@@ -47,15 +47,17 @@ Generated with the built-in image editing tool on 2026-11-02 from `island.png`. 
 
 Generated with the built-in image editing tool on 2026-11-02 from `grassland.png`. The healthy upper panel was preserved. The lower panel shows chronic overgrazing through short vegetation, compacted bare soil, hoof marks, reduced wildflowers and shallow rainfall erosion channels.
 
+`grassland-degraded-3x2.png` is the page-ready version. Each generated 4:3 half was center-cropped equally at the top and bottom, then resized to the site's existing 1086 × 724 panel format. No scene elements were added or removed during this mechanical formatting step.
+
 ## grassland-overgrazed.png
 
-Generated using the built-in image editing tool on 2026-11-02 from `grassland.png`.
+Generated using the built-in image editing tool on 2026-11-02 from `grassland.png` as an alternate version retained with the project.
 
 Use case: precise-object-edit
 Asset type: website habitat before/after vertical sprite sheet
-Input image: edit target, a single portrait image containing two equal 3:2 grassland landscape scenes stacked vertically.
-Primary request: Keep the entire TOP HALF healthy prairie visually unchanged. Edit only the BOTTOM HALF so it accurately depicts real grassland degradation caused by chronic overgrazing and soil erosion, rather than merely seasonal dryness.
-Bottom-half scene: preserve the same camera position, distant hills, sky, foreground rocks, and overall terrain geometry. Show an uneven, very short grazed grass layer; irregular bare-soil patches concentrated along realistic livestock paths; compacted ground; a few narrow shallow erosion rills following the slope; reduced wildflower diversity; scattered unpalatable scrub; and two or three very small distant grazing livestock for context. The land should remain recognizable as degraded semi-arid grassland, not a desert and not a catastrophic dust bowl.
-Style: photorealistic educational environmental comparison, natural daylight and believable ecology.
-Composition/framing: preserve the exact stacked two-panel format, dimensions/aspect ratio, and horizontal midpoint seam. No border, gap, labels, text, logos, or watermark.
-Constraints: change only the bottom half; preserve top-half details; keep landmark alignment suitable for a crossfade; no dramatic storm, no fire, no machinery, no buildings, no dead animals, no fantasy elements.
+Primary request: Keep the entire top half healthy prairie visually unchanged. Edit only the bottom half so it accurately depicts real grassland degradation caused by chronic overgrazing and soil erosion, rather than merely seasonal dryness.
+Bottom-half scene: preserve the same camera position, distant hills, sky, foreground rocks and terrain geometry. Show short grazed grass, irregular bare-soil patches along livestock paths, compacted ground, shallow erosion rills, reduced wildflower diversity, scattered scrub and a few small distant livestock. Keep it recognizable as degraded semi-arid grassland, not a desert or catastrophic dust bowl.
+Constraints: preserve the stacked comparison and landmark alignment; no text, border, dramatic storm, fire, machinery, buildings, dead animals or fantasy elements.
+
+`grassland-overgrazed-3x2.png` is its mechanically center-cropped 1086 × 1448 version; it is retained as an alternate and is not loaded by the page.
+

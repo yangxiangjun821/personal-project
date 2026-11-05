@@ -1,77 +1,794 @@
-[
-  {
-    "title": "Saola",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Pseudoryx_nghetinhensis%2C_b.PNG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "source": "https://commons.wikimedia.org/wiki/File%3APseudoryx_nghetinhensis%2C_b.PNG"
-  },
-  {
-    "title": "Okapi",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg/960px-Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "source": "https://commons.wikimedia.org/wiki/File%3ASaint-Aignan_%28Loir-et-Cher%29._Okapi.jpg"
-  },
-  {
-    "title": "Aye-aye",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Wild_aye_aye.jpg/960px-Wild_aye_aye.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "source": "https://commons.wikimedia.org/wiki/File%3AWild_aye_aye.jpg"
-  },
-  {
-    "title": "Proboscis monkey",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Proboscis_Monkey_in_Borneo.jpg/960px-Proboscis_Monkey_in_Borneo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "source": "https://commons.wikimedia.org/wiki/File%3AProboscis_Monkey_in_Borneo.jpg"
-  },
-  {
-    "title": "Hirola",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Beatragus_hunteri_176040791.jpg/960px-Beatragus_hunteri_176040791.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "source": "https://commons.wikimedia.org/wiki/File%3ABeatragus_hunteri_176040791.jpg"
-  },
-  {
-    "title": "Pygmy three-toed sloth",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Bradypus_pygmaeus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "source": "https://commons.wikimedia.org/wiki/File%3ABradypus_pygmaeus.jpg"
-  },
-  {
-    "title": "Sunda pangolin",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Pangolin_borneo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "source": "https://commons.wikimedia.org/wiki/File%3APangolin_borneo.jpg"
-  },
-  {
-    "title": "Axolotl",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Axolotl_ganz.jpg/960px-Axolotl_ganz.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "source": "https://commons.wikimedia.org/wiki/File%3AAxolotl_ganz.jpg"
-  },
-  {
-    "title": "Gharial",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Gharial_%28Gavialis_gangeticus%29_male.jpg/960px-Gharial_%28Gavialis_gangeticus%29_male.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "source": "https://commons.wikimedia.org/wiki/File%3AGharial_%28Gavialis_gangeticus%29_male.jpg"
-  },
-  {
-    "title": "Hawksbill sea turtle",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Eretmochelys-imbricata-K%C3%A9lonia-2.JPG/960px-Eretmochelys-imbricata-K%C3%A9lonia-2.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "source": "https://commons.wikimedia.org/wiki/File%3AEretmochelys-imbricata-K%C3%A9lonia-2.JPG"
-  },
-  {
-    "title": "Helmeted hornbill",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Helmeted_Hornbill.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "source": "https://commons.wikimedia.org/wiki/File%3AHelmeted_Hornbill.jpg"
-  },
-  {
-    "title": "Philippine eagle",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Pamarayeg_IIIx2_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "source": "https://commons.wikimedia.org/wiki/File%3APamarayeg_IIIx2_%28cropped%29.jpg"
-  },
-  {
-    "title": "African penguin",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Wikimania_2018%2C_Cape_Town_%28_1050602%29%2C_crop.jpg/960px-Wikimania_2018%2C_Cape_Town_%28_1050602%29%2C_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "source": "https://commons.wikimedia.org/wiki/File%3AWikimania_2018%2C_Cape_Town_%28_1050602%29%2C_crop.jpg"
-  },
-  {
-    "title": "Vaquita",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Vaquita_size.svg/960px-Vaquita_size.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "source": "https://commons.wikimedia.org/wiki/File%3AVaquita_size.svg"
-  },
-  {
-    "title": "Whale shark",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Similan_Dive_Center_-_great_whale_shark.jpg/960px-Similan_Dive_Center_-_great_whale_shark.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "source": "https://commons.wikimedia.org/wiki/File%3ASimilan_Dive_Center_-_great_whale_shark.jpg"
-  }
+﻿[
+    {
+        "title":  "Saola",
+        "file":  "images/animals/saola-wild.png",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/7/72/Pseudoryx_nghetinhensis.PNG",
+        "source":  "https://commons.wikimedia.org/wiki/File:Pseudoryx_nghetinhensis.PNG",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "The original uploader was Silviculture at Vietnamese Wikipedia."
+    },
+    {
+        "title":  "Okapi",
+        "file":  "images/animals/okapi.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg/1280px-Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Saint-Aignan_(Loir-et-Cher)._Okapi.jpg",
+        "license":  "CC BY 2.0",
+        "artist":  "Daniel Jolivet"
+    },
+    {
+        "title":  "Aye-aye",
+        "file":  "images/animals/aye-aye.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Wild_aye_aye.jpg/1280px-Wild_aye_aye.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Wild_aye_aye.jpg",
+        "license":  "CC BY 2.0",
+        "artist":  "nomis-simon"
+    },
+    {
+        "title":  "Proboscis monkey",
+        "file":  "images/animals/proboscis-monkey.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Proboscis_Monkey_in_Borneo.jpg/1280px-Proboscis_Monkey_in_Borneo.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Proboscis_Monkey_in_Borneo.jpg",
+        "license":  "CC BY-SA 2.0",
+        "artist":  "David Dennis"
+    },
+    {
+        "title":  "Hirola",
+        "file":  "images/animals/hirola.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Beatragus_hunteri_176040791.jpg/1280px-Beatragus_hunteri_176040791.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Beatragus_hunteri_176040791.jpg",
+        "license":  "CC BY 4.0",
+        "artist":  "Jan Ebr"
+    },
+    {
+        "title":  "Pygmy three-toed sloth",
+        "file":  "images/animals/pygmy-three-toed-sloth.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/6/6d/Bradypus_pygmaeus.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Bradypus_pygmaeus.jpg",
+        "license":  "Public domain",
+        "artist":  "Edward Griffith"
+    },
+    {
+        "title":  "Sunda pangolin",
+        "file":  "images/animals/sunda-pangolin.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/4/42/Pangolin_borneo.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Pangolin_borneo.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "Piekfrosch at German Wikipedia\n\n(Original text: Piekfrosch (Wikipedia-User))"
+    },
+    {
+        "title":  "Axolotl",
+        "file":  "images/animals/axolotl.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Axolotl_ganz.jpg/1280px-Axolotl_ganz.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Axolotl_ganz.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "LoKiLeCh"
+    },
+    {
+        "title":  "Gharial",
+        "file":  "images/animals/gharial.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Gharial_%28Gavialis_gangeticus%29_male.jpg/1280px-Gharial_%28Gavialis_gangeticus%29_male.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Gharial_(Gavialis_gangeticus)_male.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Charles J. Sharp"
+    },
+    {
+        "title":  "Hawksbill sea turtle",
+        "file":  "images/animals/hawksbill-turtle.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Eretmochelys-imbricata-K%C3%A9lonia-2.JPG/1280px-Eretmochelys-imbricata-K%C3%A9lonia-2.JPG?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Eretmochelys-imbricata-K%C3%A9lonia-2.JPG",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "Thierry Caro"
+    },
+    {
+        "title":  "Kakapo",
+        "file":  "images/animals/kakapo.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/a/aa/Sirocco_full_length_portrait.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Sirocco_full_length_portrait.jpg",
+        "license":  "CC BY 2.0",
+        "artist":  "Department of Conservation"
+    },
+    {
+        "title":  "Helmeted hornbill",
+        "file":  "images/animals/helmeted-hornbill.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/b/bb/Helmeted_Hornbill.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Helmeted_Hornbill.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "Doug Janson"
+    },
+    {
+        "title":  "Philippine eagle",
+        "file":  "images/animals/philippine-eagle.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/1/1f/Pamarayeg_IIIx2_%28cropped%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Pamarayeg_IIIx2_(cropped).jpg",
+        "license":  "CC BY 4.0",
+        "artist":  "Aimee Valencia"
+    },
+    {
+        "title":  "African penguin",
+        "file":  "images/animals/african-penguin.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Wikimania_2018%2C_Cape_Town_%28_1050602%29%2C_crop.jpg/1280px-Wikimania_2018%2C_Cape_Town_%28_1050602%29%2C_crop.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Wikimania_2018,_Cape_Town_(_1050602),_crop.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Matti Blume"
+    },
+    {
+        "title":  "Vaquita",
+        "file":  "images/animals/vaquita.png",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Vaquita_size.svg/1280px-Vaquita_size.svg.png?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Vaquita_size.svg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "Chris_huh"
+    },
+    {
+        "title":  "Whale shark",
+        "file":  "images/animals/whale-shark.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/f/f6/Similan_Dive_Center_-_great_whale_shark.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Similan_Dive_Center_-_great_whale_shark.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Abe Khao Lak"
+    },
+    {
+        "title":  "Largetooth sawfish",
+        "file":  "images/animals/largetooth-sawfish.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/2009_Pristis_microdon1.JPG/1280px-2009_Pristis_microdon1.JPG?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:2009_Pristis_microdon1.JPG",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "J. Patrick Fischer"
+    },
+    {
+        "title":  "Giant oceanic manta ray",
+        "file":  "images/animals/giant-oceanic-manta-ray.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/d/df/Manta_birostris-Thailand4.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Manta_birostris-Thailand4.jpg",
+        "license":  "CC BY-SA 2.0",
+        "artist":  "jon hanson from london, UK"
+    },
+    {
+        "title":  "European eel",
+        "file":  "images/animals/european-eel.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/5/58/Anguilla_anguilla.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Anguilla_anguilla.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "GerardM"
+    },
+    {
+        "title":  "Golden poison frog",
+        "file":  "images/animals/golden-poison-frog.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/6/6e/Schrecklicherpfeilgiftfrosch-01.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Schrecklicherpfeilgiftfrosch-01.jpg",
+        "license":  "CC BY-SA 2.0 de",
+        "artist":  "Wilfried Berns"
+    },
+    {
+        "title":  "Javan rhinoceros",
+        "file":  "images/animals/javan-rhinoceros.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/c/ce/Rhinoceros_sondaicus_in_London_Zoo.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Rhinoceros_sondaicus_in_London_Zoo.jpg",
+        "license":  "Public domain",
+        "artist":  "T.Dixon. The Zoological Society of London"
+    },
+    {
+        "title":  "Sumatran rhinoceros",
+        "file":  "images/animals/sumatran-rhinoceros.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Sumatran_Rhinoceros_at_Sumatran_Rhino_Sanctuary_Lampung_Indonesia_2013.JPG/1280px-Sumatran_Rhinoceros_at_Sumatran_Rhino_Sanctuary_Lampung_Indonesia_2013.JPG?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Sumatran_Rhinoceros_at_Sumatran_Rhino_Sanctuary_Lampung_Indonesia_2013.JPG",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "26Isabella"
+    },
+    {
+        "title":  "Black rhinoceros",
+        "file":  "images/animals/black-rhinoceros.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Black_Rhino_at_Working_with_Wildlife.jpg/1280px-Black_Rhino_at_Working_with_Wildlife.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Black_Rhino_at_Working_with_Wildlife.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "AfricanConservation"
+    },
+    {
+        "title":  "African forest elephant",
+        "file":  "images/animals/african-forest-elephant.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Loxodontacyclotis.jpg/1280px-Loxodontacyclotis.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Loxodontacyclotis.jpg",
+        "license":  "CC BY 2.5",
+        "artist":  "Thomas Breuer"
+    },
+    {
+        "title":  "Asian elephant",
+        "file":  "images/animals/asian-elephant.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Elephas_maximus_%28Bandipur%29.jpg/1280px-Elephas_maximus_%28Bandipur%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Elephas_maximus_(Bandipur).jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "Yathin S Krishnappa"
+    },
+    {
+        "title":  "Sumatran orangutan",
+        "file":  "images/animals/sumatran-orangutan.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Sumatra-Orang-Utan_im_Pongoland.jpg/1280px-Sumatra-Orang-Utan_im_Pongoland.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Sumatra-Orang-Utan_im_Pongoland.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Fiver, der Hellseher"
+    },
+    {
+        "title":  "Tapanuli orangutan",
+        "file":  "images/animals/tapanuli-orangutan.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Pongo_tapanuliensis.jpg/1280px-Pongo_tapanuliensis.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Pongo_tapanuliensis.jpg",
+        "license":  "CC BY 4.0",
+        "artist":  "Tim Laman"
+    },
+    {
+        "title":  "Bornean orangutan",
+        "file":  "images/animals/bornean-orangutan.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Tanjung_Puting30477.jpg/1280px-Tanjung_Puting30477.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Tanjung_Puting30477.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Nanosanchez"
+    },
+    {
+        "title":  "Cross River gorilla",
+        "file":  "images/animals/cross-river-gorilla.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/a/a9/Cross_river_gorilla.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Cross_river_gorilla.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "arenddehaas at English Wikipedia"
+    },
+    {
+        "title":  "Bonobo",
+        "file":  "images/animals/bonobo.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/e/e2/Apeldoorn_Apenheul_zoo_Bonobo.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Apeldoorn_Apenheul_zoo_Bonobo.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "natataek"
+    },
+    {
+        "title":  "Red panda",
+        "file":  "images/animals/red-panda.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Red_Panda%2C_Gentle_Tree-Dweller_of_the_Himalayas.jpg/1280px-Red_Panda%2C_Gentle_Tree-Dweller_of_the_Himalayas.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Red_Panda,_Gentle_Tree-Dweller_of_the_Himalayas.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Sunuwargr"
+    },
+    {
+        "title":  "Ethiopian wolf",
+        "file":  "images/animals/ethiopian-wolf.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Ethiopian_wolf_%28Canis_simensis_citernii%29.jpg/1280px-Ethiopian_wolf_%28Canis_simensis_citernii%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Ethiopian_wolf_(Canis_simensis_citernii).jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Charles J. Sharp"
+    },
+    {
+        "title":  "African wild dog",
+        "file":  "images/animals/african-wild-dog.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/African_Wild_Dog_at_Working_with_Wildlife.jpg/1280px-African_Wild_Dog_at_Working_with_Wildlife.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:African_Wild_Dog_at_Working_with_Wildlife.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "AfricanConservation"
+    },
+    {
+        "title":  "Tiger",
+        "file":  "images/animals/tiger.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/1280px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Bengal_tiger_(Panthera_tigris_tigris)_female_3_crop.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Charles J. Sharp"
+    },
+    {
+        "title":  "Iberian lynx",
+        "file":  "images/animals/iberian-lynx.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Lince_ib%C3%A9rico_%28Lynx_pardinus%29%2C_Almuradiel%2C_Ciudad_Real%2C_Espa%C3%B1a%2C_2021-12-19%2C_DD_07.jpg/1280px-Lince_ib%C3%A9rico_%28Lynx_pardinus%29%2C_Almuradiel%2C_Ciudad_Real%2C_Espa%C3%B1a%2C_2021-12-19%2C_DD_07.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Lince_ib%C3%A9rico_(Lynx_pardinus),_Almuradiel,_Ciudad_Real,_Espa%C3%B1a,_2021-12-19,_DD_07.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Diego Delso"
+    },
+    {
+        "title":  "Mediterranean monk seal",
+        "file":  "images/animals/mediterranean-monk-seal.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Monachus_monachus_DSC_0274.jpg/1280px-Monachus_monachus_DSC_0274.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Monachus_monachus_DSC_0274.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Marinko Babić"
+    },
+    {
+        "title":  "Hawaiian monk seal",
+        "file":  "images/animals/hawaiian-monk-seal.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Monachus_schauinslandi.jpg/1280px-Monachus_schauinslandi.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Monachus_schauinslandi.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "N3kt0n"
+    },
+    {
+        "title":  "North Atlantic right whale",
+        "file":  "images/animals/north-atlantic-right-whale.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/GRNMS_-_Right_Whales_%2831361234602%29.jpg/1280px-GRNMS_-_Right_Whales_%2831361234602%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:GRNMS_-_Right_Whales_(31361234602).jpg",
+        "license":  "Public domain",
+        "artist":  "National Marine Sanctuaries"
+    },
+    {
+        "title":  "Blue whale",
+        "file":  "images/animals/blue-whale.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg/1280px-Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg",
+        "license":  "Public domain",
+        "artist":  "NOAA Photo Library"
+    },
+    {
+        "title":  "Dugong",
+        "file":  "images/animals/dugong.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Dugong.JPG/1280px-Dugong.JPG?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Dugong.JPG",
+        "license":  "CC BY-SA 3.0 de",
+        "artist":  "Gejuni"
+    },
+    {
+        "title":  "Amazon river dolphin",
+        "file":  "images/animals/amazon-river-dolphin.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Amazonas-Flussdelfin_Orinoko3.jpg/1280px-Amazonas-Flussdelfin_Orinoko3.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Amazonas-Flussdelfin_Orinoko3.jpg",
+        "license":  "CC BY-SA 2.0 de",
+        "artist":  "Oceancetaceen"
+    },
+    {
+        "title":  "Indus river dolphin",
+        "file":  "images/animals/indus-river-dolphin.png",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/South_Asian_river_dolphin_size_comparison.svg/1280px-South_Asian_river_dolphin_size_comparison.svg.png?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:South_Asian_river_dolphin_size_comparison.svg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "Chris_huh"
+    },
+    {
+        "title":  "Polar bear",
+        "file":  "images/animals/polar-bear.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Polar_Bear_-_Alaska_(cropped).jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "Alan Wilson"
+    },
+    {
+        "title":  "Giant panda",
+        "file":  "images/animals/giant-panda.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/1280px-Grosser_Panda.JPG?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Grosser_Panda.JPG",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "J. Patrick Fischer"
+    },
+    {
+        "title":  "Koala",
+        "file":  "images/animals/koala.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/4/49/Koala_climbing_tree.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "Diliff"
+    },
+    {
+        "title":  "Tasmanian devil",
+        "file":  "images/animals/tasmanian-devil.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Sarcophilus_harrisii_taranna.jpg/1280px-Sarcophilus_harrisii_taranna.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Sarcophilus_harrisii_taranna.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "JJ Harrison (https://www.jjharrison.com.au/)"
+    },
+    {
+        "title":  "Northern hairy-nosed wombat",
+        "file":  "images/animals/northern-hairy-nosed-wombat.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/0/00/Haarnasenwombat_%28Lasiorhinus_krefftii%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Haarnasenwombat_(Lasiorhinus_krefftii).jpg",
+        "license":  "CC BY-SA 2.0 de",
+        "artist":  ""
+    },
+    {
+        "title":  "Ring-tailed lemur",
+        "file":  "images/animals/ring-tailed-lemur.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Ring-tailed_lemur_%28Lemur_catta%29.jpg/1280px-Ring-tailed_lemur_%28Lemur_catta%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Ring-tailed_lemur_(Lemur_catta).jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Charles J. Sharp"
+    },
+    {
+        "title":  "Greater bamboo lemur",
+        "file":  "images/animals/greater-bamboo-lemur.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Prolemur_simus_-_Grand_Hapal%C3%A9mur_-_Adulte_-_Zoologique_de_Paris_27.JPG/1280px-Prolemur_simus_-_Grand_Hapal%C3%A9mur_-_Adulte_-_Zoologique_de_Paris_27.JPG?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Prolemur_simus_-_Grand_Hapal%C3%A9mur_-_Adulte_-_Zoologique_de_Paris_27.JPG",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Cedricguppy - Loury Cédric"
+    },
+    {
+        "title":  "California condor",
+        "file":  "images/animals/california-condor.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/1/11/California-condor-gymnogyps-californianus-078_%2821196759264%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:California-condor-gymnogyps-californianus-078_(21196759264).jpg",
+        "license":  "CC BY-SA 2.0",
+        "artist":  "Don Graham from Redlands, CA, USA - God bless it!"
+    },
+    {
+        "title":  "Whooping crane",
+        "file":  "images/animals/whooping-crane.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Grus_americana_Sasata.jpg/1280px-Grus_americana_Sasata.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Grus_americana_Sasata.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "Sasata"
+    },
+    {
+        "title":  "Grey parrot",
+        "file":  "images/animals/african-grey-parrot.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Perroquet_%C3%A0_Yampopo_Beach_-_Douala.jpg/1280px-Perroquet_%C3%A0_Yampopo_Beach_-_Douala.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Perroquet_%C3%A0_Yampopo_Beach_-_Douala.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Florettesokeng"
+    },
+    {
+        "title":  "Shoebill",
+        "file":  "images/animals/shoebill.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Balaeniceps_rex_-Ueno_Zoo%2C_Tokyo%2C_Japan-8a.jpg/1280px-Balaeniceps_rex_-Ueno_Zoo%2C_Tokyo%2C_Japan-8a.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Balaeniceps_rex_-Ueno_Zoo,_Tokyo,_Japan-8a.jpg",
+        "license":  "CC BY 2.0",
+        "artist":  "Bob Owen"
+    },
+    {
+        "title":  "Secretarybird",
+        "file":  "images/animals/secretarybird.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Secretary_bird_Mara_for_WC.jpg/1280px-Secretary_bird_Mara_for_WC.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Secretary_bird_Mara_for_WC.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Sumeet Moghe"
+    },
+    {
+        "title":  "White-backed vulture",
+        "file":  "images/animals/white-backed-vulture.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/d/d3/2012-white-backed-vulture.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:2012-white-backed-vulture.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "Yathin sk"
+    },
+    {
+        "title":  "Hooded vulture",
+        "file":  "images/animals/hooded-vulture.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Hooded_vulture_%28Necrosyrtes_monachus%29.jpg/1280px-Hooded_vulture_%28Necrosyrtes_monachus%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Hooded_vulture_(Necrosyrtes_monachus).jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Charles J. Sharp"
+    },
+    {
+        "title":  "Egyptian vulture",
+        "file":  "images/animals/egyptian-vulture.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Egyptian_Vulture%2C_Socotra.jpg/1280px-Egyptian_Vulture%2C_Socotra.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Egyptian_Vulture,_Socotra.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Rod Waddington"
+    },
+    {
+        "title":  "Great Indian bustard",
+        "file":  "images/animals/great-indian-bustard.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/3/34/Ardeotis_nigriceps%2C_Desert_National_Park%2C_Rajasthan%2C_India_1.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Ardeotis_nigriceps,_Desert_National_Park,_Rajasthan,_India_1.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Original: SVKMBFLY; this edit: MPF"
+    },
+    {
+        "title":  "Bengal florican",
+        "file":  "images/animals/bengal-florican.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/5/50/Bengal_Florican_Houbaropsis_bengalensis_bengalensis_%28cropped%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Bengal_Florican_Houbaropsis_bengalensis_bengalensis_(cropped).jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Nejib Ahmed"
+    },
+    {
+        "title":  "Spoon-billed sandpiper",
+        "file":  "images/animals/spoon-billed-sandpiper.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Eurynorhynchus_pygmeus_2_-_Pak_Thale.jpg/1280px-Eurynorhynchus_pygmeus_2_-_Pak_Thale.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Eurynorhynchus_pygmeus_2_-_Pak_Thale.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "JJ Harrison (https://www.jjharrison.com.au/)"
+    },
+    {
+        "title":  "Yellow-crested cockatoo",
+        "file":  "images/animals/yellow-crested-cockatoo.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/c/c2/Cacatua_sulphurea_330278728_%28centered%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Cacatua_sulphurea_330278728_(centered).jpg",
+        "license":  "CC BY 4.0",
+        "artist":  "Kalvin Chan"
+    },
+    {
+        "title":  "Bali myna",
+        "file":  "images/animals/bali-myna.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Bali_Myna_0A2A9443.jpg/1280px-Bali_Myna_0A2A9443.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Bali_Myna_0A2A9443.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "JJ Harrison"
+    },
+    {
+        "title":  "Orange-bellied parrot",
+        "file":  "images/animals/orange-bellied-parrot.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Neophema_chrysogaster_male_-_Melaleuca.jpg/1280px-Neophema_chrysogaster_male_-_Melaleuca.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Neophema_chrysogaster_male_-_Melaleuca.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "JJ Harrison (https://www.jjharrison.com.au/)"
+    },
+    {
+        "title":  "Regent honeyeater",
+        "file":  "images/animals/regent-honeyeater.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Regent_honeyeater.jpg/1280px-Regent_honeyeater.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Regent_honeyeater.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Jss367"
+    },
+    {
+        "title":  "Yellow-eyed penguin",
+        "file":  "images/animals/yellow-eyed-penguin.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Yellow-eyed_Penguin_MC.jpg/1280px-Yellow-eyed_Penguin_MC.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Yellow-eyed_Penguin_MC.jpg",
+        "license":  "CC BY 2.5",
+        "artist":  "Christian Mehlführer, User:Chmehl"
+    },
+    {
+        "title":  "Galapagos penguin",
+        "file":  "images/animals/galapagos-penguin.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Gal%C3%A1pagos_penguin_%28Spheniscus_mendiculus%29_male.jpg/1280px-Gal%C3%A1pagos_penguin_%28Spheniscus_mendiculus%29_male.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Gal%C3%A1pagos_penguin_(Spheniscus_mendiculus)_male.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "Charles J. Sharp"
+    },
+    {
+        "title":  "Blue-throated macaw",
+        "file":  "images/animals/blue-throated-macaw.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/4/4f/Ara_glaucogularis_-Cincinnati_Zoo-8a.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Ara_glaucogularis_-Cincinnati_Zoo-8a.jpg",
+        "license":  "CC BY-SA 2.0",
+        "artist":  "Ted"
+    },
+    {
+        "title":  "Lear\u0027s macaw",
+        "file":  "images/animals/lears-macaw.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Anodorhynchus_leari_-Rio_de_Janeiro_Zoo%2C_Brazil-8a.jpg/1280px-Anodorhynchus_leari_-Rio_de_Janeiro_Zoo%2C_Brazil-8a.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Anodorhynchus_leari_-Rio_de_Janeiro_Zoo,_Brazil-8a.jpg",
+        "license":  "CC BY 2.0",
+        "artist":  "Marcos Pereira"
+    },
+    {
+        "title":  "Harpy eagle",
+        "file":  "images/animals/harpy-eagle.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/3/3b/Harpia_harpyja_001_800.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Harpia_harpyja_001_800.jpg",
+        "license":  "CC BY 3.0",
+        "artist":  "http://www.birdphotos.com"
+    },
+    {
+        "title":  "Andean condor",
+        "file":  "images/animals/andean-condor.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/AndeanCondorMale.jpg/1280px-AndeanCondorMale.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:AndeanCondorMale.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "Greg Hume"
+    },
+    {
+        "title":  "Grey crowned crane",
+        "file":  "images/animals/grey-crowned-crane.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Grey_crowned_crane_%28Balearica_regulorum_gibbericeps%29.jpg/1280px-Grey_crowned_crane_%28Balearica_regulorum_gibbericeps%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Grey_crowned_crane_(Balearica_regulorum_gibbericeps).jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Charles J. Sharp"
+    },
+    {
+        "title":  "Northern bald ibis",
+        "file":  "images/animals/northern-bald-ibis.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Northern_Bald_Ibis_Geronticus_eremita_%288470600428%29.jpg/1280px-Northern_Bald_Ibis_Geronticus_eremita_%288470600428%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Northern_Bald_Ibis_Geronticus_eremita_(8470600428).jpg",
+        "license":  "CC BY-SA 2.0",
+        "artist":  "Len Worthington"
+    },
+    {
+        "title":  "Atlantic puffin",
+        "file":  "images/animals/atlantic-puffin.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Puffin_%28Fratercula_arctica%29.jpg/1280px-Puffin_%28Fratercula_arctica%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Puffin_(Fratercula_arctica).jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Charles J. Sharp"
+    },
+    {
+        "title":  "Macaroni penguin",
+        "file":  "images/animals/macaroni-penguin.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/SGI-2016-South_Georgia_%28Cooper_Bay%29%E2%80%93Macaroni_penguin_%28Eudyptes_chrysolophus%29_01.jpg/1280px-SGI-2016-South_Georgia_%28Cooper_Bay%29%E2%80%93Macaroni_penguin_%28Eudyptes_chrysolophus%29_01.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:SGI-2016-South_Georgia_(Cooper_Bay)%E2%80%93Macaroni_penguin_(Eudyptes_chrysolophus)_01.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Godot13"
+    },
+    {
+        "title":  "Chinese alligator",
+        "file":  "images/animals/chinese-alligator.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/ChineseAlligator15.JPG/1280px-ChineseAlligator15.JPG?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:ChineseAlligator15.JPG",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "Greg Hume"
+    },
+    {
+        "title":  "Siamese crocodile",
+        "file":  "images/animals/siamese-crocodile.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Crocodylus_siamensis_in_moscow_zoo_01.jpg/1280px-Crocodylus_siamensis_in_moscow_zoo_01.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Crocodylus_siamensis_in_moscow_zoo_01.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "Rigelus"
+    },
+    {
+        "title":  "Philippine crocodile",
+        "file":  "images/animals/philippine-crocodile.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Crocodylus_mindorensis_by_Gregg_Yan_01.jpg/1280px-Crocodylus_mindorensis_by_Gregg_Yan_01.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Crocodylus_mindorensis_by_Gregg_Yan_01.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "Gregg Yan"
+    },
+    {
+        "title":  "Orinoco crocodile",
+        "file":  "images/animals/orinoco-crocodile.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Orinoco_Crocodile.jpg/1280px-Orinoco_Crocodile.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Orinoco_Crocodile.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Chrislorenz9"
+    },
+    {
+        "title":  "Radiated tortoise",
+        "file":  "images/animals/radiated-tortoise.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Radiated_tortoise_%28Astrochelys_radiata%29_Tsimanampetsotsa.jpg/1280px-Radiated_tortoise_%28Astrochelys_radiata%29_Tsimanampetsotsa.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Radiated_tortoise_(Astrochelys_radiata)_Tsimanampetsotsa.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Charles J. Sharp"
+    },
+    {
+        "title":  "Ploughshare tortoise",
+        "file":  "images/animals/ploughshare-tortoise.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/3/30/Ploughshare_Tortoise_%28Astrochelys_yniphora%29_%2820359393031%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Ploughshare_Tortoise_(Astrochelys_yniphora)_(20359393031).jpg",
+        "license":  "CC0",
+        "artist":  "Internet Archive Book Images"
+    },
+    {
+        "title":  "Yangtze giant softshell turtle",
+        "file":  "images/animals/yangtze-giant-softshell-turtle.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/d/d8/R%C3%B9a_%C4%90%E1%BB%93ng_M%C3%B4.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:R%C3%B9a_%C4%90%E1%BB%93ng_M%C3%B4.jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "Phuongcacanh at Vietnamese Wikipedia"
+    },
+    {
+        "title":  "Leatherback sea turtle",
+        "file":  "images/animals/leatherback-turtle.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Leatherback_sea_turtle_Tinglar%2C_USVI_%285839996547%29.jpg/1280px-Leatherback_sea_turtle_Tinglar%2C_USVI_%285839996547%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Leatherback_sea_turtle_Tinglar,_USVI_(5839996547).jpg",
+        "license":  "Public domain",
+        "artist":  "U.S. Fish and Wildlife Service Southeast Region"
+    },
+    {
+        "title":  "Kemp\u0027s ridley sea turtle",
+        "file":  "images/animals/kemps-ridley-turtle.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Lepidochelys_kempii.jpg/1280px-Lepidochelys_kempii.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Lepidochelys_kempii.jpg",
+        "license":  "CC BY 2.0",
+        "artist":  "U.S. Fish and Wildlife Service Southeast Region"
+    },
+    {
+        "title":  "Loggerhead sea turtle",
+        "file":  "images/animals/loggerhead-turtle.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Loggerhead_sea_turtle.jpg/1280px-Loggerhead_sea_turtle.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Loggerhead_sea_turtle.jpg",
+        "license":  "CC BY 2.0",
+        "artist":  "ukanda"
+    },
+    {
+        "title":  "Komodo dragon",
+        "file":  "images/animals/komodo-dragon.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/202306_Varanus_komodoensis.jpg/1280px-202306_Varanus_komodoensis.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:202306_Varanus_komodoensis.jpg",
+        "license":  "CC BY 4.0",
+        "artist":  "James Jolokia (james1203)"
+    },
+    {
+        "title":  "Marine iguana",
+        "file":  "images/animals/marine-iguana.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Amblyrhynchus_cristatus_%283838137696%29.jpg/1280px-Amblyrhynchus_cristatus_%283838137696%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Amblyrhynchus_cristatus_(3838137696).jpg",
+        "license":  "CC BY-SA 2.0",
+        "artist":  "RAF-YYC from Calgary, Canada"
+    },
+    {
+        "title":  "Panamanian golden frog",
+        "file":  "images/animals/panamanian-golden-frog.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Atelopus_zeteki1.jpg/1280px-Atelopus_zeteki1.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Atelopus_zeteki1.jpg",
+        "license":  "CC BY 2.0",
+        "artist":  "Brian Gratwicke"
+    },
+    {
+        "title":  "Mountain chicken",
+        "file":  "images/animals/mountain-chicken.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Leptodactylus_fallax_%281%29.jpg/1280px-Leptodactylus_fallax_%281%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Leptodactylus_fallax_(1).jpg",
+        "license":  "Public domain",
+        "artist":  "TimVickers"
+    },
+    {
+        "title":  "Chinese giant salamander",
+        "file":  "images/animals/chinese-giant-salamander.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Velemlok_%C4%8D%C3%ADnsk%C3%BD_zoo_praha_1.jpg/1280px-Velemlok_%C4%8D%C3%ADnsk%C3%BD_zoo_praha_1.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Velemlok_%C4%8D%C3%ADnsk%C3%BD_zoo_praha_1.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Petr Hamerník"
+    },
+    {
+        "title":  "European sea sturgeon",
+        "file":  "images/animals/european-sturgeon.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Acipenser_sturio_1879.jpg/1280px-Acipenser_sturio_1879.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Acipenser_sturio_1879.jpg",
+        "license":  "Public domain",
+        "artist":  "Alexander Francis Lydon"
+    },
+    {
+        "title":  "Mekong giant catfish",
+        "file":  "images/animals/mekong-giant-catfish.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Pangasianodon_gigas_in_Gifu_World_Fresh_Water_Aquarium_-_2.jpg/1280px-Pangasianodon_gigas_in_Gifu_World_Fresh_Water_Aquarium_-_2.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Pangasianodon_gigas_in_Gifu_World_Fresh_Water_Aquarium_-_2.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "KKPCW"
+    },
+    {
+        "title":  "Great hammerhead",
+        "file":  "images/animals/great-hammerhead.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/b/bd/Great_hammerhead2.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Great_hammerhead2.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Albert kok"
+    },
+    {
+        "title":  "Oceanic whitetip shark",
+        "file":  "images/animals/oceanic-whitetip-shark.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Oceanic_Whitetip_Shark_%28cropped%29.jpg/1280px-Oceanic_Whitetip_Shark_%28cropped%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Oceanic_Whitetip_Shark_(cropped).jpg",
+        "license":  "CC BY-SA 3.0",
+        "artist":  "Johan Lantz, Malmö SWEDEN"
+    },
+    {
+        "title":  "Southern bluefin tuna",
+        "file":  "images/animals/southern-bluefin-tuna.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/d/d0/Thunnus_maccoyii.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Thunnus_maccoyii.jpg",
+        "license":  "CC BY-SA 4.0",
+        "artist":  "Gustavo200897"
+    },
+    {
+        "title":  "Elkhorn coral",
+        "file":  "images/animals/elkhorn-coral.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/5/5f/Elkhorn_coral.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Elkhorn_coral.jpg",
+        "license":  "Public domain",
+        "artist":  ""
+    },
+    {
+        "title":  "Staghorn coral",
+        "file":  "images/animals/staghorn-coral.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Hertshoon.jpg/1280px-Hertshoon.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Hertshoon.jpg",
+        "license":  "Public domain",
+        "artist":  "Albert Kok at Dutch Wikipedia\n\n(Original text: albert kok)"
+    },
+    {
+        "title":  "Rusty patched bumble bee",
+        "file":  "images/animals/rusty-patched-bumble-bee.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Bombus_affinis%2C_F%2C_side%2C_sky_meadows%2C_virginia_2014-09-22-18.05.02_ZS_PMax_%2815169110488%29.jpg/1280px-Bombus_affinis%2C_F%2C_side%2C_sky_meadows%2C_virginia_2014-09-22-18.05.02_ZS_PMax_%2815169110488%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Bombus_affinis,_F,_side,_sky_meadows,_virginia_2014-09-22-18.05.02_ZS_PMax_(15169110488).jpg",
+        "license":  "Public domain",
+        "artist":  "USGS Bee Inventory and Monitoring Lab from Beltsville, Maryland, USA"
+    },
+    {
+        "title":  "Monarch butterfly",
+        "file":  "images/animals/monarch-butterfly.jpg",
+        "remote":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg/1280px-Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+        "source":  "https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg",
+        "license":  "GFDL 1.2",
+        "artist":  "Photo by and (c)2007 Derek Ramsey (Ram-Man)"
+    },
+    {
+        "title":  "Black abalone",
+        "file":  "images/animals/black-abalone.jpg",
+        "remote":  "https://upload.wikimedia.org/wikipedia/commons/5/58/Haliotis_cracherodii.JPG?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+        "source":  "https://commons.wikimedia.org/wiki/File:Haliotis_cracherodii.JPG",
+        "license":  "Public domain",
+        "artist":  ""
+    }
 ]

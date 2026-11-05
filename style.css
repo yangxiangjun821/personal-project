@@ -125,16 +125,48 @@ nav .links a:focus-visible::after {
     transform: scaleX(1);
 }
 
-nav .action {
-    padding: 0.55em 1.2em;
-    color: var(--primary-deep);
-    font-weight: 700;
-    text-decoration: none;
-    white-space: nowrap;
-    background: var(--accent);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 999px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+.nav-toggle {
+    display: none;
+}
+
+header.has-toggle .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 0.5rem;
+    padding: 0;
+    color: #f2f0e7;
+    font: inherit;
+    line-height: 1;
+    background: rgba(3, 7, 17, 0.35);
+    border: 1px solid rgba(242, 240, 231, 0.35);
+    border-radius: 50%;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus-visible {
+    background: rgba(3, 7, 17, 0.6);
+}
+
+/* The panel wrapper is layout-neutral on the horizontal bar. */
+.nav-panel {
+    display: contents;
+}
+
+header:not(.is-collapsed) .nav-toggle {
+    order: 1;
+}
+
+header.is-collapsed nav {
+    justify-content: flex-end;
+}
+
+header.is-collapsed .nav-panel {
+    display: none;
 }
 
 nav a:hover,
@@ -320,10 +352,6 @@ main {
     font-size: 1.2rem;
 }
 
-.about-mission {
-    max-width: 70ch;
-}
-
 .page-intro {
     max-width: 900px;
     padding: clamp(2.5rem, 7vw, 5.5rem) 0 3rem;
@@ -349,6 +377,107 @@ main {
     align-items: end;
     justify-content: space-between;
     margin: 3.5rem 0 1.5rem;
+}
+
+#habitats {
+    position: relative;
+    isolation: isolate;
+}
+
+.habitat-content {
+    position: relative;
+    z-index: 1;
+}
+
+.ocean-scene {
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: -100vh;
+    margin-left: calc(50% - 50vw);
+    overflow: hidden;
+    pointer-events: none;
+    background: #092c3d;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 520ms cubic-bezier(0.16, 1, 0.3, 1), visibility 0s linear 520ms;
+}
+
+.ocean-scene canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ocean-scene__readout {
+    position: absolute;
+    right: clamp(1.2rem, 4vw, 3rem);
+    bottom: 1.35rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: rgba(236, 249, 246, .88);
+    font-size: .7rem;
+    font-weight: 750;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 12px rgba(0, 24, 36, .72);
+}
+
+.ocean-scene__readout span + span {
+    padding-left: 1rem;
+    border-left: 1px solid rgba(226, 247, 243, .38);
+    font-variant-numeric: tabular-nums;
+}
+
+#habitats.is-ocean {
+    padding-bottom: 14vh;
+}
+
+#habitats.is-ocean .ocean-scene {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 620ms cubic-bezier(0.16, 1, 0.3, 1), visibility 0s;
+}
+
+#habitats.is-ocean .section-heading {
+    padding: 1.25rem 1.4rem;
+    background: rgba(242, 240, 231, .92);
+    border-radius: var(--radius);
+    box-shadow: 0 18px 46px rgba(0, 35, 50, .18);
+    -webkit-backdrop-filter: blur(10px) saturate(112%);
+    backdrop-filter: blur(10px) saturate(112%);
+}
+
+#habitats.is-ocean .animal-list {
+    border-color: rgba(218, 231, 226, .56);
+    background: rgba(198, 218, 212, .52);
+    box-shadow: 0 28px 80px rgba(0, 28, 44, .24);
+}
+
+#habitats.is-ocean .animal-profile {
+    background: rgba(251, 250, 245, .91);
+    -webkit-backdrop-filter: blur(12px) saturate(110%);
+    backdrop-filter: blur(12px) saturate(110%);
+}
+
+#habitats.is-ocean .filter-status {
+    display: inline-block;
+    padding: .35rem .7rem;
+    color: #effbf8;
+    background: rgba(5, 45, 61, .62);
+    border-radius: 6px;
+    text-shadow: 0 1px 7px rgba(0, 20, 32, .7);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+.ocean-scene--fallback .ocean-scene {
+    background:
+        radial-gradient(circle at 68% 16%, rgba(255, 218, 145, .58), transparent 16%),
+        linear-gradient(180deg, #73b8d2 0%, #d4b67f 36%, #1a6576 39%, #06324a 100%);
 }
 
 .section-heading h2,
@@ -385,10 +514,38 @@ main {
     grid-template-columns: minmax(9.5rem, .72fr) minmax(0, 1.28fr);
     gap: 1.5rem;
     align-items: start;
-    min-height: 310px;
+    min-height: 520px;
     padding: 1.7rem;
     overflow: hidden;
     background: var(--surface);
+}
+.animal-profile__image {
+    position: relative;
+    z-index: 1;
+    grid-column: 1 / -1;
+    width: calc(100% + 3.4rem);
+    aspect-ratio: 16 / 9;
+    margin: -1.7rem -1.7rem 0;
+    overflow: hidden;
+    background: var(--surface-alt);
+}
+.animal-profile__image img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+.animal-profile__image.is-unavailable {
+    display: grid;
+    place-items: center;
+    color: var(--muted);
+    font-size: .82rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
 }
 .animal-profile::after {
     content: "";
@@ -434,78 +591,6 @@ main {
 .status--vulnerable { background: #677446; }
 .filter-status { margin: .9rem 0 0; color: var(--muted); font-size: .9rem; }
 .coursework-plan { max-width: 780px; padding: 4rem 0 1rem; }
-
-.quote-hero {
-    position: relative;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(20rem, 34%);
-    min-height: 390px;
-    padding: clamp(2rem, 5vw, 4rem);
-    margin-bottom: 4rem;
-    overflow: hidden;
-    color: white;
-    background: var(--primary-deep);
-    border-radius: 24px;
-    box-shadow: 0 24px 55px rgba(7, 35, 25, 0.24);
-}
-
-.quote-hero__content { position: relative; z-index: 1; max-width: 700px; }
-.quote-hero__label {
-    margin: 0 0 1.2rem;
-    color: var(--accent);
-    font-size: 0.78rem;
-    font-weight: 800;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-}
-.quote-hero h1 { margin: 0 0 1.5rem; color: white; }
-.quote-hero__quote { margin: 0; }
-.quote-hero__quote p {
-    max-width: 25ch;
-    margin: 0;
-    font-size: clamp(1.8rem, 4vw, 3.3rem);
-    font-weight: 700;
-    line-height: 1.13;
-    letter-spacing: -0.03em;
-    text-wrap: balance;
-}
-.quote-hero__quote footer { margin-top: 1rem; color: #e3eadf; background: transparent; }
-.quote-hero__quote cite { font-style: normal; font-weight: 600; }
-.quote-hero__button {
-    display: inline-flex;
-    gap: 0.8rem;
-    align-items: center;
-    padding: 0.75rem 1rem;
-    margin-top: 2rem;
-    color: var(--primary-deep);
-    font: inherit;
-    font-size: 0.9rem;
-    font-weight: 800;
-    cursor: pointer;
-    background: var(--accent);
-    border: 0;
-    border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.16);
-    transition: transform 0.2s ease, background 0.2s ease;
-}
-.quote-hero__button:hover { background: #edb65b; transform: translateY(-2px); }
-.quote-hero__button:focus-visible { outline: 3px solid white; outline-offset: 4px; }
-.quote-hero__button span { font-size: 1.2rem; line-height: 1; }
-.quote-hero__animal {
-    align-self: center;
-    width: min(100%, 24rem);
-    aspect-ratio: 830 / 683;
-    background: #b9d8b3;
-    opacity: .56;
-    transform: translateX(1rem);
-    -webkit-mask: var(--animal-mask, url("images/elephant-line-art.png")) center / contain no-repeat;
-    mask: var(--animal-mask, url("images/elephant-line-art.png")) center / contain no-repeat;
-}
-.quote-hero__quote.is-changing p { animation: quote-in 420ms cubic-bezier(0.16, 1, 0.3, 1); }
-@keyframes quote-in { from { opacity: 0; transform: translateY(0.5rem); } to { opacity: 1; transform: translateY(0); } }
-.quotes-heading { display: flex; gap: 2rem; align-items: baseline; justify-content: space-between; margin-bottom: 1.5rem; }
-.quotes-heading h2 { margin: 0; }
-.quotes-heading p { margin: 0; color: var(--muted); }
 
 main > p,
 main > ul,
@@ -554,42 +639,6 @@ img {
     font-size: 0.85rem;
 }
 
-.quote {
-    max-width: 640px;
-    padding: 1.5rem 1.6rem;
-    margin: 0 0 1rem;
-    color: var(--text);
-    background: #ffffff;
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    box-shadow: 0 12px 28px rgba(14, 44, 79, 0.08);
-}
-
-.quote blockquote {
-    margin: 0;
-}
-
-.quote blockquote p {
-    margin: 0;
-    color: var(--text);
-    font-size: clamp(1.6rem, 2.5vw, 2.35rem);
-    line-height: 1.35;
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    text-wrap: balance;
-}
-
-.quote footer,
-.quote footer cite {
-    padding: 0;
-    margin-top: 0.8rem;
-    color: var(--muted);
-    font-size: 0.9rem;
-    font-style: normal;
-    font-weight: 600;
-    background: transparent;
-}
-
 footer p,
 footer address {
     margin: 0;
@@ -620,23 +669,6 @@ body > footer a {
     margin: 0.35rem 0 0;
     color: var(--muted);
 }
-
-.about-grid {
-    display: grid;
-    grid-template-columns: 1.2fr .8fr;
-    gap: clamp(2rem, 7vw, 6rem);
-    padding: 3.5rem 0;
-}
-
-.editorial-note {
-    padding: 1.5rem;
-    background: var(--surface-alt);
-    border-top: 3px solid var(--accent);
-}
-
-.editorial-note h2 { margin-top: 0; }
-.contact-section { padding: 3rem 0 1rem; border-top: 1px solid var(--line); }
-.contact-section address { font-style: normal; font-size: 1.2rem; }
 
 a:focus-visible {
     outline: 3px solid var(--accent);
@@ -716,25 +748,18 @@ a:focus-visible {
     }
 
     .section-heading { align-items: flex-start; flex-direction: column; }
+    #habitats.is-ocean { padding-bottom: 8vh; }
+    #habitats.is-ocean .section-heading { padding: 1rem; }
+    .ocean-scene__readout { right: 1rem; bottom: 1rem; gap: .65rem; font-size: .62rem; }
+    .ocean-scene__readout span + span { padding-left: .65rem; }
     .animal-list { grid-template-columns: 1fr; }
     .animal-profile { grid-template-columns: minmax(0, 1fr); gap: .75rem; min-height: 0; padding: 1.4rem; }
+    .animal-profile__image { width: calc(100% + 2.8rem); margin: -1.4rem -1.4rem .35rem; }
     .animal-profile__body { padding-top: .25rem; }
-    .about-grid { grid-template-columns: 1fr; }
+}
 
-    .quote-hero { grid-template-columns: 1fr; min-height: 0; padding: 2rem 1.4rem 2.2rem; margin-bottom: 3rem; }
-    .quote-hero__animal {
-        position: absolute;
-        right: -4.5rem;
-        bottom: -2rem;
-        width: 19rem;
-        opacity: .14;
-        transform: none;
-    }
-    .quote-hero__content { max-width: none; }
-    .quotes-heading { display: block; }
-    .quotes-heading p { margin-top: 0.5rem; }
-
-    .quote {
-        font-size: 1rem;
+@media (prefers-reduced-motion: reduce) {
+    .ocean-scene {
+        transition-duration: 160ms;
     }
 }

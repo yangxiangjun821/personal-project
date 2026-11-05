@@ -5,46 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Meet endangered animals, understand the threats they face, and discover practical ways to protect the wild.">
     <title>Vanishing Wild</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20261105">
+    <link rel="stylesheet" href="earth.css?v=20261105">
     <link rel="icon" href="favicon-32.png" sizes="32x32">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
-<body>
+<body class="home">
+    <div class="earth-viewport">
+        <canvas id="earth-canvas" tabindex="0" role="img" aria-label="Interactive Earth. Drag or use arrow keys to rotate. Scroll or press plus and minus to zoom. Press Home to reset."></canvas>
+        <div class="earth-message" id="earth-message" role="status">Loading our planet…</div>
+    </div>
     <header id="site-header"></header>
 
     <main class="home-page">
-        <section class="wild-hero" aria-labelledby="home-title">
-            <img src="images/wildlife-hero.jpg" alt="An Asian elephant walking through a misty tropical forest at sunrise">
-            <div class="wild-hero__content">
-                <h1 id="home-title">Vanishing Wild</h1>
-                <p>Meet endangered animals, understand the pressures they face, and learn why every surviving habitat matters.</p>
-                <a class="primary-link" href="project.html">Explore the field guide</a>
+        <section class="earth-hero" aria-labelledby="home-title">
+            <div class="earth-heading">
+                <h1 id="home-title">One planet.<br>Countless lives.</h1>
+                <p>Explore the world we share.<br>Every habitat is a home worth protecting.</p>            </div>
+            <div class="earth-bottom">
+                <div class="earth-controls" role="group" aria-label="Earth controls">
+                    <button type="button" id="earth-reset">Reset view</button>
+                </div>
             </div>
-        </section>
-
-        <section class="intro-grid" aria-labelledby="why-title">
-            <div>
-                <h2 id="why-title">Extinction is not inevitable</h2>
-                <p>Every animal is part of a living system. Protecting a species also means protecting its food, its movement, its shelter, and the people who share its landscape.</p>
-            </div>
-            <dl class="field-notes">
-                <div><dt>Learn</dt><dd>recognise twenty remarkable animals and their habitats</dd></div>
-                <div><dt>Connect</dt><dd>see how human choices shape survival</dd></div>
-                <div><dt>Act</dt><dd>start with informed, responsible everyday decisions</dd></div>
-            </dl>
-        </section>
-
-        <section class="pathways" aria-labelledby="explore-title">
-            <h2 id="explore-title">Enter the field guide</h2>
-            <div class="pathways__grid">
-                <a href="project.html"><strong>Animal profiles</strong><span>Filter threatened species by the habitats they depend on.</span></a>
-                <a href="quotes.html"><strong>Voices for the wild</strong><span>Read twenty reflections on nature, oceans, and responsibility.</span></a>
-            </div>
+            <noscript><p class="earth-noscript">Enable JavaScript to explore the interactive Earth.</p></noscript>
         </section>
     </main>
 
-    <footer id="site-footer"></footer>
-
-    <script src="nav.js"></script>
+    <script src="nav.js?v=20261105"></script>
+    <script src="earth.js?v=20261105"></script>
+    <script src="earth-markers.js?v=20261105"></script>
+    <script src="pollution-scenes.js?v=20261105"></script>
+    <script src="pollution-renderer.js?v=20261105"></script>
+    <script src="earth-dive.js?v=20261105"></script>
+    <script src="habitat-flight.js?v=20261105"></script>
+    <script src="animal-images.js?v=20261105"></script>
+    <script src="animal-list.js?v=20261105"></script>
+    <script src="about-view.js?v=20261105"></script>
 </body>
 </html>

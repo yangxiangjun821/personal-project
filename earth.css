@@ -1,0 +1,274 @@
+.home-page { max-width: none; padding: 0; }
+body.home { height: 100svh; overflow: hidden; background: #030711; color: #f2f0e7; }
+/* Every layer above the fixed canvas lets pointer events fall through, except real controls. */
+.earth-hero { position: relative; color: #f2f0e7; height: 100svh; pointer-events: none; }
+.earth-hero a, .earth-hero button { pointer-events: auto; }
+.earth-bottom { pointer-events: none; }
+.earth-controls, .earth-bottom p { pointer-events: auto; }
+body.home header { position: fixed; top: 0; right: 0; left: 0; z-index: 20; background: transparent; box-shadow: none; pointer-events: none; }
+body.home header nav { text-shadow: 0 1px 10px #020510; }
+body.home header nav a, body.home header nav button { pointer-events: auto; }
+.home-page { position: relative; z-index: 1; pointer-events: none; }
+/* Home: a vertical menu pinned to the top-right that folds up and down under its toggle. */
+body.home header { left: auto; padding: 1.25rem 1.5rem; }
+body.home header nav { flex-direction: column; align-items: flex-end; gap: 1rem; margin: 0; }
+body.home header.is-collapsed nav { justify-content: flex-start; }
+body.home header .nav-toggle { order: 0; margin-left: 0; }
+body.home .nav-panel { display: flex; flex-direction: column; align-items: flex-end; gap: .9rem; max-height: 760px; padding: .25rem .25rem .5rem; overflow: hidden; opacity: 1; transition: max-height .35s ease, opacity .25s ease, visibility 0s; }
+body.home .nav-panel .links { display: flex; flex-direction: column; align-items: flex-end; gap: .9rem; width: auto; margin: 0; }
+body.home .nav-panel .links li { display: flex; flex-direction: column; align-items: flex-end; }
+body.home header.is-collapsed .nav-panel { display: flex; max-height: 0; opacity: 0; visibility: hidden; transition: max-height .35s ease, opacity .2s ease, visibility 0s .35s; }
+.earth-heading { text-shadow: 0 2px 18px #020510; position: absolute; z-index: 1; top: 15%; left: max(5%, calc((100vw - 1200px) / 2)); width: 32%; pointer-events: none; }
+/* The heading fades out while the menu is open or while the user explores the globe. */
+.earth-heading { transition: opacity .9s ease, visibility 0s; }
+body.home.is-exploring .earth-heading,
+body.home:has(#site-header.has-toggle:not(.is-collapsed)) .earth-heading { opacity: 0; visibility: hidden; transition: opacity .9s ease, visibility 0s .9s; }
+.earth-heading h1 { color: #f2f0e7; font-family: Georgia, serif; font-size: clamp(2.8rem, 4.5vw, 5rem); font-weight: 400; line-height: 1.08; letter-spacing: -.035em; margin: 0 0 1.5rem; }
+.earth-heading p { color: #b9cabe; font-size: 1rem; line-height: 1.8; }
+.earth-hero::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(2,5,14,.72), rgba(2,5,14,.25) 32%, transparent 60%); }
+.earth-viewport { position: fixed; inset: 0; z-index: 0; background: #030711; }
+#earth-canvas { display: block; width: 100%; height: 100%; cursor: grab; touch-action: none; }
+#earth-canvas:focus, #earth-canvas:focus-visible { outline: none; }
+#earth-canvas.is-dragging { cursor: grabbing; }
+.earth-hero :focus-visible { outline: 2px solid #edbc70; outline-offset: -4px; }
+.earth-message { position: absolute; top: 48%; left: 15%; right: 15%; text-align: center; color: #edbc70; pointer-events: none; }
+.earth-message[hidden] { display: none; }
+.earth-bottom { z-index: 1; text-shadow: 0 2px 8px #020510; position: absolute; bottom: 0; left: 5%; right: 5%; min-height: 76px; display: flex; align-items: center; justify-content: flex-end; gap: 16px; }
+.earth-bottom p { color: #bdcec3; font-size: .85rem; }
+.earth-bottom p span { padding: 0 10px; }
+.earth-controls { display: flex; align-items: center; gap: 8px; }
+/* Same glass treatment as the menu toggle. */
+.earth-controls button { border: 1px solid rgba(242,240,231,.35); border-radius: 999px; background: rgba(3,7,17,.35); color: #f2f0e7; min-width: 44px; min-height: 40px; padding: 6px 18px; font: inherit; cursor: pointer; backdrop-filter: blur(6px); }
+.earth-controls button:hover, .earth-controls button:focus-visible { background: rgba(3,7,17,.6); }
+.earth-controls button:disabled { opacity: .35; cursor: default; }
+.earth-controls output { min-width: 52px; text-align: center; font-size: .85rem; font-variant-numeric: tabular-nums; }
+#earth-reset { margin-left: 12px; font-size: .85rem; }
+.earth-noscript { position: absolute; bottom: 100px; left: 5%; }
+@media (max-width: 760px) {
+    .earth-heading { text-shadow: 0 2px 18px #020510; top: 120px; left: 7%; width: 86%; }
+    .earth-heading h1 { font-size: clamp(2.5rem, 8vw, 3.5rem); margin-bottom: 12px; }
+    .earth-heading p { margin: 0; font-size: .9rem; }
+    .earth-link { margin-top: 12px; font-size: .9rem; }
+    .earth-hero::after { background: linear-gradient(180deg, rgba(2,5,14,.65), transparent 48%, rgba(2,5,14,.4)); }
+    .earth-bottom { flex-direction: column; justify-content: center; gap: 4px; padding: 12px 0; }
+    .earth-bottom p { margin: 0 0 6px; font-size: .75rem; }
+}
+
+@media (max-width: 760px) {
+    .earth-controls { flex-wrap: wrap; justify-content: center; gap: 6px; max-width: 100%; }
+    #earth-reset { margin-left: 0; }
+    .earth-controls button { padding: 6px 9px; }
+}
+
+/* Animal markers: staggered fade-in when shown, hidden while on the far side of the globe. */
+.earth-markers { position: fixed; inset: 0; z-index: 2; pointer-events: none; }
+.earth-marker { position: absolute; top: 0; left: 0; width: 26px; height: 26px; margin: -13px 0 0 -13px; padding: 0; background: none; border: 0; cursor: pointer; opacity: 0; visibility: hidden; transition: opacity 1.2s ease, visibility 0s 1.2s; }
+.earth-markers.is-on .earth-marker { opacity: 1; visibility: visible; pointer-events: auto; transition: opacity .8s ease var(--delay), visibility 0s var(--delay); }
+.earth-marker span { display: block; width: 10px; height: 10px; margin: 8px; border-radius: 50%; background: #edbc70; box-shadow: 0 0 0 3px rgba(237,188,112,.28), 0 0 12px rgba(237,188,112,.8); transform: scale(.2); transition: transform .8s cubic-bezier(.2,.9,.3,1.3) var(--delay), opacity .25s ease; }
+.earth-markers.is-on .earth-marker span { transform: scale(1); }
+.earth-marker:hover span, .earth-marker:focus-visible span { transform: scale(1.5); transition-delay: 0s; }
+.earth-marker:focus-visible { outline: none; }
+.earth-markers .earth-marker.is-behind { pointer-events: none; }
+.earth-marker.is-behind span { opacity: 0; }
+.earth-card { position: fixed; top: 0; left: 0; display: flex; gap: 12px; align-items: center; width: 300px; padding: 10px; color: #f2f0e7; background: rgba(3,7,17,.62); border: 1px solid rgba(242,240,231,.25); border-radius: 14px; backdrop-filter: blur(10px); box-shadow: 0 12px 40px rgba(0,0,0,.45); opacity: 0; visibility: hidden; transform: translateY(6px); transition: opacity .45s ease, transform .45s ease, visibility 0s .45s; pointer-events: none; }
+.earth-card.is-visible { opacity: 1; visibility: visible; transform: none; transition: opacity .45s ease, transform .45s ease, visibility 0s; }
+.earth-card img { flex: 0 0 96px; width: 96px; height: 96px; object-fit: cover; border-radius: 10px; }
+.earth-card div { display: grid; gap: 4px; min-width: 0; }
+.earth-card strong { font-family: Georgia, serif; font-size: 1.15rem; font-weight: 400; line-height: 1.2; }
+.earth-card__place { color: #c3d2c8; font-size: .82rem; line-height: 1.4; }
+.earth-card__status { justify-self: start; color: #fff; padding: 2px 8px; border-radius: 999px; font-size: .68rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; background: rgba(242,240,231,.14); }
+.earth-card__status:empty, .earth-card__latin:empty, .earth-card__feature:empty { display: none; }
+.earth-card__latin { color: #b9cabe; font-size: .78rem; }
+.earth-card__feature { color: #e6e3d8; font-size: .8rem; line-height: 1.45; }
+.earth-card__coords { color: #edbc70; font-size: .75rem; font-variant-numeric: tabular-nums; }
+body.home header nav a.is-active::after { transform: scaleX(1); }
+
+/* Selecting a marker: the others dim, the chosen one pulses, and the profile panel slides in on the right. */
+.earth-markers.has-selection .earth-marker:not(.is-selected) span { opacity: .22; box-shadow: none; }
+.earth-markers.has-selection .earth-marker:not(.is-selected):hover span { opacity: .7; }
+.earth-markers .earth-marker.is-behind span,
+.earth-markers.has-selection .earth-marker.is-behind span { opacity: 0; }
+.earth-markers .earth-marker.is-selected span { transform: scale(1.6); background: #fff1d9; transition-delay: 0s; }
+.earth-marker.is-selected::after { content: ""; position: absolute; inset: 0; border: 2px solid #edbc70; border-radius: 50%; animation: marker-pulse 1.8s ease-out infinite; pointer-events: none; }
+@keyframes marker-pulse { from { transform: scale(.6); opacity: 1; } to { transform: scale(2.4); opacity: 0; } }
+.earth-marker.is-behind::after { display: none; }
+
+.animal-panel { position: fixed; z-index: 3; top: 50%; right: clamp(16px, 4vw, 64px); width: min(400px, calc(100vw - 32px)); max-height: calc(100svh - 200px); overflow: auto; color: #f2f0e7; background: rgba(3,7,17,.62); border: 1px solid rgba(242,240,231,.22); border-radius: 18px; backdrop-filter: blur(14px); box-shadow: 0 20px 60px rgba(0,0,0,.5); scrollbar-color: rgba(242,240,231,.28) transparent; opacity: 0; visibility: hidden; transform: translate(40px, -50%); transition: opacity .6s ease, transform .8s cubic-bezier(.2,.8,.2,1), visibility 0s .8s; scrollbar-width: thin; }
+.animal-panel.is-open { opacity: 1; visibility: visible; transform: translate(0, -50%); transition: opacity .6s ease .2s, transform .8s cubic-bezier(.2,.8,.2,1) .2s, visibility 0s; }
+.animal-panel__close { position: absolute; top: 12px; right: 12px; z-index: 1; width: 36px; height: 36px; padding: 0; color: #f2f0e7; font: inherit; line-height: 1; background: rgba(3,7,17,.45); border: 1px solid rgba(242,240,231,.35); border-radius: 50%; cursor: pointer; backdrop-filter: blur(6px); }
+.animal-panel__close:hover, .animal-panel__close:focus-visible { background: rgba(3,7,17,.75); }
+.animal-panel__image { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 18px 18px 0 0; }
+.animal-panel__body { padding: 18px 22px 22px; }
+.animal-panel__meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 10px; font-size: .75rem; }
+.animal-panel__meta span:empty { display: none; }
+.animal-panel__status { padding: 2px 10px; color: #fff; font-weight: 700; border-radius: 999px; background: rgba(242,240,231,.18); }
+.animal-panel__status.status--critical { background: #a8432e; }
+.animal-panel__status.status--endangered { background: #b67627; }
+.animal-panel__status.status--vulnerable { background: #677446; }
+.animal-panel__habitat { color: #c3d2c8; letter-spacing: .08em; text-transform: uppercase; }
+.animal-panel h2 { margin: 0; color: #f2f0e7; font-family: Georgia, serif; font-size: 1.9rem; font-weight: 400; line-height: 1.15; }
+.animal-panel__scientific { margin: 4px 0 0; color: #b9cabe; font-style: italic; font-size: .9rem; }
+.animal-panel__scientific:empty { display: none; }
+.animal-panel__facts p { margin: 12px 0 0; color: #d8e2da; font-size: .9rem; line-height: 1.6; }
+.animal-panel__facts strong { color: #edbc70; font-weight: 600; }
+.animal-panel__location { display: grid; gap: 2px; margin: 16px 0 0; padding-top: 14px; border-top: 1px solid rgba(242,240,231,.18); font-size: .82rem; color: #c3d2c8; }
+.animal-panel__coords { color: #edbc70; font-variant-numeric: tabular-nums; }
+@media (max-width: 760px) {
+    .animal-panel { top: auto; right: 16px; bottom: 16px; left: 16px; width: auto; max-height: 52svh; transform: translateY(40px); }
+    .animal-panel.is-open { transform: none; }
+    .animal-panel__image { aspect-ratio: 16 / 9; }
+}
+
+/* Habitat filter: markers outside the chosen habitat fade away. */
+.earth-markers.is-on .earth-marker.is-filtered { opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .6s ease, visibility 0s .6s; }
+
+/* Habitat submenu, unfolding beneath "Habitats" in the home menu. */
+body.home .habitat-menu { display: grid; justify-items: end; gap: .45rem; max-height: 0; margin: 0; padding: 0 .9rem 0 0; overflow: hidden; list-style: none; border-right: 1px solid rgba(242,240,231,.25); opacity: 0; transition: max-height .4s ease, opacity .3s ease, margin .4s ease; }
+body.home .habitat-menu.is-open { max-height: 320px; margin: .7rem 0 .2rem; opacity: 1; }
+body.home .habitat-menu button { padding: 0; color: #f2f0e7; font: inherit; font-size: .92rem; text-align: right; text-shadow: 0 1px 10px #020510; background: none; border: 0; opacity: .75; cursor: pointer; pointer-events: auto; transition: opacity .2s ease, color .2s ease; }
+body.home .habitat-menu button:hover, body.home .habitat-menu button:focus-visible { opacity: 1; }
+body.home .habitat-menu button[aria-pressed="true"] { color: #edbc70; opacity: 1; }
+body.home .habitat-menu button[aria-pressed="true"]::before { content: "● "; font-size: .6em; vertical-align: middle; }
+
+/* Cinematic habitat dive (earth-dive.js): a fixed full-screen canvas over the destination scene,
+   with a transparent scroller on top whose scroll position drives the camera. */
+.earth-dive { position: fixed; inset: 0; z-index: 15; overflow: hidden; background: transparent; opacity: 0; transition: opacity .35s ease; }
+.earth-dive[hidden] { display: none; }
+.earth-dive.is-visible { opacity: 1; }
+.earth-dive.is-leaving { opacity: 0; transition-duration: .38s; }
+.earth-dive__scene { position: absolute; inset: 0; background: #0b1a14; visibility: hidden; }
+.earth-dive__scene.is-on { visibility: visible; }
+.earth-dive__canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.earth-dive__scroller { position: absolute; inset: 0; overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; scrollbar-width: none; outline: none; }
+.earth-dive__scroller::-webkit-scrollbar { display: none; }
+.earth-dive__scroller.is-locked { overflow: hidden; }   /* the automatic flight ignores the wheel and touch */
+.earth-dive__track { pointer-events: none; }
+/* HUD: a quiet progress rail on the right, the scroll hint, loading status and credits. */
+.earth-dive__hud { position: absolute; inset: 0; pointer-events: none; transition: opacity .5s ease; }
+.earth-dive__hud.is-hidden, .earth-dive__credit.is-hidden, .earth-dive__status.is-hidden { opacity: 0; }
+.earth-dive__rail { position: absolute; top: 50%; right: clamp(14px, 2.2vw, 30px); display: grid; gap: 22px; margin: 0; padding: 0; list-style: none; transform: translateY(-50%); }
+.earth-dive__rail::before { content: ""; position: absolute; top: 4px; bottom: 4px; right: 3px; width: 1px; background: rgba(242,240,231,.22); }
+.earth-dive__rail::after { content: ""; position: absolute; top: 4px; right: 3px; width: 1px; height: calc((100% - 8px) * var(--dive-progress, 0)); background: #edbc70; }
+.earth-dive__rail li { position: relative; display: flex; align-items: center; justify-content: flex-end; gap: 12px; padding-right: 18px; color: rgba(242,240,231,.45); font-size: .68rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; text-shadow: 0 1px 8px rgba(2,5,16,.9); transition: color .4s ease; }
+.earth-dive__rail li::after { content: ""; position: absolute; right: 0; width: 7px; height: 7px; border-radius: 50%; background: #030711; border: 1px solid rgba(242,240,231,.4); }
+.earth-dive__rail li.is-past { color: rgba(242,240,231,.62); }
+.earth-dive__rail li.is-past::after { background: #edbc70; border-color: #edbc70; }
+.earth-dive__rail li.is-active { color: #f2f0e7; }
+.earth-dive__rail li.is-active::after { background: #edbc70; border-color: #edbc70; box-shadow: 0 0 0 4px rgba(237,188,112,.18); }
+.earth-dive__hint { position: absolute; left: 50%; bottom: clamp(26px, 7vh, 64px); margin: 0; color: #f2f0e7; font-size: .85rem; letter-spacing: .08em; text-align: center; text-shadow: 0 1px 10px #020510; transform: translateX(-50%); transition: opacity .6s ease; }
+.earth-dive__hint::after { content: ""; display: block; width: 1px; height: 34px; margin: 12px auto 0; background: linear-gradient(#f2f0e7, transparent); animation: dive-hint 2.2s ease-in-out infinite; }
+.earth-dive__hint.is-hidden { opacity: 0; }
+@keyframes dive-hint { 0% { transform: scaleY(.2); transform-origin: top; opacity: 0; } 40% { transform: scaleY(1); opacity: 1; } 100% { transform: scaleY(1) translateY(14px); opacity: 0; } }
+.earth-dive__status { position: absolute; left: clamp(16px, 3vw, 40px); bottom: 18px; margin: 0; color: #c3d2c8; font-size: .72rem; letter-spacing: .04em; text-shadow: 0 1px 8px #020510; pointer-events: none; transition: opacity .5s ease; }
+.earth-dive__credit { position: absolute; right: clamp(12px, 2vw, 24px); bottom: 10px; max-width: min(560px, 60vw); margin: 0; color: rgba(242,240,231,.55); font-size: .62rem; line-height: 1.4; text-align: right; text-shadow: 0 1px 6px #020510; pointer-events: none; transition: opacity .5s ease; }
+.earth-dive__back { position: absolute; top: 1.25rem; left: 1.5rem; z-index: 2; min-height: 40px; padding: 6px 18px; color: #f2f0e7; font: inherit; font-size: .88rem; background: rgba(3,7,17,.35); border: 1px solid rgba(242,240,231,.35); border-radius: 999px; cursor: pointer; backdrop-filter: blur(6px); }
+.earth-dive__back { transition: opacity .4s ease, visibility 0s; }
+.earth-dive__back.is-hidden { opacity: 0; visibility: hidden; transition: opacity .4s ease, visibility 0s .4s; }
+.earth-dive__back:hover, .earth-dive__back:focus-visible { background: rgba(3,7,17,.65); outline: 2px solid #edbc70; outline-offset: 2px; }
+body.is-diving .earth-heading, body.is-diving .earth-markers, body.is-diving .animal-panel, body.is-diving .earth-bottom { visibility: hidden; }
+
+/* The destination photograph under the canvas; the canvas dissolves away to reveal it. */
+.habitat-view { position: absolute; inset: 0; overflow: hidden; }
+.habitat-view__look { position: absolute; inset: -6%; }
+.habitat-view__drift { position: absolute; inset: 0; }
+.habitat-view__image { position: absolute; inset: 0; background: center / cover no-repeat; will-change: transform; }
+.habitat-view__loss { position: absolute; inset: 0; width: 100%; height: 100%; display: none; }
+.habitat-view__loss.is-on { display: block; }
+.habitat-loss__actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.habitat-loss__actions button { min-height: 44px; padding: 8px 14px; background: #183a2e; color: #f2f0e7; border: 1px solid #7b9383; border-radius: 4px; cursor: pointer; font: inherit; font-size: .8rem; }
+.habitat-loss__actions button:hover { background: #315f45; }
+.habitat-loss__actions button:focus-visible { outline: 3px solid #edbc70; outline-offset: 3px; }
+.habitat-loss__actions button:disabled { opacity: .5; cursor: wait; }
+.habitat-loss__context, .habitat-loss__status { color: #c7d4cc; font-size: .75rem; line-height: 1.5; margin: 10px 0 0; max-width: 65ch; }
+.habitat-loss__status:empty { display: none; }
+.habitat-loss__range { min-height: 36px; }
+.habitat-view::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at 50% 55%, transparent 60%, rgba(0,0,0,.28)); }
+
+/* The chapter that follows the landing, scrolling up over the destination. */
+.dive-chapter { position: relative; display: grid; gap: 28px; padding: 0 clamp(16px, 5vw, 72px) clamp(48px, 12vh, 120px); color: #f2f0e7; }
+.dive-chapter__intro, .dive-chapter__animals { max-width: 460px; padding: 22px 26px; background: rgba(3,7,17,.6); border: 1px solid rgba(242,240,231,.22); border-radius: 18px; backdrop-filter: blur(12px); box-shadow: 0 20px 60px rgba(0,0,0,.4); }
+.dive-chapter__animals { max-width: 760px; }
+.dive-chapter__animals[hidden] { display: none; }
+.dive-chapter__animals h3 { margin: 0 0 14px; color: #f2f0e7; font-family: Georgia, serif; font-size: 1.35rem; font-weight: 400; }
+.dive-chapter__animals ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.dive-animal { display: flex; gap: 12px; align-items: center; padding: 8px; background: rgba(242,240,231,.06); border-radius: 12px; }
+.dive-animal img { flex: 0 0 64px; width: 64px; height: 64px; margin: 0; object-fit: cover; border: 0; border-radius: 9px; box-shadow: none; }
+.dive-animal div { display: grid; gap: 2px; min-width: 0; }
+.dive-animal strong { font-family: Georgia, serif; font-size: 1rem; font-weight: 400; }
+.dive-animal span { color: #c3d2c8; font-size: .75rem; line-height: 1.35; }
+.dive-chapter__actions { display: flex; flex-wrap: wrap; gap: 12px 18px; align-items: center; margin-top: 16px; }
+.dive-chapter__animals p { margin: 14px 0 0; }
+.habitat-caption__label { margin: 0 0 6px; color: #edbc70; font-size: .75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.habitat-caption__title { margin: 0; color: #f2f0e7; font-family: Georgia, serif; font-size: 1.8rem; font-weight: 400; line-height: 1.15; }
+.habitat-caption__place { margin: 10px 0 0; color: #d8e2da; font-size: .92rem; line-height: 1.55; }
+.habitat-caption__note { margin: 12px 0 0; color: #9fb2a6; font-size: .72rem; line-height: 1.45; }
+.habitat-loss { margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(242,240,231,.16); }
+.habitat-loss[hidden] { display: none; }
+.habitat-loss__label { display: flex; justify-content: space-between; gap: 12px; color: #9fb2a6; font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.habitat-loss__stage { color: #edbc70; letter-spacing: .08em; }
+.habitat-loss__range { width: 100%; margin: 10px 0 0; accent-color: #edbc70; cursor: pointer; }
+.habitat-loss__note { min-height: 2.9em; margin: 6px 0 0; color: #d8e2da; font-size: .85rem; line-height: 1.45; }
+.habitat-caption__back { padding: 8px 18px; color: #f2f0e7; font: inherit; font-size: .9rem; background: rgba(3,7,17,.35); border: 1px solid rgba(242,240,231,.35); border-radius: 999px; cursor: pointer; backdrop-filter: blur(6px); }
+.habitat-caption__back:hover, .habitat-caption__back:focus-visible { background: rgba(3,7,17,.6); }
+@media (max-width: 760px) {
+    .earth-dive__rail { gap: 16px; }
+    .earth-dive__rail li span { display: none; }
+    .earth-dive__credit { max-width: 70vw; font-size: .56rem; }
+    .dive-chapter__intro, .dive-chapter__animals { padding: 18px; }
+}
+
+/* Animal list: the Earth sinks into the bottom-right quarter as a locked backdrop (the stars keep
+   moving) and the field-guide cards unroll over it. */
+#earth-canvas.is-locked { cursor: default; }
+body.home.is-listing .earth-heading,
+body.home.is-listing .earth-markers,
+body.home.is-listing .earth-bottom { opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .6s ease, visibility 0s .6s; }
+body.home.is-listing .earth-markers .earth-marker { pointer-events: none; }
+.animal-list-view { position: fixed; inset: 0; z-index: 12; overflow-y: auto; overscroll-behavior: contain; padding: 96px clamp(16px, 5vw, 72px) 64px; color: #f2f0e7; background: linear-gradient(100deg, rgba(2,5,14,.78), rgba(2,5,14,.45) 55%, rgba(2,5,14,0) 85%); opacity: 0; transition: opacity .6s ease; scrollbar-width: thin; scrollbar-color: rgba(242,240,231,.28) transparent; }
+.animal-list-view[hidden] { display: none; }
+.animal-list-view.is-open { opacity: 1; }
+.animal-list-view__head { display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: flex-end; justify-content: space-between; max-width: min(1120px, 72vw); margin: 0 0 28px; opacity: 0; transform: translateY(16px); transition: opacity .9s ease .4s, transform .9s ease .4s; }
+.animal-list-view.is-open .animal-list-view__head { opacity: 1; transform: none; }
+.animal-list-view h2 { margin: 0; color: #f2f0e7; font-family: Georgia, serif; font-size: clamp(2rem, 3.4vw, 3.2rem); font-weight: 400; letter-spacing: -.02em; text-shadow: 0 2px 18px #020510; }
+.animal-list-view__count { margin: 8px 0 0; color: #b9cabe; font-size: .95rem; }
+.animal-list-view__close { min-height: 40px; padding: 6px 18px; color: #f2f0e7; font: inherit; background: rgba(3,7,17,.35); border: 1px solid rgba(242,240,231,.35); border-radius: 999px; cursor: pointer; backdrop-filter: blur(6px); }
+.animal-list-view__close:hover, .animal-list-view__close:focus-visible { background: rgba(3,7,17,.7); outline: 2px solid #edbc70; outline-offset: 2px; }
+.animal-list-view__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; max-width: min(1120px, 72vw); }
+.list-card { overflow: hidden; background: rgba(5,10,22,.84); border: 1px solid rgba(242,240,231,.2); border-radius: 16px; box-shadow: 0 18px 50px rgba(0,0,0,.4); opacity: 0; transform: translateY(28px) scale(.98); transition: opacity 1s ease, transform 1s cubic-bezier(.2,.8,.2,1); }
+.list-card.is-shown { opacity: 1; transform: none; }
+.list-card__image { margin: 0; aspect-ratio: 16 / 10; background: rgba(242,240,231,.06); }
+.list-card__image img { display: block; width: 100%; height: 100%; margin: 0; object-fit: cover; border: 0; border-radius: 0; box-shadow: none; }
+.list-card__image.is-unavailable { display: grid; place-items: center; }
+.list-card__image.is-unavailable::after { content: "Photo unavailable"; color: #8fa196; font-size: .8rem; }
+.list-card__body { padding: 16px 18px 18px; }
+.list-card__meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 10px; color: #c3d2c8; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; }
+.list-card__status { padding: 2px 9px; color: #fff; font-weight: 700; letter-spacing: .03em; border-radius: 999px; background: rgba(242,240,231,.18); }
+.list-card__status.status--critical { background: #a8432e; }
+.list-card__status.status--endangered { background: #b67627; }
+.list-card__status.status--vulnerable { background: #677446; }
+.list-card h3 { margin: 0; color: #f2f0e7; font-family: Georgia, serif; font-size: 1.4rem; font-weight: 400; line-height: 1.2; }
+.list-card__latin { margin: 3px 0 0; color: #b9cabe; font-size: .85rem; font-style: italic; }
+.list-card__body > p:not(.list-card__meta):not(.list-card__latin) { margin: 10px 0 0; color: #d8e2da; font-size: .86rem; line-height: 1.55; }
+.list-card strong { color: #edbc70; font-weight: 600; }
+.list-card a { color: #edbc70; }
+/* About: the same overlay mirrored, with the Earth in the bottom-left quarter and the cards on the right. */
+.animal-list-view--about { background: linear-gradient(260deg, rgba(2,5,14,.8), rgba(2,5,14,.45) 55%, rgba(2,5,14,0) 85%); }
+.animal-list-view--about .animal-list-view__head,
+.animal-list-view--about .animal-list-view__grid { max-width: min(1000px, 66vw); margin-left: auto; }
+@media (max-width: 760px) {
+    .animal-list-view { padding: 84px 16px 48px; background: linear-gradient(180deg, rgba(2,5,14,.75), rgba(2,5,14,.4) 70%, rgba(2,5,14,.15)); }
+    .animal-list-view__head, .animal-list-view__grid { max-width: none; }
+    .animal-list-view--about .animal-list-view__head, .animal-list-view--about .animal-list-view__grid { max-width: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .list-card, .animal-list-view__head { transition-duration: .01s; transform: none; }
+}
+/* Opening the menu over the list: give it its own solid panel so the two never blend together. */
+body.home.is-listing header .nav-panel { transition: max-height .35s ease, opacity .25s ease, visibility 0s, background .3s ease; }
+body.home:has(.animal-panel.is-open) header .nav-panel { transition: max-height .35s ease, opacity .25s ease, visibility 0s, background .3s ease; }
+body.home:has(.animal-panel.is-open) header:not(.is-collapsed) .nav-panel,
+body.home.is-listing header:not(.is-collapsed) .nav-panel { min-width: 220px; padding: 18px 22px 20px; background: #070d1c; border: 1px solid rgba(242,240,231,.2); border-radius: 16px; box-shadow: 0 18px 50px rgba(0,0,0,.55); }
+body.home.is-listing header nav { text-shadow: none; }
+/* Shown only if a habitat is chosen before the dive's shaders have finished compiling. */
+.earth-dive-preparing { position: fixed; left: 50%; bottom: clamp(24px, 6vh, 56px); z-index: 16; margin: 0; padding: 9px 18px; color: #f2f0e7; font-size: .85rem; letter-spacing: .04em; background: rgba(3,7,17,.6); border: 1px solid rgba(242,240,231,.25); border-radius: 999px; backdrop-filter: blur(8px); opacity: 0; visibility: hidden; transform: translate(-50%, 8px); transition: opacity .3s ease, transform .3s ease, visibility 0s .3s; pointer-events: none; }
+.earth-dive-preparing.is-visible { opacity: 1; visibility: visible; transform: translate(-50%, 0); transition: opacity .3s ease, transform .3s ease, visibility 0s; }

@@ -1,0 +1,782 @@
+[
+  {
+    "name": "African forest elephant",
+    "image": "images/animals/african-forest-elephant.jpg",
+    "place": "Lopé National Park",
+    "country": "Gabon",
+    "lat": -0.5,
+    "lng": 11.5,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "African grey parrot",
+    "image": "images/animals/african-grey-parrot.jpg",
+    "place": "Dzanga-Sangha Protected Areas",
+    "country": "Central African Republic",
+    "lat": 2.9,
+    "lng": 16.2,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "African penguin",
+    "image": "images/animals/african-penguin.jpg",
+    "place": "Boulders Beach, Simon's Town",
+    "country": "South Africa",
+    "lat": -34.197,
+    "lng": 18.451,
+    "habitats": [
+      "ocean"
+    ]
+  },
+  {
+    "name": "African wild dog",
+    "image": "images/animals/african-wild-dog.jpg",
+    "place": "Okavango Delta",
+    "country": "Botswana",
+    "lat": -19.3,
+    "lng": 22.9,
+    "habitats": [
+      "grassland"
+    ]
+  },
+  {
+    "name": "Amazon river dolphin",
+    "image": "images/animals/amazon-river-dolphin.jpg",
+    "place": "Mamirauá Sustainable Development Reserve",
+    "country": "Brazil",
+    "lat": -2.1,
+    "lng": -64.9,
+    "habitats": [
+      "freshwater"
+    ]
+  },
+  {
+    "name": "Amur leopard",
+    "image": "images/amur-leopard.jpg",
+    "place": "Land of the Leopard National Park",
+    "country": "Russia",
+    "lat": 43.1,
+    "lng": 131.5,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Asian elephant",
+    "image": "images/animals/asian-elephant.jpg",
+    "place": "Nagarhole National Park",
+    "country": "India",
+    "lat": 11.95,
+    "lng": 76.15,
+    "habitats": [
+      "forest",
+      "grassland"
+    ]
+  },
+  {
+    "name": "Axolotl",
+    "image": "images/animals/axolotl.jpg",
+    "place": "Lake Xochimilco canals, Mexico City",
+    "country": "Mexico",
+    "lat": 19.26,
+    "lng": -99.1,
+    "habitats": [
+      "freshwater"
+    ]
+  },
+  {
+    "name": "Aye-aye",
+    "image": "images/animals/aye-aye.jpg",
+    "place": "Nosy Mangabe Special Reserve",
+    "country": "Madagascar",
+    "lat": -15.5,
+    "lng": 49.77,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Bali myna",
+    "image": "images/animals/bali-myna.jpg",
+    "place": "West Bali National Park",
+    "country": "Indonesia",
+    "lat": -8.13,
+    "lng": 114.5,
+    "habitats": [
+      "forest",
+      "island"
+    ]
+  },
+  {
+    "name": "Bengal florican",
+    "image": "images/animals/bengal-florican.jpg",
+    "place": "Shuklaphanta National Park",
+    "country": "Nepal",
+    "lat": 28.85,
+    "lng": 80.2,
+    "habitats": [
+      "grassland",
+      "freshwater"
+    ]
+  },
+  {
+    "name": "Black rhinoceros",
+    "image": "images/animals/black-rhinoceros.jpg",
+    "place": "Etosha National Park",
+    "country": "Namibia",
+    "lat": -18.85,
+    "lng": 16.3,
+    "habitats": [
+      "grassland"
+    ]
+  },
+  {
+    "name": "Blue whale",
+    "image": "images/animals/blue-whale.jpg",
+    "place": "Santa Barbara Channel, California",
+    "country": "United States",
+    "lat": 34.1,
+    "lng": -119.8,
+    "habitats": [
+      "ocean"
+    ]
+  },
+  {
+    "name": "Bonobo",
+    "image": "images/animals/bonobo.jpg",
+    "place": "Salonga National Park",
+    "country": "DR Congo",
+    "lat": -2,
+    "lng": 21,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Bornean orangutan",
+    "image": "images/animals/bornean-orangutan.jpg",
+    "place": "Tanjung Puting National Park",
+    "country": "Indonesia",
+    "lat": -2.9,
+    "lng": 111.9,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "California condor",
+    "image": "images/animals/california-condor.jpg",
+    "place": "Vermilion Cliffs National Monument",
+    "country": "United States",
+    "lat": 36.8,
+    "lng": -112,
+    "habitats": [
+      "grassland"
+    ]
+  },
+  {
+    "name": "Cross River gorilla",
+    "image": "images/animals/cross-river-gorilla.jpg",
+    "place": "Afi Mountain Wildlife Sanctuary",
+    "country": "Nigeria",
+    "lat": 6.3,
+    "lng": 8.97,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Dugong",
+    "image": "images/animals/dugong.jpg",
+    "place": "Shark Bay",
+    "country": "Australia",
+    "lat": -25.5,
+    "lng": 113.5,
+    "habitats": [
+      "ocean"
+    ]
+  },
+  {
+    "name": "Egyptian vulture",
+    "image": "images/animals/egyptian-vulture.jpg",
+    "place": "Socotra Archipelago",
+    "country": "Yemen",
+    "lat": 12.5,
+    "lng": 53.9,
+    "habitats": [
+      "grassland"
+    ]
+  },
+  {
+    "name": "Ethiopian wolf",
+    "image": "images/animals/ethiopian-wolf.jpg",
+    "place": "Sanetti Plateau, Bale Mountains",
+    "country": "Ethiopia",
+    "lat": 6.85,
+    "lng": 39.85,
+    "habitats": [
+      "grassland"
+    ]
+  },
+  {
+    "name": "European eel",
+    "image": "images/animals/european-eel.jpg",
+    "place": "Sargasso Sea (spawning grounds)",
+    "country": "North Atlantic",
+    "lat": 26,
+    "lng": -62,
+    "habitats": [
+      "freshwater",
+      "ocean"
+    ]
+  },
+  {
+    "name": "Galápagos penguin",
+    "image": "images/animals/galapagos-penguin.jpg",
+    "place": "Western Isabela Island",
+    "country": "Ecuador",
+    "lat": -0.6,
+    "lng": -91.2,
+    "habitats": [
+      "ocean",
+      "island"
+    ]
+  },
+  {
+    "name": "Gharial",
+    "image": "images/animals/gharial.jpg",
+    "place": "National Chambal Sanctuary",
+    "country": "India",
+    "lat": 26.7,
+    "lng": 78.6,
+    "habitats": [
+      "freshwater"
+    ]
+  },
+  {
+    "name": "Giant oceanic manta ray",
+    "image": "images/animals/giant-oceanic-manta-ray.jpg",
+    "place": "Isla de la Plata, Machalilla",
+    "country": "Ecuador",
+    "lat": -1.27,
+    "lng": -81.07,
+    "habitats": [
+      "ocean"
+    ]
+  },
+  {
+    "name": "Giant panda",
+    "image": "images/animals/giant-panda.jpg",
+    "place": "Wolong National Nature Reserve",
+    "country": "China",
+    "lat": 31,
+    "lng": 103.2,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Golden poison frog",
+    "image": "images/animals/golden-poison-frog.jpg",
+    "place": "Río Saija, Cauca Pacific coast",
+    "country": "Colombia",
+    "lat": 2.85,
+    "lng": -77.65,
+    "habitats": [
+      "forest",
+      "freshwater"
+    ]
+  },
+  {
+    "name": "Great Indian bustard",
+    "image": "images/animals/great-indian-bustard.jpg",
+    "place": "Desert National Park, Rajasthan",
+    "country": "India",
+    "lat": 26.55,
+    "lng": 70.55,
+    "habitats": [
+      "grassland"
+    ]
+  },
+  {
+    "name": "Greater bamboo lemur",
+    "image": "images/animals/greater-bamboo-lemur.jpg",
+    "place": "Ranomafana National Park",
+    "country": "Madagascar",
+    "lat": -21.25,
+    "lng": 47.42,
+    "habitats": [
+      "forest",
+      "freshwater"
+    ]
+  },
+  {
+    "name": "Hawaiian monk seal",
+    "image": "images/animals/hawaiian-monk-seal.jpg",
+    "place": "French Frigate Shoals, Papahānaumokuākea",
+    "country": "United States",
+    "lat": 23.8,
+    "lng": -166.2,
+    "habitats": [
+      "ocean",
+      "island"
+    ]
+  },
+  {
+    "name": "Hawksbill turtle",
+    "image": "images/animals/hawksbill-turtle.jpg",
+    "place": "Milman Island, Great Barrier Reef",
+    "country": "Australia",
+    "lat": -11.17,
+    "lng": 143,
+    "habitats": [
+      "ocean"
+    ]
+  },
+  {
+    "name": "Helmeted hornbill",
+    "image": "images/animals/helmeted-hornbill.jpg",
+    "place": "Danum Valley Conservation Area",
+    "country": "Malaysia",
+    "lat": 4.96,
+    "lng": 117.8,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Hirola",
+    "image": "images/animals/hirola.jpg",
+    "place": "Ishaqbini Hirola Community Conservancy",
+    "country": "Kenya",
+    "lat": -1.2,
+    "lng": 40.3,
+    "habitats": [
+      "grassland"
+    ]
+  },
+  {
+    "name": "Hooded vulture",
+    "image": "images/animals/hooded-vulture.jpg",
+    "place": "Greater Banjul area",
+    "country": "The Gambia",
+    "lat": 13.45,
+    "lng": -16.6,
+    "habitats": [
+      "grassland"
+    ]
+  },
+  {
+    "name": "Iberian lynx",
+    "image": "images/animals/iberian-lynx.jpg",
+    "place": "Doñana National Park",
+    "country": "Spain",
+    "lat": 37,
+    "lng": -6.45,
+    "habitats": [
+      "forest",
+      "grassland"
+    ]
+  },
+  {
+    "name": "Indus river dolphin",
+    "image": "images/animals/indus-river-dolphin.png",
+    "place": "Indus River, Guddu–Sukkur reach",
+    "country": "Pakistan",
+    "lat": 27.9,
+    "lng": 69.2,
+    "habitats": [
+      "freshwater"
+    ]
+  },
+  {
+    "name": "Javan rhinoceros",
+    "image": "images/animals/javan-rhinoceros.jpg",
+    "place": "Ujung Kulon National Park",
+    "country": "Indonesia",
+    "lat": -6.75,
+    "lng": 105.33,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Kākāpō",
+    "image": "images/animals/kakapo.jpg",
+    "place": "Whenua Hou / Codfish Island",
+    "country": "New Zealand",
+    "lat": -46.77,
+    "lng": 167.64,
+    "habitats": [
+      "forest",
+      "island"
+    ]
+  },
+  {
+    "name": "Koala",
+    "image": "images/animals/koala.jpg",
+    "place": "Port Macquarie, New South Wales",
+    "country": "Australia",
+    "lat": -31.43,
+    "lng": 152.9,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Largetooth sawfish",
+    "image": "images/animals/largetooth-sawfish.jpg",
+    "place": "Fitzroy River, Western Australia",
+    "country": "Australia",
+    "lat": -17.7,
+    "lng": 123.6,
+    "habitats": [
+      "ocean",
+      "freshwater"
+    ]
+  },
+  {
+    "name": "Mediterranean monk seal",
+    "image": "images/animals/mediterranean-monk-seal.jpg",
+    "place": "Cabo Blanco peninsula",
+    "country": "Mauritania",
+    "lat": 20.8,
+    "lng": -17.05,
+    "habitats": [
+      "ocean"
+    ]
+  },
+  {
+    "name": "Mountain gorilla",
+    "image": "images/mountain-gorilla.jpg",
+    "place": "Bwindi Impenetrable National Park",
+    "country": "Uganda",
+    "lat": -1,
+    "lng": 29.65,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "North Atlantic right whale",
+    "image": "images/animals/north-atlantic-right-whale.jpg",
+    "place": "Cape Cod Bay",
+    "country": "United States",
+    "lat": 41.85,
+    "lng": -70.35,
+    "habitats": [
+      "ocean"
+    ]
+  },
+  {
+    "name": "Northern hairy-nosed wombat",
+    "image": "images/animals/northern-hairy-nosed-wombat.jpg",
+    "place": "Epping Forest National Park, Queensland",
+    "country": "Australia",
+    "lat": -22.35,
+    "lng": 146.7,
+    "habitats": [
+      "grassland"
+    ]
+  },
+  {
+    "name": "Okapi",
+    "image": "images/animals/okapi.jpg",
+    "place": "Okapi Wildlife Reserve, Epulu",
+    "country": "DR Congo",
+    "lat": 1.38,
+    "lng": 28.58,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Orange-bellied parrot",
+    "image": "images/animals/orange-bellied-parrot.jpg",
+    "place": "Melaleuca, Southwest Tasmania",
+    "country": "Australia",
+    "lat": -43.42,
+    "lng": 146.16,
+    "habitats": [
+      "island",
+      "grassland"
+    ]
+  },
+  {
+    "name": "Philippine eagle",
+    "image": "images/animals/philippine-eagle.jpg",
+    "place": "Mount Apo Natural Park, Mindanao",
+    "country": "Philippines",
+    "lat": 7,
+    "lng": 125.27,
+    "habitats": [
+      "forest",
+      "island"
+    ]
+  },
+  {
+    "name": "Polar bear",
+    "image": "images/animals/polar-bear.jpg",
+    "place": "Churchill, Hudson Bay",
+    "country": "Canada",
+    "lat": 58.77,
+    "lng": -94.17,
+    "habitats": [
+      "ocean"
+    ]
+  },
+  {
+    "name": "Proboscis monkey",
+    "image": "images/animals/proboscis-monkey.jpg",
+    "place": "Lower Kinabatangan, Sabah",
+    "country": "Malaysia",
+    "lat": 5.5,
+    "lng": 118.2,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Pygmy three-toed sloth",
+    "image": "images/animals/pygmy-three-toed-sloth.jpg",
+    "place": "Isla Escudo de Veraguas",
+    "country": "Panama",
+    "lat": 9.1,
+    "lng": -81.56,
+    "habitats": [
+      "forest",
+      "island"
+    ]
+  },
+  {
+    "name": "Red panda",
+    "image": "images/animals/red-panda.jpg",
+    "place": "Singalila National Park",
+    "country": "India",
+    "lat": 27.1,
+    "lng": 88,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Regent honeyeater",
+    "image": "images/animals/regent-honeyeater.jpg",
+    "place": "Capertee Valley, New South Wales",
+    "country": "Australia",
+    "lat": -33.1,
+    "lng": 150,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Ring-tailed lemur",
+    "image": "images/animals/ring-tailed-lemur.jpg",
+    "place": "Berenty Reserve",
+    "country": "Madagascar",
+    "lat": -25,
+    "lng": 46.3,
+    "habitats": [
+      "forest",
+      "grassland"
+    ]
+  },
+  {
+    "name": "Saola",
+    "image": "images/animals/saola-wild.png",
+    "place": "Vu Quang National Park, Annamite Range",
+    "country": "Vietnam",
+    "lat": 18.3,
+    "lng": 105.4,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Secretarybird",
+    "image": "images/animals/secretarybird.jpg",
+    "place": "Serengeti National Park",
+    "country": "Tanzania",
+    "lat": -2.3,
+    "lng": 34.8,
+    "habitats": [
+      "grassland"
+    ]
+  },
+  {
+    "name": "Shoebill",
+    "image": "images/animals/shoebill.jpg",
+    "place": "Mabamba Bay wetland, Lake Victoria",
+    "country": "Uganda",
+    "lat": 0.07,
+    "lng": 32.35,
+    "habitats": [
+      "freshwater"
+    ]
+  },
+  {
+    "name": "Snow leopard",
+    "image": "images/snow-leopard.jpg",
+    "place": "Hemis National Park, Ladakh",
+    "country": "India",
+    "lat": 33.9,
+    "lng": 77.4,
+    "habitats": [
+      "grassland"
+    ]
+  },
+  {
+    "name": "Spoon-billed sandpiper",
+    "image": "images/animals/spoon-billed-sandpiper.jpg",
+    "place": "Meinypilgyno breeding grounds, Chukotka",
+    "country": "Russia",
+    "lat": 62.55,
+    "lng": 177.05,
+    "habitats": [
+      "ocean",
+      "freshwater"
+    ]
+  },
+  {
+    "name": "Sumatran orangutan",
+    "image": "images/animals/sumatran-orangutan.jpg",
+    "place": "Gunung Leuser National Park, Ketambe",
+    "country": "Indonesia",
+    "lat": 3.68,
+    "lng": 97.65,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Sumatran rhinoceros",
+    "image": "images/animals/sumatran-rhinoceros.jpg",
+    "place": "Way Kambas National Park",
+    "country": "Indonesia",
+    "lat": -4.93,
+    "lng": 105.78,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Sunda pangolin",
+    "image": "images/animals/sunda-pangolin.jpg",
+    "place": "Central Catchment Nature Reserve",
+    "country": "Singapore",
+    "lat": 1.36,
+    "lng": 103.8,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Tapanuli orangutan",
+    "image": "images/animals/tapanuli-orangutan.jpg",
+    "place": "Batang Toru forest",
+    "country": "Indonesia",
+    "lat": 1.6,
+    "lng": 99.1,
+    "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Tasmanian devil",
+    "image": "images/animals/tasmanian-devil.jpg",
+    "place": "Cradle Mountain, Tasmania",
+    "country": "Australia",
+    "lat": -41.65,
+    "lng": 145.95,
+    "habitats": [
+      "forest",
+      "grassland"
+    ]
+  },
+  {
+    "name": "Tiger",
+    "image": "images/animals/tiger.jpg",
+    "place": "Sundarbans",
+    "country": "India / Bangladesh",
+    "lat": 21.95,
+    "lng": 89.18,
+    "habitats": [
+      "forest",
+      "grassland"
+    ]
+  },
+  {
+    "name": "Vaquita",
+    "image": "images/animals/vaquita.png",
+    "place": "Vaquita Refuge, Upper Gulf of California",
+    "country": "Mexico",
+    "lat": 30.9,
+    "lng": -114.5,
+    "habitats": [
+      "ocean"
+    ]
+  },
+  {
+    "name": "Whale shark",
+    "image": "images/animals/whale-shark.jpg",
+    "place": "Ningaloo Reef",
+    "country": "Australia",
+    "lat": -22.7,
+    "lng": 113.65,
+    "habitats": [
+      "ocean"
+    ]
+  },
+  {
+    "name": "White-backed vulture",
+    "image": "images/animals/white-backed-vulture.jpg",
+    "place": "Kruger National Park",
+    "country": "South Africa",
+    "lat": -24,
+    "lng": 31.5,
+    "habitats": [
+      "grassland"
+    ]
+  },
+  {
+    "name": "Whooping crane",
+    "image": "images/animals/whooping-crane.jpg",
+    "place": "Aransas National Wildlife Refuge (wintering)",
+    "country": "United States",
+    "lat": 28.27,
+    "lng": -96.8,
+    "habitats": [
+      "freshwater",
+      "grassland"
+    ]
+  },
+  {
+    "name": "Yellow-crested cockatoo",
+    "image": "images/animals/yellow-crested-cockatoo.jpg",
+    "place": "Komodo National Park",
+    "country": "Indonesia",
+    "lat": -8.55,
+    "lng": 119.5,
+    "habitats": [
+      "forest",
+      "island"
+    ]
+  },
+  {
+    "name": "Yellow-eyed penguin",
+    "image": "images/animals/yellow-eyed-penguin.jpg",
+    "place": "Otago Peninsula",
+    "country": "New Zealand",
+    "lat": -45.87,
+    "lng": 170.73,
+    "habitats": [
+      "ocean",
+      "island"
+    ]
+  }
+]

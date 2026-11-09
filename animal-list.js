@@ -52,11 +52,18 @@
         frame.className = 'list-card__frame';
         if (src) {
             const image = document.createElement('img');
-            image.src = src;
+            // Cards use a 640px copy from images/animals/thumbs/; the detail page keeps the full photo.
+            // If a thumbnail is missing, fall back to the full photo before giving up.
+            image.src = src.startsWith('images/animals/')
+                ? src.replace('images/animals/', 'images/animals/thumbs/').replace(/\.png$/, '.jpg') : src;
             image.alt = alt || name;
             image.loading = 'lazy';
             image.decoding = 'async';
-            image.addEventListener('error', () => { image.remove(); frame.classList.add('is-unavailable'); }, { once: true });
+            image.addEventListener('error', function fail() {
+                if (image.src.includes('/thumbs/')) { image.src = src; return; }
+                image.removeEventListener('error', fail);
+                image.remove(); frame.classList.add('is-unavailable');
+            });
             frame.append(image);
         } else frame.classList.add('is-unavailable');
         figure.append(frame, animalCredit(record));

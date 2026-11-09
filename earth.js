@@ -224,10 +224,13 @@
             state.zoom+=(zoomTarget-state.zoom)*(1-Math.exp(-dt/zoomEase));
             dirty=true;
         } else if (state.zoom!==zoomTarget) { state.zoom=zoomTarget; dirty=true; }
-        if (!dirty && now-lastDraw<32) { frame=requestAnimationFrame(render); return; }
+        // As a settled backdrop (behind the animal list or about view) the globe is half covered and
+        // nobody is steering it, so the twinkling sky redraws at ~15fps and 1x instead of ~30fps and 1.5x.
+        const backdrop=locked && !fly;
+        if (!dirty && now-lastDraw<(backdrop?66:32)) { frame=requestAnimationFrame(render); return; }
         lastDraw=now;
         const viewChanged=dirty; dirty=false;
-        const dpr = Math.min(devicePixelRatio || 1, 1.5);   // the sky shader is costly; 1.5x stays sharp
+        const dpr = Math.min(devicePixelRatio || 1, backdrop ? 1 : 1.5);   // the sky shader is costly; 1.5x stays sharp
         const width = Math.max(1, Math.round(canvas.clientWidth*dpr));
         const height = Math.max(1, Math.round(canvas.clientHeight*dpr));
         if (canvas.width !== width || canvas.height !== height) { canvas.width=width; canvas.height=height; }

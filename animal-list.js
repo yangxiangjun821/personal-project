@@ -26,12 +26,10 @@
     const images = typeof animalImages === 'object' ? animalImages : {};
     let built = null;
     function build() {
-        if (!built) built = fetch('project.html')
-            .then(response => { if (!response.ok) throw new Error('Field guide failed to load'); return response.text(); })
-            .then(html => {
-                const profiles = new DOMParser().parseFromString(html, 'text/html').querySelectorAll('.animal-profile');
-                profiles.forEach(profile => grid.append(card(profile)));
-                count.textContent = profiles.length + ' species from every continent, each with a feature no other animal shares.';
+        if (!built) built = animalData.load()
+            .then(records => {
+                records.forEach(record => grid.append(card(record)));
+                count.textContent = records.size + ' species from every continent, each with a feature no other animal shares.';
             })
             .catch(error => {
                 built = null;   // allow a retry next time the list opens
@@ -41,51 +39,67 @@
         return built;
     }
 
-    function card(profile) {
+    // Species card: photo with its credit, names in both languages, IUCN tag, range, a one-line hook
+    // and a "Learn more" button that opens the detail page (animal-detail.js).
+    function card(record) {
         const article = document.createElement('article');
-        article.className = 'list-card';
-        const name = profile.querySelector('h3')?.textContent.trim() || '';
+        article.className = 'list-card species-card';
+        const name = record.name;
         const figure = document.createElement('figure');
         figure.className = 'list-card__image';
         const [src, alt] = images[name] || [];
+        const frame = document.createElement('div');
+        frame.className = 'list-card__frame';
         if (src) {
             const image = document.createElement('img');
             image.src = src;
             image.alt = alt || name;
             image.loading = 'lazy';
             image.decoding = 'async';
-            image.addEventListener('error', () => { image.remove(); figure.classList.add('is-unavailable'); }, { once: true });
-            figure.append(image);
-        } else figure.classList.add('is-unavailable');
+            image.addEventListener('error', () => { image.remove(); frame.classList.add('is-unavailable'); }, { once: true });
+            frame.append(image);
+        } else frame.classList.add('is-unavailable');
+        figure.append(frame, animalCredit(record));
         const body = document.createElement('div');
         body.className = 'list-card__body';
         const meta = document.createElement('p');
         meta.className = 'list-card__meta';
-        const status = profile.querySelector('.status');
-        if (status) {
+        const iucn = animalData.IUCN[record.key];
+        if (iucn) {
             const badge = document.createElement('span');
-            badge.className = 'list-card__status';
-            badge.textContent = status.textContent;
-            status.classList.forEach(c => { if (c.startsWith('status--')) badge.classList.add(c); });
+            badge.className = 'iucn iucn--' + record.key;
+            const abbr = document.createElement('b');
+            abbr.textContent = iucn.abbr;
+            const label = document.createElement('span');
+            label.textContent = iucn.en;
+            badge.append(abbr, label);
             meta.append(badge);
         }
-        const number = profile.querySelector('.specimen-number');
-        if (number) {
-            const where = document.createElement('span');
-            where.textContent = number.textContent;
-            meta.append(where);
-        }
+        const where = document.createElement('span');
+        where.textContent = record.habitatLabel;
+        meta.append(where);
         const title = document.createElement('h3');
         title.textContent = name;
-        const latin = document.createElement('p');
-        latin.className = 'list-card__latin';
-        latin.textContent = profile.querySelector('.scientific-name')?.textContent || '';
-        body.append(meta, title, latin);
-        profile.querySelectorAll('.animal-profile__body p').forEach(paragraph => {
-            const copy = document.importNode(paragraph, true);
-            copy.removeAttribute('class');
-            body.append(copy);
-        });
+        const other = document.createElement('p');
+        other.className = 'card-alt';
+        other.dataset.i18nOff = '';
+        other.dataset.name = name;
+        other.textContent = window.animalDetail ? animalDetail.altName(name) : '';
+        const range = document.createElement('p');
+        range.className = 'card-range';
+        const rangeLabel = document.createElement('strong');
+        rangeLabel.textContent = 'Range:';
+        range.append(rangeLabel, ' ', record.range);
+        const line = document.createElement('p');
+        line.className = 'card-line';
+        line.textContent = record.feature;
+        const more = document.createElement('button');
+        more.type = 'button';
+        more.className = 'card-more';
+        more.textContent = 'Learn more';
+        more.setAttribute('aria-label', 'Learn more: ' + name);
+        more.addEventListener('click', () => window.animalDetail && animalDetail.open(name));
+        body.append(meta, title, other, range, line, more);
         article.append(figure, body);
         return article;
     }

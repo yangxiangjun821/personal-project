@@ -28,6 +28,7 @@
             '<h2 id="animal-panel-title"></h2><p class="animal-panel__scientific"></p>' +
             '<div class="animal-panel__facts"></div>' +
             '<p class="animal-panel__location"><span class="animal-panel__place"></span><span class="animal-panel__coords"></span></p>' +
+            '<button type="button" class="card-more animal-panel__more">Learn more</button>' +
         '</div>';
     layer.after(panel);
 
@@ -83,7 +84,11 @@
     function update() {
         markers.forEach(({ marker, animal }) => {
             const point = earthView.project(animal.lat, animal.lng);
-            marker.style.transform = `translate(${point.x}px, ${point.y}px)`;
+            // Lie flat on the surface: squash the dot along the radial direction as it nears the limb.
+            const squash = Math.max(.2, Math.min(1, point.depth * 1.6));
+            const angle = Math.atan2(point.ny, point.nx);
+            marker.style.transform = `translate(${point.x}px, ${point.y}px) rotate(${angle}rad) scale(${squash}, 1)`;
+            marker.style.setProperty('--edge', Math.min(1, point.depth * 4).toFixed(2));
             marker.classList.toggle('is-behind', !point.visible);
             if (marker === active && !point.visible) hide();
         });
@@ -100,25 +105,41 @@
         const status = card.querySelector('.earth-card__status');
         const latin = card.querySelector('.earth-card__latin');
         const feature = card.querySelector('.earth-card__feature');
-        [status, latin, feature].forEach(element => { element.textContent = ''; });
-        status.className = 'earth-card__status';
+        [latin, feature].forEach(element => { element.textContent = ''; });
+        statusBadge(status, 'earth-card__status', null);
         place();
         card.classList.add('is-visible');
         // Fill in the field-guide details (status, Latin name, signature feature) once they arrive.
         profiles.then(map => {
             const profile = map.get(normalise(animal.name));
             if (!profile || active !== marker) return;
-            const source = profile.querySelector('.status');
-            if (source) {
-                status.textContent = source.textContent;
-                source.classList.forEach(name => { if (name.startsWith('status--')) status.classList.add(name); });
-            }
+            statusBadge(status, 'earth-card__status', profile.querySelector('.status'));
             const scientific = profile.querySelector('.scientific-name');
             if (scientific) latin.textContent = scientific.textContent;
             const signature = profile.querySelector('.animal-profile__feature');
             if (signature) feature.textContent = signature.textContent.replace(/^\s*Signature:\s*/, '');
             place();
         });
+    }
+
+    // Conservation status as the same two-part IUCN badge ("CR | Critically endangered") that the
+    // animal list and the detail page use. `source` is the field-guide .status element, or null to clear.
+    const STATUS_ABBR = { critical: 'CR', endangered: 'EN', vulnerable: 'VU' };
+    function statusBadge(element, base, source) {
+        element.className = base;
+        element.replaceChildren();
+        if (!source) return;
+        const key = [...source.classList].filter(name => name.startsWith('status--'))
+            .map(name => name.slice('status--'.length)).find(name => STATUS_ABBR[name]);
+        const label = document.createElement('span');
+        label.textContent = source.textContent.trim();
+        if (key) {
+            element.classList.add('iucn', 'iucn--' + key);
+            const abbr = document.createElement('b');
+            abbr.textContent = (window.animalData && animalData.IUCN[key] || {}).abbr || STATUS_ABBR[key];
+            element.append(abbr);
+        } else element.classList.add('iucn');
+        element.append(label);
     }
 
     function hide() {
@@ -151,23 +172,20 @@
         panel.querySelector('.animal-panel__image').src = animal.image;
         panel.querySelector('.animal-panel__image').alt = animal.name;
         panel.querySelector('h2').textContent = animal.name;
+        panel.querySelector('.animal-panel__more').onclick = () => window.animalDetail && animalDetail.open(animal.name);
         panel.querySelector('.animal-panel__place').textContent = animal.place + ', ' + animal.country;
         panel.querySelector('.animal-panel__coords').textContent = coords(animal);
         const status = panel.querySelector('.animal-panel__status');
         const habitat = panel.querySelector('.animal-panel__habitat');
         const scientific = panel.querySelector('.animal-panel__scientific');
         const facts = panel.querySelector('.animal-panel__facts');
-        [status, habitat, scientific].forEach(element => { element.textContent = ''; });
-        status.className = 'animal-panel__status';
+        [habitat, scientific].forEach(element => { element.textContent = ''; });
+        statusBadge(status, 'animal-panel__status', null);
         facts.replaceChildren();
         profiles.then(map => {
             const profile = map.get(normalise(animal.name));
             if (!profile || selected !== marker) return;
-            const statusSource = profile.querySelector('.status');
-            if (statusSource) {
-                status.textContent = statusSource.textContent;
-                statusSource.classList.forEach(name => { if (name.startsWith('status--')) status.classList.add(name); });
-            }
+            statusBadge(status, 'animal-panel__status', profile.querySelector('.status'));
             const number = profile.querySelector('.specimen-number');
             if (number) habitat.textContent = number.textContent.split('·').pop().trim();
             const latin = profile.querySelector('.scientific-name');
@@ -220,7 +238,7 @@
             if (out && marker === selected) deselect('none');
             if (out && marker === active) hide();
         });
-        document.querySelectorAll('.habitat-menu button').forEach(button =>
+        document.querySelectorAll('.habitat-menu button[data-habitat]').forEach(button =>
             button.setAttribute('aria-pressed', String(button.dataset.habitat === name)));
         const link = document.querySelector('#site-header a[href="#habitats"]');
         if (link) link.classList.toggle('is-active', name !== 'all');
@@ -231,7 +249,7 @@
             document.dispatchEvent(new CustomEvent('habitatchoose', { detail: { habitat: name } }));
         }).catch(error => console.error(error));
     }
-    function toggleHabitatMenu(link) {
+    function buildHabitatMenu(link) {
         let menu = link.parentElement.querySelector('.habitat-menu');
         if (!menu) {
             menu = document.createElement('ul');
@@ -245,11 +263,18 @@
             });
             link.after(menu);
             link.setAttribute('aria-controls', 'habitat-menu');
+            link.setAttribute('aria-expanded', 'false');
         }
-        const open = !menu.classList.contains('is-open');
-        requestAnimationFrame(() => menu.classList.toggle('is-open', open));
-        link.setAttribute('aria-expanded', String(open));
+        return menu;
     }
+    function toggleHabitatMenu(link) {
+        buildHabitatMenu(link);
+        if (window.siteNav) siteNav.toggleSubmenu(link);
+    }
+    // Build the (folded) sub-list as soon as the menu exists, so hovering "Habitats" can unfold it.
+    const habitatsLink = () => document.querySelector('#site-header a[href="#habitats"]');
+    if (habitatsLink()) buildHabitatMenu(habitatsLink());
+    document.addEventListener('navready', () => { if (habitatsLink()) buildHabitatMenu(habitatsLink()); });
 
     // Markers are always on: they fade in beside the heading on page load.
     load().then(() => requestAnimationFrame(() => layer.classList.add('is-on')))

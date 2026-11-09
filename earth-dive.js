@@ -990,6 +990,16 @@ void main(){
         const scrollRange = () => Math.max(1, track.offsetHeight - scroller.clientHeight);
         function onScroll() {
             if (!opts.autoplay) target = clamp01(scroller.scrollTop / scrollRange());
+            // Back at the top after reading the chapter: show the destination whole again, so the next
+            // downward scroll repeats the same sequence.
+            if (landed && !awaiting && !leaving && !autoScroll) {
+                if (scroller.scrollTop > 40) chapterDown = true;
+                else if (chapterDown && scroller.scrollTop <= 1) {
+                    awaiting = true; chapterDown = false;
+                    lockScroll(true);
+                    if (scene && scene.afterChapter) scene.afterChapter();
+                }
+            }
             wake();
         }
         // Automatic flight: progress runs from where it is to `to` over `seconds`, gently eased at
@@ -1014,6 +1024,26 @@ void main(){
             const lift = Math.min(first.offsetHeight + 48, scroller.clientHeight * .7);
             scroller.scrollTo({ top: lift, behavior: reducedMotion ? 'auto' : 'smooth' });
         }
+        // After landing the destination is shown whole and the page stays still. The first downward
+        // scroll (wheel, swipe or key) lets the scene put its own controls away, then the chapter slides up.
+        let awaiting = false, chapterDown = false, swipeFrom = null;
+        function requestChapter() {
+            if (!active || !landed || !awaiting || leaving) return;
+            awaiting = false; chapterDown = false;
+            const delay = scene && scene.beforeChapter ? scene.beforeChapter() || 0 : 0;
+            setTimeout(() => { if (active && landed && !leaving && !awaiting) showChapter(); }, delay);
+        }
+        const DOWN_KEYS = new Set(['ArrowDown', 'PageDown', ' ', 'End']);
+        root.addEventListener('wheel', event => { if (event.deltaY > 0) requestChapter(); }, { passive: true });
+        root.addEventListener('touchstart', event => { swipeFrom = event.touches[0].clientY; }, { passive: true });
+        root.addEventListener('touchmove', event => {
+            if (swipeFrom !== null && swipeFrom - event.touches[0].clientY > 30) { swipeFrom = null; requestChapter(); }
+        }, { passive: true });
+        root.addEventListener('keydown', event => {
+            // Keys typed into a control (the slider, a button) belong to that control.
+            if (DOWN_KEYS.has(event.key) && !event.target.closest('input, button, select, textarea')) requestChapter();
+        });
+
         let autoScroll = 0;
         function stopAutoScroll() { cancelAnimationFrame(autoScroll); autoScroll = 0; }
         function scrollToTop(then) {
@@ -1061,7 +1091,7 @@ void main(){
             if (leaving && leaving.check()) return;
             const settling = Math.abs(target - progress) > 1e-5 || styleMix < 1 || introRamp < 1 || terrainBlend < 1 && terrainState === 'ready';
             // Keep animating for the float and the stars unless the destination scene has taken over.
-            if (opts.autoplay && !leaving && !landed && progress >= .995) { landed = true; setTimeout(() => { if (active && landed && !leaving) showChapter(); }, 250); }
+            if (opts.autoplay && !leaving && !landed && progress >= .995) { landed = true; awaiting = true; chapterDown = false; }
             if (!hiddenCanvas || settling || leaving || playDur) frame = requestAnimationFrame(loop);
         }
         // Resolution follows the measured frame time: one very slow frame drops straight to the
@@ -1299,7 +1329,7 @@ void main(){
             renderScale = TIERS[tier].start;
             frameEma = 16; cooldown = .4;
             scroller.scrollTop = 0;
-            landed = false; playDur = 0;
+            landed = false; playDur = 0; awaiting = false; chapterDown = false;
             lockScroll(opts.autoplay);
             if (opts.autoplay) play(1, opts.duration);
             document.body.classList.add('is-diving');
@@ -1318,7 +1348,7 @@ void main(){
             if (!active) return;
             const finish = () => {
                 stopAutoScroll();
-                playDur = 0; landed = false;
+                playDur = 0; landed = false; awaiting = false; chapterDown = false;
                 active = false; leaving = null;
                 cancelAnimationFrame(frame); frame = 0;
                 root.classList.remove('is-visible', 'is-leaving');
@@ -1345,7 +1375,7 @@ void main(){
             };
             if (opts.autoplay) {
                 // Fly back up on its own: the chapter slides away and the flight plays in reverse.
-                landed = false;
+                landed = false; awaiting = false; chapterDown = false;
                 lockScroll(true);
                 scroller.scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' });
                 play(0, Math.max(1.8, progress * opts.duration * .6));

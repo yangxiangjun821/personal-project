@@ -1,0 +1,2562 @@
+{
+ "_readme": [
+  "Hand-checked facts for the species detail page, keyed by the English name used in the field guide.",
+  "Only add a field when you have read it in a reliable source (IUCN Red List, a national agency, a research paper, a major conservation body). Leave it out otherwise: the page then shows 'No reliable data yet'.",
+  "Every value is a plain string unless noted. 'sources' is a list of { label, url } and should cover everything written here.",
+  "Fields: iucnYear; china { level, note }; traits { length, weight, lifespan }; habitat; behavior { food, activity, social, breeding };",
+  "population { estimate, scope, year, trend, captive }; threats [strings]; ecology; conservation [strings]; didYouKnow { text, source }; sources; updated (YYYY-MM-DD)."
+ ],
+ "Saola": {
+  "traits": {
+   "length": "头体长：一只圈养雌性的实测记录约 150 厘米（样本极少）"
+  },
+  "behavior": {
+   "food": "草食，据报道会取食 Schismatoglottis 等植物",
+   "breeding": "可能有固定繁殖季（约 8 月下旬至 11 月中旬）；已记录的都是单胎，多在 4 月中旬至 6 月下旬出生"
+  },
+  "population": {
+   "estimate": "约 50–300 只",
+   "scope": "越南和老挝的长山山脉（全球）",
+   "year": "2015 年估计"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Pseudoryx nghetinhensis",
+    "url": "https://www.iucnredlist.org/search?query=Pseudoryx%20nghetinhensis&searchType=species"
+   },
+   {
+    "label": "维基百科：Saola",
+    "url": "https://en.wikipedia.org/wiki/Saola"
+   }
+  ],
+  "updated": "2026-11-08",
+  "iucnYear": "2016"
+ },
+ "Okapi": {
+  "traits": {
+   "length": "体长约 2.5 米，肩高约 1.5 米",
+   "weight": "200–350 千克",
+   "lifespan": "典型寿命 20–30 年"
+  },
+  "behavior": {
+   "food": "草食，吃树叶、嫩芽、草、蕨类、水果和真菌",
+   "activity": "主要在白天活动，也可能在夜里活动数小时",
+   "social": "基本独居，只在繁殖时相聚",
+   "breeding": "孕期约 440–450 天，通常一胎"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Okapia johnstoni",
+    "url": "https://www.iucnredlist.org/search?query=Okapia%20johnstoni&searchType=species"
+   },
+   {
+    "label": "维基百科：Okapi",
+    "url": "https://en.wikipedia.org/wiki/Okapi"
+   }
+  ],
+  "updated": "2026-11-08",
+  "iucnYear": "2015"
+ },
+ "Aye-aye": {
+  "traits": {
+   "length": "头体长 36–43 厘米，尾长 56–61 厘米",
+   "weight": "约 2 千克"
+  },
+  "behavior": {
+   "food": "杂食，吃种子、坚果、水果、花蜜、真菌，也吃蛀木昆虫幼虫和蜂蜜",
+   "activity": "夜行、树栖，是世界上最大的夜行灵长类",
+   "breeding": "全年均可交配；雌性约 3–4 岁开始繁殖，每 2–3 年生一胎"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Daubentonia madagascariensis",
+    "url": "https://www.iucnredlist.org/search?query=Daubentonia%20madagascariensis&searchType=species"
+   },
+   {
+    "label": "维基百科：Aye-aye",
+    "url": "https://en.wikipedia.org/wiki/Aye-aye"
+   }
+  ],
+  "updated": "2026-11-08",
+  "iucnYear": "2020"
+ },
+ "Proboscis monkey": {
+  "traits": {
+   "length": "雄性头体长 66–76 厘米，雌性 53–62 厘米",
+   "weight": "雄性多为 16–22.5 千克，雌性 7–12 千克"
+  },
+  "behavior": {
+   "food": "以果实和树叶为主，也吃花、种子和少量昆虫",
+   "social": "通常是一只成年雄猴带若干雌猴和幼猴的群体，也有全雄群；单雄群 3–19 只，较大的群体最多可达 60 只"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Nasalis larvatus",
+    "url": "https://www.iucnredlist.org/search?query=Nasalis%20larvatus&searchType=species"
+   },
+   {
+    "label": "维基百科：Proboscis monkey",
+    "url": "https://en.wikipedia.org/wiki/Proboscis_monkey"
+   }
+  ],
+  "updated": "2026-11-08",
+  "iucnYear": "2021"
+ },
+ "Hirola": {
+  "traits": {
+   "length": "头体长 1.2–2 米，肩高 99–125 厘米",
+   "weight": "73–118 千克",
+   "lifespan": "野外寿命无数据；圈养记录最长约 15 年"
+  },
+  "behavior": {
+   "food": "以草为主，旱季可能也取食嫩枝叶",
+   "social": "雌性独自产仔，之后回到由雌性和幼崽组成的育幼群",
+   "breeding": "季节性繁殖，幼崽多在 9–11 月出生"
+  },
+  "population": {
+   "estimate": "300–500 只",
+   "scope": "全球种群；无圈养个体"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Beatragus hunteri",
+    "url": "https://www.iucnredlist.org/search?query=Beatragus%20hunteri&searchType=species"
+   },
+   {
+    "label": "维基百科：Hirola",
+    "url": "https://en.wikipedia.org/wiki/Hirola"
+   }
+  ],
+  "updated": "2026-11-08",
+  "iucnYear": "2017"
+ },
+ "Pygmy three-toed sloth": {
+  "traits": {
+   "length": "头体长 48–53 厘米",
+   "weight": "2.5–3.5 千克"
+  },
+  "behavior": {
+   "food": "树栖，以树叶为食",
+   "breeding": "交配与繁殖的细节尚无记录"
+  },
+  "population": {
+   "estimate": "约 500–1,500 只（高值估计 3,200 只）",
+   "scope": "仅限巴拿马埃斯库多·德·贝拉瓜斯岛",
+   "year": "2015 年研究",
+   "trend": "2012 年海岸红树林普查只数到约 79 只，2015 年的研究认为这一数字严重偏低"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Bradypus pygmaeus",
+    "url": "https://www.iucnredlist.org/search?query=Bradypus%20pygmaeus&searchType=species"
+   },
+   {
+    "label": "维基百科：Pygmy three-toed sloth",
+    "url": "https://en.wikipedia.org/wiki/Pygmy_three-toed_sloth"
+   }
+  ],
+  "updated": "2026-11-08",
+  "iucnYear": "2022"
+ },
+ "Sunda pangolin": {
+  "traits": {
+   "length": "头体长 40–65 厘米，尾长 35–56 厘米",
+   "weight": "最重约 10 千克"
+  },
+  "behavior": {
+   "food": "无牙，用细长而黏的舌头舔食蚂蚁和白蚁",
+   "activity": "眼部结构适合夜视，主要夜间活动",
+   "breeding": "每年生 1–2 只幼崽；秋季交配，冬季在洞穴中产仔"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Manis javanica",
+    "url": "https://www.iucnredlist.org/search?query=Manis%20javanica&searchType=species"
+   },
+   {
+    "label": "维基百科：Sunda pangolin",
+    "url": "https://en.wikipedia.org/wiki/Sunda_pangolin"
+   }
+  ],
+  "updated": "2026-11-08",
+  "iucnYear": "2019"
+ },
+ "Axolotl": {
+  "traits": {
+   "length": "成体长 15–45 厘米，最常见约 23 厘米",
+   "lifespan": "野外寿命约 10–15 年"
+  },
+  "behavior": {
+   "food": "肉食，吃软体动物、蠕虫、水生昆虫、小龙虾和小鱼，也吃其他蝾螈"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Ambystoma mexicanum",
+    "url": "https://www.iucnredlist.org/search?query=Ambystoma%20mexicanum&searchType=species"
+   },
+   {
+    "label": "维基百科：Axolotl",
+    "url": "https://en.wikipedia.org/wiki/Axolotl"
+   }
+  ],
+  "updated": "2026-11-08",
+  "iucnYear": "2020"
+ },
+ "Gharial": {
+  "traits": {
+   "length": "雌性 2.6–4.5 米，雄性 3–6 米"
+  },
+  "behavior": {
+   "food": "幼体吃昆虫、蝌蚪、小鱼和蛙",
+   "breeding": "雌性春季聚集挖巢，每窝产 20–95 枚蛋"
+  },
+  "population": {
+   "trend": "野外种群自 1930 年代以来大幅下降，如今只分布在历史分布区的约 2%"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Gavialis gangeticus",
+    "url": "https://www.iucnredlist.org/search?query=Gavialis%20gangeticus&searchType=species"
+   },
+   {
+    "label": "维基百科：Gharial",
+    "url": "https://en.wikipedia.org/wiki/Gharial"
+   }
+  ],
+  "updated": "2026-11-08",
+  "iucnYear": "2019"
+ },
+ "Hawksbill turtle": {
+  "traits": {
+   "lifespan": "寿命未知"
+  },
+  "behavior": {
+   "breeding": "性成熟较晚：一项中太平洋研究估计约在 29 岁（范围 23–36 岁）"
+  },
+  "iucnYear": "2008",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Eretmochelys imbricata",
+    "url": "https://www.iucnredlist.org/search?query=Eretmochelys%20imbricata&searchType=species"
+   },
+   {
+    "label": "维基百科：Hawksbill sea turtle",
+    "url": "https://en.wikipedia.org/wiki/Hawksbill_sea_turtle"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Kākāpō": {
+  "traits": {
+   "length": "体长最长约 64 厘米",
+   "weight": "雄鸟约 1.5–3 千克，雌鸟约 0.95–1.6 千克",
+   "lifespan": "长寿：平均预期寿命约 60 年（±20 年），有报道称可达 100 年"
+  },
+  "behavior": {
+   "food": "完全草食，吃果实、种子、叶、茎和根茎",
+   "activity": "夜行、地栖，不会飞",
+   "breeding": "唯一采用“求偶场”一雄多雌繁殖方式的鹦鹉；雄鸟不参与育雏"
+  },
+  "population": {
+   "estimate": "325 只（已知存活个体）",
+   "scope": "已知个体都有标记和命名，生活在新西兰四座无天敌的小岛，另有 2023 年在本土保护区的重引入",
+   "year": "截至 2026 年"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Strigops habroptilus",
+    "url": "https://www.iucnredlist.org/search?query=Strigops%20habroptilus&searchType=species"
+   },
+   {
+    "label": "维基百科：Kākāpō",
+    "url": "https://en.wikipedia.org/wiki/K%C4%81k%C4%81p%C5%8D"
+   }
+  ],
+  "updated": "2026-11-08",
+  "iucnYear": "2018"
+ },
+ "Helmeted hornbill": {
+  "traits": {
+   "length": "总长超过其他所有犀鸟（中央尾羽特别长）",
+   "weight": "约 3 千克，其中盔突约占 11%"
+  },
+  "behavior": {
+   "social": "被认为有领域性，且一夫一妻，但社会行为所知甚少",
+   "breeding": "每年繁殖一次，每次一只雏鸟"
+  },
+  "threats": [
+   "据 TRAFFIC 统计，仅中国和印度尼西亚在三年内就查获了 2,170 个盔突"
+  ],
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Rhinoplax vigil",
+    "url": "https://www.iucnredlist.org/search?query=Rhinoplax%20vigil&searchType=species"
+   },
+   {
+    "label": "维基百科：Helmeted hornbill",
+    "url": "https://en.wikipedia.org/wiki/Helmeted_hornbill"
+   }
+  ],
+  "updated": "2026-11-08",
+  "iucnYear": "2020"
+ },
+ "Philippine eagle": {
+  "traits": {
+   "length": "体长 86–102 厘米",
+   "weight": "4.04–8.0 千克",
+   "lifespan": "野外寿命估计 30–60 年；圈养最长记录 41 年（罗马动物园）"
+  },
+  "behavior": {
+   "food": "机会主义的顶级捕食者，按当地猎物的多少和捕捉难易取食（并非几乎只吃猴子）",
+   "breeding": "每对繁殖需要很大的活动范围，因此对森林砍伐尤为敏感"
+  },
+  "population": {
+   "estimate": "棉兰老岛上约有 82–233 对繁殖对",
+   "scope": "仅指棉兰老岛（该物种数量最多的岛屿）"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Pithecophaga jefferyi",
+    "url": "https://www.iucnredlist.org/search?query=Pithecophaga%20jefferyi&searchType=species"
+   },
+   {
+    "label": "维基百科：Philippine eagle",
+    "url": "https://en.wikipedia.org/wiki/Philippine_eagle"
+   }
+  ],
+  "updated": "2026-11-08",
+  "iucnYear": "2025"
+ },
+ "African penguin": {
+  "traits": {
+   "length": "身高 60–70 厘米",
+   "weight": "平均 2.2–3.5 千克",
+   "lifespan": "野外约 10–25 年，圈养最长约 34 年"
+  },
+  "behavior": {
+   "food": "追逐式潜水捕食，主要吃鱼和乌贼；沙丁鱼减少后，食物在一定程度上转向凤尾鱼",
+   "social": "群居，在纳米比亚至南非阿尔戈阿湾之间的 27 座岛屿上有繁殖群，开普敦附近还有两个大陆群落",
+   "breeding": "非洲唯一在本地繁殖的企鹅"
+  },
+  "population": {
+   "estimate": "约 15–18 万只",
+   "scope": "全球种群",
+   "year": "2000 年（较早的数字）",
+   "trend": "1910 年估计约 150 万只，到 20 世纪末只剩约 10%"
+  },
+  "iucnYear": "2024",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Spheniscus demersus",
+    "url": "https://www.iucnredlist.org/search?query=Spheniscus%20demersus&searchType=species"
+   },
+   {
+    "label": "维基百科：African penguin",
+    "url": "https://en.wikipedia.org/wiki/African_penguin"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Vaquita": {
+  "traits": {
+   "length": "最大体长：雌性约 150 厘米，雄性约 140 厘米（现存最小的鲸类）",
+   "weight": "约 27–68 千克",
+   "lifespan": "估计约 20 年；3–6 岁性成熟"
+  },
+  "behavior": {
+   "food": "以底栖鱼类（如石首鱼）为主，也吃甲壳类和乌贼",
+   "social": "多单独或成对活动，常带幼崽；曾见最多 10 只的小群",
+   "breeding": "可能是一雄多雌，雄性之间争夺雌性"
+  },
+  "iucnYear": "2022",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Phocoena sinus",
+    "url": "https://www.iucnredlist.org/search?query=Phocoena%20sinus&searchType=species"
+   },
+   {
+    "label": "维基百科：Vaquita",
+    "url": "https://en.wikipedia.org/wiki/Vaquita"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Whale shark": {
+  "behavior": {
+   "food": "滤食性，主要吃浮游生物、磷虾、鱼卵，以及沙丁鱼、凤尾鱼等小型群游鱼",
+   "activity": "高度洄游，会在澳大利亚宁格鲁礁、墨西哥尤卡坦半岛、印度古吉拉特邦和喀拉拉邦近海等地季节性聚集",
+   "breeding": "尚未观察到产仔；仅在圣赫勒拿岛有过两次交配的记录"
+  },
+  "population": {
+   "trend": "过去 75 年种群下降超过 50%（IUCN 评估依据）"
+  },
+  "iucnYear": "2016",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Rhincodon typus",
+    "url": "https://www.iucnredlist.org/search?query=Rhincodon%20typus&searchType=species"
+   },
+   {
+    "label": "维基百科：Whale shark",
+    "url": "https://en.wikipedia.org/wiki/Whale_shark"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Largetooth sawfish": {
+  "traits": {
+   "length": "最大确认个体约 7 米；如今多数个体 2–2.5 米",
+   "weight": "大个体可达 500–600 千克",
+   "lifespan": "寿命未知，四种估计为 30、35、44 和 80 年"
+  },
+  "behavior": {
+   "food": "捕食鱼类、软体动物和甲壳类",
+   "activity": "会用“锯”搅动底泥寻找猎物，或横扫鱼群",
+   "breeding": "繁殖有季节性，卵胎生，具体时间因地区而异"
+  },
+  "iucnYear": "2022",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Pristis pristis",
+    "url": "https://www.iucnredlist.org/search?query=Pristis%20pristis&searchType=species"
+   },
+   {
+    "label": "维基百科：Largetooth sawfish",
+    "url": "https://en.wikipedia.org/wiki/Largetooth_sawfish"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Giant oceanic manta ray": {
+  "traits": {
+   "length": "盘宽最大约 7 米，常见约 4.5 米",
+   "weight": "最重约 3,000 千克"
+  },
+  "behavior": {
+   "food": "滤食桡足类、糖虾、磷虾等浮游动物，偶尔吃小鱼",
+   "activity": "远洋物种，随洋流迁移，可单独或最多 50 只成群",
+   "breeding": "雄性盘宽约 4 米成熟，雌性约 5 米"
+  },
+  "population": {
+   "trend": "近 20 年因过度捕捞，种群急剧下降"
+  },
+  "iucnYear": "2022",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Mobula birostris",
+    "url": "https://www.iucnredlist.org/search?query=Mobula%20birostris&searchType=species"
+   },
+   {
+    "label": "维基百科：Giant oceanic manta ray",
+    "url": "https://en.wikipedia.org/wiki/Giant_oceanic_manta_ray"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "European eel": {
+  "traits": {
+   "lifespan": "野外约 15–20 年；圈养个体有活过 80 年的"
+  },
+  "behavior": {
+   "food": "夜间凭气味觅食，吃蠕虫、鱼、软体动物、甲壳类，偶尔吃大量出现的浮游生物",
+   "breeding": "在马尾藻海产卵；野外交配至今没有被观察到"
+  },
+  "iucnYear": "2020",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Anguilla anguilla",
+    "url": "https://www.iucnredlist.org/search?query=Anguilla%20anguilla&searchType=species"
+   },
+   {
+    "label": "维基百科：European eel",
+    "url": "https://en.wikipedia.org/wiki/European_eel"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Golden poison frog": {
+  "traits": {
+   "length": "成体体长约 6 厘米",
+   "weight": "近 30 克"
+  },
+  "behavior": {
+   "food": "蝌蚪以藻类和蚊子幼虫为食",
+   "activity": "白天活动",
+   "social": "个体间隔均匀分布，不形成大的群体"
+  },
+  "iucnYear": "2017",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Phyllobates terribilis",
+    "url": "https://www.iucnredlist.org/search?query=Phyllobates%20terribilis&searchType=species"
+   },
+   {
+    "label": "维基百科：Golden poison frog",
+    "url": "https://en.wikipedia.org/wiki/Golden_poison_frog"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Javan rhinoceros": {
+  "traits": {
+   "length": "体长 3.1–3.2 米",
+   "weight": "最重个体约 2,300 千克",
+   "lifespan": "野外约 30–45 年"
+  },
+  "behavior": {
+   "food": "草食，吃嫩芽、嫩枝、幼叶和落果，是各种犀牛中食性最灵活的",
+   "social": "基本独居；交配对和带幼崽的母犀除外"
+  },
+  "population": {
+   "estimate": "约 74 只",
+   "scope": "仅限印度尼西亚乌戎格楠国家公园"
+  },
+  "iucnYear": "2020",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Rhinoceros sondaicus",
+    "url": "https://www.iucnredlist.org/search?query=Rhinoceros%20sondaicus&searchType=species"
+   },
+   {
+    "label": "维基百科：Javan rhinoceros",
+    "url": "https://en.wikipedia.org/wiki/Javan_rhinoceros"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Sumatran rhinoceros": {
+  "traits": {
+   "length": "头体长 2.36–3.18 米，肩高 112–145 厘米",
+   "weight": "500–1,000 千克，平均约 700–800 千克",
+   "lifespan": "野外估计约 30–45 年"
+  },
+  "behavior": {
+   "social": "基本独居，只在求偶和育幼时相伴"
+  },
+  "population": {
+   "estimate": "不足 80 只成熟个体",
+   "scope": "全球；仅有 5 个较大的野外种群（苏门答腊 4 个、婆罗洲 1 个）"
+  },
+  "iucnYear": "2020",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Dicerorhinus sumatrensis",
+    "url": "https://www.iucnredlist.org/search?query=Dicerorhinus%20sumatrensis&searchType=species"
+   },
+   {
+    "label": "维基百科：Sumatran rhinoceros",
+    "url": "https://en.wikipedia.org/wiki/Sumatran_rhinoceros"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Black rhinoceros": {
+  "traits": {
+   "length": "肩高 1.32–1.8 米，体长 2.8–3.75 米",
+   "weight": "成年多为 800–1,400 千克",
+   "lifespan": "没有盗猎压力时约 35–50 年"
+  },
+  "behavior": {
+   "food": "用尖而能抓握的上唇摘取树叶和嫩枝",
+   "social": "通常被认为是独居，唯一牢固的关系是母子"
+  },
+  "population": {
+   "estimate": "3,142 只成熟个体",
+   "scope": "全球野外（IUCN 估计）"
+  },
+  "iucnYear": "2020",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Diceros bicornis",
+    "url": "https://www.iucnredlist.org/search?query=Diceros%20bicornis&searchType=species"
+   },
+   {
+    "label": "维基百科：Black rhinoceros",
+    "url": "https://en.wikipedia.org/wiki/Black_rhinoceros"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "African forest elephant": {
+  "traits": {
+   "length": "公象肩高约 2.4–3 米，母象约 1.8–2.4 米",
+   "weight": "公象约 4–7 吨，母象约 2–4 吨（2000 年一项研究）",
+   "lifespan": "约 60–70 年"
+  },
+  "behavior": {
+   "food": "草食；会聚集到富含矿物质的水坑和盐舐地补充矿物",
+   "social": "最多约 20 头的母系家族群，由成年母象及其子女组成",
+   "breeding": "成年公象只在交配季与家族群相处；家族成员共同照看幼象"
+  },
+  "population": {
+   "estimate": "不足 30,000 头",
+   "scope": "全球",
+   "year": "2013 年估计",
+   "trend": "20 世纪的过度猎杀使数量急剧下降"
+  },
+  "iucnYear": "2021",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Loxodonta cyclotis",
+    "url": "https://www.iucnredlist.org/search?query=Loxodonta%20cyclotis&searchType=species"
+   },
+   {
+    "label": "维基百科：African forest elephant",
+    "url": "https://en.wikipedia.org/wiki/African_forest_elephant"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Asian elephant": {
+  "traits": {
+   "weight": "雄象平均约 4 吨，雌象约 2.7 吨",
+   "lifespan": "野外约 60 年"
+  },
+  "behavior": {
+   "food": "草食，每天约吃 150 千克植物，既吃草也食嫩枝叶",
+   "social": "雌象和幼象成群；雄象独居或组成“单身群”",
+   "breeding": "繁殖季雄象会暂时加入雌象群交配"
+  },
+  "population": {
+   "trend": "自 1986 年起被列为濒危；在约 60–75 年（三个象代）内种群至少下降 50%"
+  },
+  "iucnYear": "2020",
+  "china": {
+   "level": "国家一级重点保护野生动物",
+   "note": "依据《国家重点保护野生动物名录》。"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Elephas maximus",
+    "url": "https://www.iucnredlist.org/search?query=Elephas%20maximus&searchType=species"
+   },
+   {
+    "label": "维基百科：Asian elephant",
+    "url": "https://en.wikipedia.org/wiki/Asian_elephant"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Sumatran orangutan": {
+  "traits": {
+   "weight": "雄性约 90 千克，雌性约 45 千克",
+   "lifespan": "野外雌性约 44–53 年，雄性约 47–58 年"
+  },
+  "behavior": {
+   "food": "以软果为主；比婆罗洲猩猩更偏爱果实，也更多吃昆虫",
+   "breeding": "雌性约 8 岁起开始生育"
+  },
+  "population": {
+   "estimate": "约 14,613 只",
+   "scope": "苏门答腊野外种群",
+   "year": "2016 年调查"
+  },
+  "iucnYear": "2023",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Pongo abelii",
+    "url": "https://www.iucnredlist.org/search?query=Pongo%20abelii&searchType=species"
+   },
+   {
+    "label": "维基百科：Sumatran orangutan",
+    "url": "https://en.wikipedia.org/wiki/Sumatran_orangutan"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Tapanuli orangutan": {
+  "traits": {
+   "weight": "雄性约 70–90 千克，身高约 137 厘米；雌性约 40–50 千克，身高约 110 厘米"
+  },
+  "behavior": {
+   "food": "食物很特别，包括毛虫和针叶树球果"
+  },
+  "population": {
+   "estimate": "约 800 只",
+   "scope": "全球（该物种仅分布于巴当托鲁一带）",
+   "year": "2018 年"
+  },
+  "iucnYear": "2017",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Pongo tapanuliensis",
+    "url": "https://www.iucnredlist.org/search?query=Pongo%20tapanuliensis&searchType=species"
+   },
+   {
+    "label": "维基百科：Tapanuli orangutan",
+    "url": "https://en.wikipedia.org/wiki/Tapanuli_orangutan"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Bornean orangutan": {
+  "traits": {
+   "lifespan": "野外约 35–45 年；圈养可达约 60 年"
+  },
+  "behavior": {
+   "food": "食物超过 400 种，包括果实、种子、花、鸟蛋、树液和藤本",
+   "social": "比苏门答腊猩猩更偏独居",
+   "breeding": "体型较大的雄性占优势，但较小的雄性同样能成功繁殖"
+  },
+  "population": {
+   "estimate": "约 104,700 只",
+   "scope": "婆罗洲野外种群"
+  },
+  "iucnYear": "2024",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Pongo pygmaeus",
+    "url": "https://www.iucnredlist.org/search?query=Pongo%20pygmaeus&searchType=species"
+   },
+   {
+    "label": "维基百科：Bornean orangutan",
+    "url": "https://en.wikipedia.org/wiki/Bornean_orangutan"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Cross River gorilla": {
+  "traits": {
+   "weight": "雄性平均约 140–200 千克，雌性约 100 千克"
+  },
+  "behavior": {
+   "activity": "活动集中在约 12,000 平方公里范围内的 11 处地点",
+   "social": "群体多由 1 只雄性、6–7 只雌性及幼崽组成"
+  },
+  "iucnYear": "2016",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Gorilla gorilla diehli",
+    "url": "https://www.iucnredlist.org/search?query=Gorilla%20gorilla%20diehli&searchType=species"
+   },
+   {
+    "label": "维基百科：Cross River gorilla",
+    "url": "https://en.wikipedia.org/wiki/Cross_River_gorilla"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Bonobo": {
+  "traits": {
+   "weight": "34–60 千克；雄性平均约 45 千克，雌性约 33 千克",
+   "lifespan": "圈养通常约 40 年；野外寿命未知"
+  },
+  "behavior": {
+   "food": "以果实为主",
+   "social": "雌性通常优先取食"
+  },
+  "population": {
+   "estimate": "没有确切数字，估计在 29,500–50,000 只之间",
+   "scope": "全球野外"
+  },
+  "iucnYear": "2016",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Pan paniscus",
+    "url": "https://www.iucnredlist.org/search?query=Pan%20paniscus&searchType=species"
+   },
+   {
+    "label": "维基百科：Bonobo",
+    "url": "https://en.wikipedia.org/wiki/Bonobo"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Red panda": {
+  "traits": {
+   "length": "头体长 51–63.5 厘米，尾长 28–48.5 厘米",
+   "weight": "约 3.2–15 千克（资料给出的范围较宽）",
+   "lifespan": "圈养最长约 14 年"
+  },
+  "behavior": {
+   "food": "主要吃竹笋和竹叶，也吃果实和花",
+   "activity": "独居，主要在树上生活；夜间和晨昏都活动",
+   "breeding": "早春交配，夏季产仔，一胎最多 4 只"
+  },
+  "iucnYear": "2015",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Ailurus fulgens",
+    "url": "https://www.iucnredlist.org/search?query=Ailurus%20fulgens&searchType=species"
+   },
+   {
+    "label": "维基百科：Red panda",
+    "url": "https://en.wikipedia.org/wiki/Red_panda"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Ethiopian wolf": {
+  "traits": {
+   "length": "体长 84–101 厘米，肩高 53–62 厘米"
+  },
+  "behavior": {
+   "food": "高度特化，主要捕食非洲高山草甸的啮齿动物",
+   "social": "群居，家族群最多约 20 只成年个体，常见约 6 只",
+   "breeding": "除繁殖雌狼外，群内其他成员的生殖受到抑制"
+  },
+  "population": {
+   "estimate": "360–440 只成年个体",
+   "scope": "仅分布于 7 处相互隔离的山地（海拔 3,000–4,500 米），一半以上在巴莱山",
+   "year": "2011 年估计"
+  },
+  "iucnYear": "2011",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Canis simensis",
+    "url": "https://www.iucnredlist.org/search?query=Canis%20simensis&searchType=species"
+   },
+   {
+    "label": "维基百科：Ethiopian wolf",
+    "url": "https://en.wikipedia.org/wiki/Ethiopian_wolf"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "African wild dog": {
+  "traits": {
+   "length": "头体长 71–112 厘米，肩高 60–75 厘米",
+   "weight": "18–36 千克",
+   "lifespan": "野外平均约 10–11 年"
+  },
+  "behavior": {
+   "food": "专门捕猎陆生有蹄类，多在黎明和黄昏猎食，白天也会活动",
+   "social": "生活在固定的群体中，由 2–27 只成年犬和一岁幼犬组成",
+   "breeding": "通常由优势对垄断繁殖"
+  },
+  "population": {
+   "estimate": "约 6,600 只成年个体（其中成熟个体约 1,400 只）",
+   "scope": "全球，分散在 39 个亚种群中；最大的亚种群可能不足 250 只",
+   "year": "IUCN 评估"
+  },
+  "iucnYear": "2020",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Lycaon pictus",
+    "url": "https://www.iucnredlist.org/search?query=Lycaon%20pictus&searchType=species"
+   },
+   {
+    "label": "维基百科：African wild dog",
+    "url": "https://en.wikipedia.org/wiki/African_wild_dog"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Tiger": {
+  "traits": {
+   "length": "头体长 1.4–2.8 米，尾长 0.6–1.1 米，肩高 0.8–1.1 米",
+   "lifespan": "圈养个体最长记录约 19 年（国际虎谱系簿）"
+  },
+  "behavior": {
+   "social": "多数时间独居，雌雄各自守卫自己的活动范围",
+   "breeding": "雌虎通常一胎 2–3 只，幼虎和母亲一起生活约两年"
+  },
+  "iucnYear": "2022",
+  "china": {
+   "level": "国家一级重点保护野生动物",
+   "note": "依据《国家重点保护野生动物名录》。"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Panthera tigris",
+    "url": "https://www.iucnredlist.org/search?query=Panthera%20tigris&searchType=species"
+   },
+   {
+    "label": "维基百科：Tiger",
+    "url": "https://en.wikipedia.org/wiki/Tiger"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Iberian lynx": {
+  "traits": {
+   "length": "雄性头体长约 74.7–82 厘米，雌性约 68.2–77.5 厘米",
+   "weight": "雄性约 7–15.9 千克，雌性约 9.2–10 千克",
+   "lifespan": "野外最长约 13 年"
+  },
+  "behavior": {
+   "food": "以欧洲野兔为主，辅以红腿石鸡、啮齿动物，偶尔捕食小型有蹄类"
+  },
+  "population": {
+   "estimate": "94 只（2002 年）",
+   "scope": "安达卢西亚两个相互隔离的种群",
+   "year": "2002 年",
+   "trend": "这是 2002 年的历史低点，并非现状；此后分布区已扩大，并有多地重引入项目"
+  },
+  "iucnYear": "2024",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Lynx pardinus",
+    "url": "https://www.iucnredlist.org/search?query=Lynx%20pardinus&searchType=species"
+   },
+   {
+    "label": "维基百科：Iberian lynx",
+    "url": "https://en.wikipedia.org/wiki/Iberian_lynx"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Mediterranean monk seal": {
+  "traits": {
+   "length": "成年平均约 2.4 米",
+   "weight": "240–400 千克（雄性平均约 320 千克，雌性约 300 千克）",
+   "lifespan": "最长约 45 年，平均约 20–25 年"
+  },
+  "behavior": {
+   "food": "白天觅食，吃鱼、甲壳类和软体动物（主要是章鱼、乌贼、龙虾、鲻鱼、比目鱼、金枪鱼、沙丁鱼和鳗鱼），每天最多约 3 千克",
+   "breeding": "没有固定繁殖季，全年都有幼崽出生，9–11 月最多；约 4 岁性成熟"
+  },
+  "population": {
+   "estimate": "约 800–1,000 只",
+   "scope": "分散在爱琴海、马德拉群岛以及毛里塔尼亚与西撒哈拉之间的布兰科角一带",
+   "year": "2026 年估计"
+  },
+  "iucnYear": "2023",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Monachus monachus",
+    "url": "https://www.iucnredlist.org/search?query=Monachus%20monachus&searchType=species"
+   },
+   {
+    "label": "维基百科：Mediterranean monk seal",
+    "url": "https://en.wikipedia.org/wiki/Mediterranean_monk_seal"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Hawaiian monk seal": {
+  "traits": {
+   "length": "雄性体长约 2.1 米，雌性约 2.4 米",
+   "weight": "雄性约 140–180 千克，雌性约 180–270 千克",
+   "lifespan": "最长约 25–30 年"
+  },
+  "behavior": {
+   "food": "主要捕食礁区的硬骨鱼，也吃头足类和甲壳类"
+  },
+  "population": {
+   "estimate": "约 1,400 只",
+   "scope": "夏威夷群岛",
+   "trend": "2010 年估计只剩约 1,100 只"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Neomonachus schauinslandi",
+    "url": "https://www.iucnredlist.org/search?query=Neomonachus%20schauinslandi&searchType=species"
+   },
+   {
+    "label": "维基百科：Hawaiian monk seal",
+    "url": "https://en.wikipedia.org/wiki/Hawaiian_monk_seal"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "North Atlantic right whale": {
+  "traits": {
+   "length": "成年平均 13–18 米",
+   "weight": "约 40,000–90,000 千克",
+   "lifespan": "估计至少 70 年；但 2024 年一项研究发现平均寿命只有约 22 年，可能与捕鲸造成的损失有关"
+  },
+  "behavior": {
+   "activity": "在拉布拉多海摄食场和佐治亚、佛罗里达外海的冬季产仔区之间迁徙"
+  },
+  "population": {
+   "estimate": "约 380 只，其中约 70 只是繁殖雌鲸",
+   "scope": "北大西洋西部",
+   "year": "2026 年估计"
+  },
+  "iucnYear": "2020",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Eubalaena glacialis",
+    "url": "https://www.iucnredlist.org/search?query=Eubalaena%20glacialis&searchType=species"
+   },
+   {
+    "label": "维基百科：North Atlantic right whale",
+    "url": "https://en.wikipedia.org/wiki/North_Atlantic_right_whale"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Blue whale": {
+  "traits": {
+   "length": "最大确认体长约 30 米",
+   "weight": "最重约 190–200 吨",
+   "lifespan": "至少 40–45 年（东北太平洋的长期识别研究）"
+  },
+  "behavior": {
+   "food": "滤食，食物几乎只有磷虾",
+   "activity": "夏季在近极地的摄食区，冬季到近热带的繁殖区，总体上做季节性迁徙",
+   "social": "通常独居或结成小群，除母子关系外没有明确的社会结构"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Balaenoptera musculus",
+    "url": "https://www.iucnredlist.org/search?query=Balaenoptera%20musculus&searchType=species"
+   },
+   {
+    "label": "维基百科：Blue whale",
+    "url": "https://en.wikipedia.org/wiki/Blue_whale"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Antarctic blue whale": {
+  "traits": {
+   "length": "蓝鲸整个物种最大确认体长约 30 米",
+   "weight": "蓝鲸整个物种最重约 190–200 吨",
+   "lifespan": "蓝鲸整个物种至少 40–45 年"
+  },
+  "behavior": {
+   "food": "蓝鲸整个物种的食物几乎只有磷虾"
+  },
+  "iucnYear": "2018",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Balaenoptera musculus intermedia",
+    "url": "https://www.iucnredlist.org/search?query=Balaenoptera%20musculus%20intermedia&searchType=species"
+   },
+   {
+    "label": "维基百科：Blue whale",
+    "url": "https://en.wikipedia.org/wiki/Blue_whale"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Dugong": {
+  "traits": {
+   "weight": "成年通常在 250–900 千克之间",
+   "lifespan": "70 年以上"
+  },
+  "behavior": {
+   "food": "草食，用向下弯的口鼻取食海底的海草",
+   "breeding": "繁殖速度很慢"
+  },
+  "population": {
+   "estimate": "超过 20,000 头",
+   "scope": "仅指澳大利亚北领地的卡奔塔利亚湾（区域数据，非全球）",
+   "trend": "一般认为全球种群在近 90 年里下降了约 20%，但总数不确定"
+  },
+  "iucnYear": "2019",
+  "china": {
+   "level": "国家一级重点保护野生动物",
+   "note": "依据《国家重点保护野生动物名录》。"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Dugong dugon",
+    "url": "https://www.iucnredlist.org/search?query=Dugong%20dugon&searchType=species"
+   },
+   {
+    "label": "维基百科：Dugong",
+    "url": "https://en.wikipedia.org/wiki/Dugong"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Amazon river dolphin": {
+  "traits": {
+   "length": "雄性最长约 2.5 米",
+   "weight": "雄性最重约 185 千克（雄性比雌性长约 16%、重约 55%）",
+   "lifespan": "野外寿命未知；圈养健康个体记录为 10–30 年"
+  },
+  "behavior": {
+   "food": "食性很广，吃多达 53 种鱼，如石首鱼、鲶鱼、脂鲤和食人鱼",
+   "social": "多单独或成对出现，群体很少超过 8 只",
+   "activity": "雨季时雌雄分区：雄性多在河道，雌性带幼崽在被淹没的区域"
+  },
+  "iucnYear": "2018",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Inia geoffrensis",
+    "url": "https://www.iucnredlist.org/search?query=Inia%20geoffrensis&searchType=species"
+   },
+   {
+    "label": "维基百科：Amazon river dolphin",
+    "url": "https://en.wikipedia.org/wiki/Amazon_river_dolphin"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Indus river dolphin": {
+  "traits": {
+   "lifespan": "有记录的最老个体是一只 28 岁的雄性，体长 199 厘米"
+  },
+  "population": {
+   "estimate": "约 2,100 只",
+   "scope": "巴基斯坦印度河（信德省野生动物部门的调查）",
+   "year": "2021 年调查",
+   "trend": "2017 年估计约 1,800 只（2001 年约 1,200 只）"
+  },
+  "iucnYear": "2022",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Platanista minor",
+    "url": "https://www.iucnredlist.org/search?query=Platanista%20minor&searchType=species"
+   },
+   {
+    "label": "维基百科：Indus river dolphin",
+    "url": "https://en.wikipedia.org/wiki/Indus_river_dolphin"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Polar bear": {
+  "traits": {
+   "length": "雄性体长约 200–250 厘米",
+   "weight": "雄性 300–800 千克",
+   "lifespan": "最长约 30 年"
+  },
+  "behavior": {
+   "food": "以肉食为主，专门捕猎海豹，尤其是环斑海豹",
+   "social": "通常独居，在陆地上可能聚集",
+   "breeding": "繁殖季雄熊会守护雌熊，并防止对手靠近"
+  },
+  "population": {
+   "estimate": "22,000–31,000 只",
+   "scope": "全球（IUCN 估计）"
+  },
+  "iucnYear": "2015",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Ursus maritimus",
+    "url": "https://www.iucnredlist.org/search?query=Ursus%20maritimus&searchType=species"
+   },
+   {
+    "label": "维基百科：Polar bear",
+    "url": "https://en.wikipedia.org/wiki/Polar_bear"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Giant panda": {
+  "traits": {
+   "length": "体长 1.2–1.9 米",
+   "weight": "成年约 100–115 千克"
+  },
+  "behavior": {
+   "food": "几乎完全以竹子为食。",
+   "social": "独居，只在交配季聚集",
+   "breeding": "雌性抚育幼崽平均 18–24 个月"
+  },
+  "iucnYear": "2016",
+  "sources": [
+   {
+    "label": "IUCN 红色名录：Ailuropoda melanoleuca",
+    "url": "https://www.iucnredlist.org/search?query=Ailuropoda%20melanoleuca&searchType=species"
+   },
+   {
+    "label": "WWF：Giant panda",
+    "url": "https://www.worldwildlife.org/species/giant-panda"
+   }
+  ],
+  "updated": "2026-11-08",
+  "china": {
+   "level": "国家一级重点保护野生动物",
+   "note": "依据《国家重点保护野生动物名录》。"
+  },
+  "habitat": "中国中西部的山地竹林，分布在四川、陕西和甘肃的部分山系。",
+  "population": {
+   "estimate": "约 1,864 只（成年及亚成年个体，不含幼崽）",
+   "scope": "中国野外种群（第四次全国大熊猫调查）",
+   "year": "2011–2014 年调查，2015 年公布",
+   "trend": "IUCN 2016 年评估将其种群趋势标注为“上升”；该趋势仅反映野外种群，不含圈养个体。"
+  },
+  "threats": [
+   "栖息地被道路、开发和农业分割，种群被隔成相互孤立的小块。",
+   "气候变化可能影响竹子的分布和生长。"
+  ],
+  "ecology": "大熊猫常被视为“伞护物种”：保护它所依赖的竹林和山地森林，同时也保护了与它共同生活的许多其他动植物。",
+  "conservation": [
+   "2021 年起，中国建设“大熊猫国家公园”，把原本相互分隔的保护区连成更大的整体。",
+   "2016 年 IUCN 将其由“濒危”下调为“易危”，这是保护工作取得成效的体现，但仍需持续保护栖息地。"
+  ],
+  "didYouKnow": {
+   "text": "大熊猫的“第六根手指”其实是一块特化的腕骨（桡侧籽骨），它和第一指配合，让大熊猫能灵活地抓握竹子。",
+   "source": "常见于权威科普资料；详见下方来源。"
+  }
+ },
+ "Koala": {
+  "traits": {
+   "length": "体长约 60–85 厘米",
+   "weight": "4–15 千克",
+   "lifespan": "野外约 13–18 年（雄性生活风险更大，可能更短）"
+  },
+  "behavior": {
+   "food": "主要吃桉树叶，常栖息在开阔的桉树林地",
+   "social": "不群居，只有母亲与未独立的幼崽有联系",
+   "breeding": "幼崽出生后在育儿袋里生活最初的 6–7 个月"
+  },
+  "iucnYear": "2020",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Phascolarctos cinereus",
+    "url": "https://www.iucnredlist.org/search?query=Phascolarctos%20cinereus&searchType=species"
+   },
+   {
+    "label": "维基百科：Koala",
+    "url": "https://en.wikipedia.org/wiki/Koala"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Tasmanian devil": {
+  "traits": {
+   "lifespan": "野外很少有超过 5 年的"
+  },
+  "behavior": {
+   "food": "肉食，是现存最大的肉食性有袋动物",
+   "social": "通常独居，但有时会在同一处共同进食",
+   "breeding": "母兽孕期约三周，产下 20–30 只幼崽；幼崽约 100 天后离开育儿袋"
+  },
+  "iucnYear": "2008",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Sarcophilus harrisii",
+    "url": "https://www.iucnredlist.org/search?query=Sarcophilus%20harrisii&searchType=species"
+   },
+   {
+    "label": "维基百科：Tasmanian devil",
+    "url": "https://en.wikipedia.org/wiki/Tasmanian_devil"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Northern hairy-nosed wombat": {
+  "traits": {
+   "length": "体高约 35 厘米，体长最长约 1 米",
+   "weight": "最重约 40 千克"
+  },
+  "behavior": {
+   "food": "吃本地草类和多种根；每天觅食时间很短（冬季约 6 小时，夏季约 2 小时）",
+   "activity": "夜行，生活在地下的洞穴网络中",
+   "breeding": "雌性略大于雄性"
+  },
+  "population": {
+   "estimate": "113 只（其中约 30 只繁殖雌性）",
+   "scope": "昆士兰州埃平森林国家公园",
+   "year": "2003 年（较早的数字）"
+  },
+  "iucnYear": "2016",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Lasiorhinus krefftii",
+    "url": "https://www.iucnredlist.org/search?query=Lasiorhinus%20krefftii&searchType=species"
+   },
+   {
+    "label": "维基百科：Northern hairy-nosed wombat",
+    "url": "https://en.wikipedia.org/wiki/Northern_hairy-nosed_wombat"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Ring-tailed lemur": {
+  "traits": {
+   "length": "头体长 39–46 厘米，尾长 56–63 厘米",
+   "weight": "平均约 2.2 千克",
+   "lifespan": "野外最长记录是一只活了 20 年的雌性；雌性很少活过 16 岁"
+  },
+  "behavior": {
+   "food": "杂食，是现存狐猴中最适应地面生活的",
+   "social": "群居，“猴群”最多约 30 只"
+  },
+  "population": {
+   "estimate": "约 2,000 只",
+   "scope": "马达加斯加野外（可能低至此数）",
+   "year": "2017 年初"
+  },
+  "iucnYear": "2020",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Lemur catta",
+    "url": "https://www.iucnredlist.org/search?query=Lemur%20catta&searchType=species"
+   },
+   {
+    "label": "维基百科：Ring-tailed lemur",
+    "url": "https://en.wikipedia.org/wiki/Ring-tailed_lemur"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Greater bamboo lemur": {
+  "traits": {
+   "length": "头体长 40–42 厘米，尾长 45–48 厘米",
+   "weight": "雄性平均约 2.75 千克，雌性约 2.61 千克"
+  },
+  "behavior": {
+   "food": "竹子专食者，木质竹最多占食物的 95%，也吃果实、花和其他草；食物含高浓度氰化物",
+   "social": "群居，群体最多约 28 只，是唯一由雄性主导的狐猴",
+   "breeding": "雌性 2–3 岁首次生育；母亲带着觅食，把幼崽背在背上或叼在口中"
+  },
+  "iucnYear": "2020",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Prolemur simus",
+    "url": "https://www.iucnredlist.org/search?query=Prolemur%20simus&searchType=species"
+   },
+   {
+    "label": "维基百科：Greater bamboo lemur",
+    "url": "https://en.wikipedia.org/wiki/Greater_bamboo_lemur"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "California condor": {
+  "traits": {
+   "length": "翼展约 3.0 米，是北美鸟类中最宽的",
+   "weight": "最重约 14 千克",
+   "lifespan": "最长可达约 60 年，是世界上最长寿的鸟类之一"
+  },
+  "behavior": {
+   "food": "食腐，吃大量腐肉",
+   "social": "大群中有成熟的社会等级，靠肢体语言、竞争性玩耍以及嘶声和哼声来排定啄序"
+  },
+  "population": {
+   "trend": "1987 年所有 27 只野生个体被捕入圈养，之后靠人工繁育增加数量，自 1991 年起重新放归野外"
+  },
+  "iucnYear": "2020",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Gymnogyps californianus",
+    "url": "https://www.iucnredlist.org/search?query=Gymnogyps%20californianus&searchType=species"
+   },
+   {
+    "label": "维基百科：California condor",
+    "url": "https://en.wikipedia.org/wiki/California_condor"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Whooping crane": {
+  "traits": {
+   "length": "翼展约 2–2.3 米，是北美最高的鸟类",
+   "lifespan": "野外估计 22–30 年以上"
+  },
+  "population": {
+   "estimate": "约 560 只",
+   "scope": "野外迁徙种群（德克萨斯州沿海与加拿大西北地区之间，称“阿兰瑟斯—伍德布法罗种群”）",
+   "year": "2025 年",
+   "trend": "另有约 140 只生活在威斯康星和路易斯安那两个重引入的野外种群；全部种群（含圈养）略超 830 只"
+  },
+  "iucnYear": "2020",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Grus americana",
+    "url": "https://www.iucnredlist.org/search?query=Grus%20americana&searchType=species"
+   },
+   {
+    "label": "维基百科：Whooping crane",
+    "url": "https://en.wikipedia.org/wiki/Whooping_crane"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "African grey parrot": {
+  "traits": {
+   "length": "体长约 33 厘米，翼展 46–52 厘米",
+   "weight": "成年约 418–526 克",
+   "lifespan": "圈养可达 40–60 年；野外平均约 23 年"
+  },
+  "behavior": {
+   "food": "以果实为主，也吃坚果和种子（包括油棕果），有时在地面觅食"
+  },
+  "population": {
+   "estimate": "估计在 63 万到 1,300 万只之间，很不确定",
+   "scope": "全球",
+   "trend": "2015 年的一项研究发现加纳种群几乎被“消灭”，自 1992 年以来下降了 90–99%"
+  },
+  "iucnYear": "2018",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Psittacus erithacus",
+    "url": "https://www.iucnredlist.org/search?query=Psittacus%20erithacus&searchType=species"
+   },
+   {
+    "label": "维基百科：Grey parrot",
+    "url": "https://en.wikipedia.org/wiki/Grey_parrot"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Shoebill": {
+  "traits": {
+   "length": "总长 100–140 厘米，翼展 230–260 厘米",
+   "weight": "据报道为 4–7 千克"
+  },
+  "behavior": {
+   "food": "主要吃鱼，也捕食多种湿地脊椎动物",
+   "social": "独居，这一习性也延伸到繁殖行为",
+   "breeding": "双亲共同孵卵、遮阳、看护并喂养雏鸟"
+  },
+  "population": {
+   "estimate": "约 5,000–8,000 只",
+   "scope": "多数生活在南苏丹、乌干达、刚果（金）东部和赞比亚的沼泽"
+  },
+  "iucnYear": "2018",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Balaeniceps rex",
+    "url": "https://www.iucnredlist.org/search?query=Balaeniceps%20rex&searchType=species"
+   },
+   {
+    "label": "维基百科：Shoebill",
+    "url": "https://en.wikipedia.org/wiki/Shoebill"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Secretarybird": {
+  "traits": {
+   "length": "体长 1.1–1.5 米，翼展 1.9–2.1 米",
+   "weight": "3.74–4.27 千克，平均约 4.05 千克",
+   "lifespan": "野外约 10–15 年，圈养最长约 19 年"
+  },
+  "behavior": {
+   "food": "在地面捕猎，常用脚踩踏致死；吃昆虫和小型脊椎动物",
+   "social": "在干旱地区的水坑或啮齿动物、蝗虫爆发处，可聚集多达 50 只",
+   "breeding": "全年都可能繁殖，多在旱季后期；巢筑在多刺树的顶部，每窝 1–3 枚蛋"
+  },
+  "population": {
+   "estimate": "6,700–67,000 只",
+   "scope": "全球（分布广但稀疏）",
+   "year": "2016 年估计"
+  },
+  "iucnYear": "2020",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Sagittarius serpentarius",
+    "url": "https://www.iucnredlist.org/search?query=Sagittarius%20serpentarius&searchType=species"
+   },
+   {
+    "label": "维基百科：Secretarybird",
+    "url": "https://en.wikipedia.org/wiki/Secretarybird"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "White-backed vulture": {
+  "traits": {
+   "length": "体长 78–98 厘米，翼展 1.96–2.25 米",
+   "weight": "4.2–7.2 千克"
+  },
+  "behavior": {
+   "food": "喙不适合撕开厚皮，只能吃内脏等软组织",
+   "social": "群居性秃鹫，依靠同类提供食物和尸体位置的信息"
+  },
+  "population": {
+   "trend": "是非洲分布最广、最常见的秃鹫，但近年来快速下降；在一个调查区域内，繁殖对从 2007 年的 73 对降到 2017 年的 22 对"
+  },
+  "iucnYear": "2021",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Gyps africanus",
+    "url": "https://www.iucnredlist.org/search?query=Gyps%20africanus&searchType=species"
+   },
+   {
+    "label": "维基百科：White-backed vulture",
+    "url": "https://en.wikipedia.org/wiki/White-backed_vulture"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Hooded vulture": {
+  "traits": {
+   "length": "体长 62–72 厘米，翼展 155–180 厘米",
+   "weight": "1.5–2.6 千克"
+  },
+  "behavior": {
+   "food": "食腐，吃动物尸体和垃圾，会在稀树草原和居民点上空盘旋，寻找垃圾堆和屠宰场",
+   "social": "可结成松散的群落；西非常有 50–250 只一起觅食，南部非洲则独居且隐蔽",
+   "breeding": "在树（常为棕榈）上用树枝筑巢，每次产 1 枚蛋"
+  },
+  "population": {
+   "trend": "塞内加尔达喀尔等地区在过去 50 年里种群损失超过 85%"
+  },
+  "iucnYear": "2022",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Necrosyrtes monachus",
+    "url": "https://www.iucnredlist.org/search?query=Necrosyrtes%20monachus&searchType=species"
+   },
+   {
+    "label": "维基百科：Hooded vulture",
+    "url": "https://en.wikipedia.org/wiki/Hooded_vulture"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Egyptian vulture": {
+  "traits": {
+   "lifespan": "圈养最长约 51 年，野外至少 21 年"
+  },
+  "behavior": {
+   "food": "主要食腐，也机会性地捕食小型哺乳动物、鸟类和爬行动物；还吃其他鸟的蛋，遇到大蛋会扔石块砸开",
+   "activity": "在温带繁殖的种群冬季南迁，热带种群相对定居",
+   "breeding": "西班牙种群的幼鸟在 90–110 天后出飞"
+  },
+  "iucnYear": "2021",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Neophron percnopterus",
+    "url": "https://www.iucnredlist.org/search?query=Neophron%20percnopterus&searchType=species"
+   },
+   {
+    "label": "维基百科：Egyptian vulture",
+    "url": "https://en.wikipedia.org/wiki/Egyptian_vulture"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Great Indian bustard": {
+  "behavior": {
+   "food": "杂食；在农田里吃花生、小米和豆荚等作物",
+   "social": "繁殖期独居，冬季聚成小群"
+  },
+  "population": {
+   "estimate": "约 150 只",
+   "scope": "印度",
+   "year": "2018 年估计",
+   "trend": "2011 年约 250 只；已在约 90% 的原分布区消失"
+  },
+  "iucnYear": "2018",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Ardeotis nigriceps",
+    "url": "https://www.iucnredlist.org/search?query=Ardeotis%20nigriceps&searchType=species"
+   },
+   {
+    "label": "维基百科：Great Indian bustard",
+    "url": "https://en.wikipedia.org/wiki/Great_Indian_bustard"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Bengal florican": {
+  "traits": {
+   "length": "体长 66–68 厘米，体高约 55 厘米",
+   "weight": "雌鸟约 1.7–1.9 千克，雄鸟约 1.2–1.5 千克"
+  },
+  "behavior": {
+   "activity": "迁移距离不远，可能只有几十公里；多数时间留在繁殖地；3–8 月的繁殖季最容易观察，清晨和傍晚最常见"
+  },
+  "population": {
+   "estimate": "不足 1,000 只",
+   "scope": "全球；其中南亚种群不足 350 只成鸟，约 85% 在印度",
+   "year": "2017 年估计"
+  },
+  "iucnYear": "2018",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Houbaropsis bengalensis",
+    "url": "https://www.iucnredlist.org/search?query=Houbaropsis%20bengalensis&searchType=species"
+   },
+   {
+    "label": "维基百科：Bengal florican",
+    "url": "https://en.wikipedia.org/wiki/Bengal_florican"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Spoon-billed sandpiper": {
+  "traits": {
+   "length": "体长 14–16 厘米"
+  },
+  "behavior": {
+   "food": "觅食时嘴左右扫动，在繁殖地吃蚊、蝇、甲虫和蜘蛛等小型动物"
+  },
+  "population": {
+   "estimate": "350–500 只繁殖个体",
+   "scope": "全球繁殖种群",
+   "year": "2000 年估计（较早的数字）",
+   "trend": "自 1970 年代以来繁殖种群显著下降"
+  },
+  "iucnYear": "2021",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Calidris pygmaea",
+    "url": "https://www.iucnredlist.org/search?query=Calidris%20pygmaea&searchType=species"
+   },
+   {
+    "label": "维基百科：Spoon-billed sandpiper",
+    "url": "https://en.wikipedia.org/wiki/Spoon-billed_sandpiper"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Yellow-crested cockatoo": {
+  "behavior": {
+   "food": "以种子、嫩芽、果实、坚果和草本植物为主",
+   "breeding": "蛋为白色，通常一窝 2 枚，双亲共同孵卵"
+  },
+  "population": {
+   "estimate": "不足 2,500 只",
+   "scope": "全球",
+   "trend": "且被认为仍在减少"
+  },
+  "iucnYear": "2018",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Cacatua sulphurea",
+    "url": "https://www.iucnredlist.org/search?query=Cacatua%20sulphurea&searchType=species"
+   },
+   {
+    "label": "维基百科：Yellow-crested cockatoo",
+    "url": "https://en.wikipedia.org/wiki/Yellow-crested_cockatoo"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Bali myna": {
+  "traits": {
+   "length": "体长最长约 25 厘米"
+  },
+  "behavior": {
+   "food": "吃水果、种子、蠕虫和昆虫",
+   "social": "幼鸟常成群活动，便于找食物和防备天敌",
+   "breeding": "繁殖季是巴厘岛的雨季：雄鸟大声鸣叫、上下点头吸引雌鸟；在树洞里筑巢，雌鸟产 2–3 枚蛋并孵化"
+  },
+  "population": {
+   "estimate": "不足 50 只成鸟",
+   "scope": "巴厘岛野外种群",
+   "year": "2020 年估计"
+  },
+  "iucnYear": "2021",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Leucopsar rothschildi",
+    "url": "https://www.iucnredlist.org/search?query=Leucopsar%20rothschildi&searchType=species"
+   },
+   {
+    "label": "维基百科：Bali starling",
+    "url": "https://en.wikipedia.org/wiki/Bali_starling"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Orange-bellied parrot": {
+  "traits": {
+   "length": "体长约 20 厘米"
+  },
+  "behavior": {
+   "food": "吃沿海小型草类和灌木的种子与浆果",
+   "activity": "只有三种会迁徙的鹦鹉之一；只在塔斯马尼亚西南部繁殖，冬季到澳大利亚大陆南部沿海越冬"
+  },
+  "population": {
+   "estimate": "91 只",
+   "scope": "野外种群",
+   "year": "2025 年 11 月",
+   "trend": "2017 年 2 月野外只有 14 只；多家机构正在开展圈养繁育"
+  },
+  "iucnYear": "2018",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Neophema chrysogaster",
+    "url": "https://www.iucnredlist.org/search?query=Neophema%20chrysogaster&searchType=species"
+   },
+   {
+    "label": "维基百科：Orange-bellied parrot",
+    "url": "https://en.wikipedia.org/wiki/Orange-bellied_parrot"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Regent honeyeater": {
+  "behavior": {
+   "food": "主要吃桉树和槲寄生的花蜜，也吃昆虫、蜜露和水果",
+   "breeding": "繁殖主要在 8 月至次年 1 月，与关键桉树和槲寄生的花期相吻合"
+  },
+  "iucnYear": "2018",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Anthochaera phrygia",
+    "url": "https://www.iucnredlist.org/search?query=Anthochaera%20phrygia&searchType=species"
+   },
+   {
+    "label": "维基百科：Regent honeyeater",
+    "url": "https://en.wikipedia.org/wiki/Regent_honeyeater"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Yellow-eyed penguin": {
+  "traits": {
+   "length": "身高 62–79 厘米",
+   "weight": "3–8.5 千克（换羽前最重）"
+  },
+  "behavior": {
+   "food": "以鱼为主",
+   "social": "多以单独的配对或松散的小群筑巢，不像其他企鹅那样大群聚集",
+   "breeding": "雏鸟孵出后的前六周，白天由一方亲鸟看护，另一方出海觅食"
+  },
+  "population": {
+   "trend": "奥塔哥半岛的数量自 1990 年代中期以来下降了 75%，趋势显示未来 20–40 年内可能在该半岛区域性灭绝"
+  },
+  "iucnYear": "2020",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Megadyptes antipodes",
+    "url": "https://www.iucnredlist.org/search?query=Megadyptes%20antipodes&searchType=species"
+   },
+   {
+    "label": "维基百科：Yellow-eyed penguin",
+    "url": "https://en.wikipedia.org/wiki/Yellow-eyed_penguin"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Galápagos penguin": {
+  "traits": {
+   "length": "身高 48–50 厘米",
+   "weight": "约 2–4 千克",
+   "lifespan": "15–20 年，野外可能因天敌等因素更短"
+  },
+  "behavior": {
+   "food": "吃克伦威尔海流滋养的海域里的鱼类和甲壳类",
+   "breeding": "一夫一妻，全年都可繁殖，亲鸟轮流守巢和出海觅食"
+  },
+  "population": {
+   "estimate": "约 1,000 对繁殖对",
+   "scope": "全球",
+   "year": "1993–2003 年平均种群规模约 1,500 只"
+  },
+  "iucnYear": "2020",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Spheniscus mendiculus",
+    "url": "https://www.iucnredlist.org/search?query=Spheniscus%20mendiculus&searchType=species"
+   },
+   {
+    "label": "维基百科：Galapagos penguin",
+    "url": "https://en.wikipedia.org/wiki/Galapagos_penguin"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Blue-throated macaw": {
+  "traits": {
+   "length": "体长约 85 厘米（含尾羽），翼展约 90 厘米",
+   "weight": "约 900–1,100 克",
+   "lifespan": "圈养可超过 50 年"
+  },
+  "behavior": {
+   "social": "多为一夫一妻的配对，也有 7–9 只的小群，已知一个 70 只的大型夜栖群",
+   "breeding": "通常每年繁殖一次；卵或雏鸟丢失时，同一季可能再产一窝"
+  },
+  "population": {
+   "estimate": "约 208–303 只成鸟",
+   "scope": "野外种群"
+  },
+  "iucnYear": "2021",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Ara glaucogularis",
+    "url": "https://www.iucnredlist.org/search?query=Ara%20glaucogularis&searchType=species"
+   },
+   {
+    "label": "维基百科：Blue-throated macaw",
+    "url": "https://en.wikipedia.org/wiki/Blue-throated_macaw"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Lear's macaw": {
+  "traits": {
+   "length": "体长 70–75 厘米",
+   "weight": "约 950 克",
+   "lifespan": "圈养最高记录为 38.3 年"
+  },
+  "behavior": {
+   "food": "主要吃利库里棕榈（Syagrus coronata）的坚果，每天可吃多达 350 颗，也吃其他种子和龙舌兰花，并会取食农民的玉米",
+   "social": "常成群觅食",
+   "breeding": "繁殖季从年初的夏季雨季开始，到 5 月幼鸟离巢"
+  },
+  "population": {
+   "trend": "21 世纪头二十年里，在强化保护下全球种群增长了约 30 倍"
+  },
+  "iucnYear": "2020",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Anodorhynchus leari",
+    "url": "https://www.iucnredlist.org/search?query=Anodorhynchus%20leari&searchType=species"
+   },
+   {
+    "label": "维基百科：Lear's macaw",
+    "url": "https://en.wikipedia.org/wiki/Lear%27s_macaw"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Harpy eagle": {
+  "traits": {
+   "weight": "雌鸟通常约 6–9 千克"
+  },
+  "behavior": {
+   "food": "主要捕食树栖哺乳动物，食物以树懒为主；雌鹰能在飞行中抓起 6–9 千克的吼猴、蜘蛛猴或成年树懒",
+   "breeding": "在热带低地雨林的上层树冠（突出层）筑巢和狩猎"
+  },
+  "iucnYear": "2021",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Harpia harpyja",
+    "url": "https://www.iucnredlist.org/search?query=Harpia%20harpyja&searchType=species"
+   },
+   {
+    "label": "维基百科：Harpy eagle",
+    "url": "https://en.wikipedia.org/wiki/Harpy_eagle"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Andean condor": {
+  "traits": {
+   "length": "翼展最大约 3.3 米",
+   "weight": "最重约 15 千克，平均约 11.3 千克（雄鸟约 12.5，雌鸟约 10.1）",
+   "lifespan": "有的个体超过 70 年"
+  },
+  "behavior": {
+   "food": "主要食腐",
+   "social": "大群中有成熟的社会等级，靠肢体语言、竞争性玩耍和叫声排定啄序",
+   "breeding": "每窝通常产 1–2 枚蛋"
+  },
+  "population": {
+   "estimate": "约 10,000 只",
+   "scope": "全球",
+   "year": "2020 年前后"
+  },
+  "iucnYear": "2020",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Vultur gryphus",
+    "url": "https://www.iucnredlist.org/search?query=Vultur%20gryphus&searchType=species"
+   },
+   {
+    "label": "维基百科：Andean condor",
+    "url": "https://en.wikipedia.org/wiki/Andean_condor"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Grey crowned crane": {
+  "traits": {
+   "length": "身高约 1 米，翼展约 2 米",
+   "weight": "约 3.5 千克"
+  },
+  "behavior": {
+   "food": "杂食，吃植物、种子、谷物、昆虫、蛙、蠕虫、蛇、小鱼和水生动物的卵",
+   "activity": "没有固定的迁徙路线，靠近热带的个体多为留鸟"
+  },
+  "population": {
+   "estimate": "58,000–77,000 只",
+   "scope": "全球估计"
+  },
+  "iucnYear": "2024",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Balearica regulorum",
+    "url": "https://www.iucnredlist.org/search?query=Balearica%20regulorum&searchType=species"
+   },
+   {
+    "label": "维基百科：Grey crowned crane",
+    "url": "https://en.wikipedia.org/wiki/Grey_crowned_crane"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Northern bald ibis": {
+  "traits": {
+   "length": "体长 70–80 厘米，翼展 125–135 厘米",
+   "weight": "平均 1.0–1.3 千克",
+   "lifespan": "圈养平均 20–25 年（最老的雄鸟 37 年、雌鸟 30 年）"
+  },
+  "behavior": {
+   "food": "在半干旱草原和休耕地觅食，吃蜥蜴、昆虫等小动物",
+   "social": "成群在海边或山地的悬崖上繁殖",
+   "breeding": "用树枝筑巢，通常每窝 2–3 枚蛋"
+  },
+  "population": {
+   "trend": "土耳其比雷吉克群体 20 世纪前半叶约有 500 对繁殖对，1930 年前后总数约 3,000 只；1970 年代急剧下降。近年的重引入使土耳其的半野生群体在 2018 年接近 250 只"
+  },
+  "iucnYear": "2018",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Geronticus eremita",
+    "url": "https://www.iucnredlist.org/search?query=Geronticus%20eremita&searchType=species"
+   },
+   {
+    "label": "维基百科：Northern bald ibis",
+    "url": "https://en.wikipedia.org/wiki/Northern_bald_ibis"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Atlantic puffin": {
+  "behavior": {
+   "food": "浮游动物、小鱼和螃蟹，潜水捕食，用翅膀推进",
+   "social": "在崖顶群落中繁殖",
+   "breeding": "挖洞筑巢，每次产 1 枚白色的蛋"
+  },
+  "population": {
+   "estimate": "954 万–1,160 万只成鸟（477 万–578 万对）",
+   "scope": "全球种群的 90% 以上在欧洲；冰岛的繁殖群约占全球 60%"
+  },
+  "iucnYear": "2018",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Fratercula arctica",
+    "url": "https://www.iucnredlist.org/search?query=Fratercula%20arctica&searchType=species"
+   },
+   {
+    "label": "维基百科：Atlantic puffin",
+    "url": "https://en.wikipedia.org/wiki/Atlantic_puffin"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Macaroni penguin": {
+  "traits": {
+   "length": "成年平均约 70 厘米",
+   "weight": "平均约 5.5 千克（随季节和性别变化明显）"
+  },
+  "behavior": {
+   "food": "吃磷虾等甲壳类，也吃小鱼和头足类；每年消耗的海洋生物比任何其他海鸟都多",
+   "social": "繁殖群最多可达约 10 万只，是密度最大的企鹅繁殖群之一"
+  },
+  "population": {
+   "estimate": "约 1,800 万只",
+   "scope": "全球",
+   "year": "较早的估计，之后的评估显示数量已下降"
+  },
+  "iucnYear": "2020",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Eudyptes chrysolophus",
+    "url": "https://www.iucnredlist.org/search?query=Eudyptes%20chrysolophus&searchType=species"
+   },
+   {
+    "label": "维基百科：Macaroni penguin",
+    "url": "https://en.wikipedia.org/wiki/Macaroni_penguin"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Chinese alligator": {
+  "traits": {
+   "length": "成年体长 1.5–2.1 米",
+   "weight": "成年 36–45 千克",
+   "lifespan": "可超过 50 年，圈养可达约 70 年"
+  },
+  "behavior": {
+   "food": "机会取食者，主要吃鱼和无脊椎动物",
+   "activity": "夏季夜行，冬季在洞穴里蛰伏",
+   "breeding": "初夏交配，雌鳄多产 20–30 枚蛋，是所有鳄类中最小的蛋"
+  },
+  "population": {
+   "estimate": "约 300 只",
+   "scope": "野外种群",
+   "year": "2017 年",
+   "trend": "1970 年代野外约 1,000 只，2001 年降至不足 130 只，2003 年后回升"
+  },
+  "iucnYear": "2018",
+  "china": {
+   "level": "国家一级重点保护野生动物",
+   "note": "依据《国家重点保护野生动物名录》。"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Alligator sinensis",
+    "url": "https://www.iucnredlist.org/search?query=Alligator%20sinensis&searchType=species"
+   },
+   {
+    "label": "维基百科：Chinese alligator",
+    "url": "https://en.wikipedia.org/wiki/Chinese_alligator"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Siamese crocodile": {
+  "traits": {
+   "length": "幼体 1.2–1.5 米，成年 2.1–3 米",
+   "weight": "成年 40–120 千克"
+  },
+  "behavior": {
+   "food": "成体主要吃鱼和蛇，也吃两栖动物和小型哺乳动物",
+   "breeding": "圈养观察中，雨季（4–5 月）繁殖，产 15–50 枚蛋并守护至孵化；雌鳄协助幼鳄破壳，并用口把幼鳄衔到水里"
+  },
+  "iucnYear": "2012",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Crocodylus siamensis",
+    "url": "https://www.iucnredlist.org/search?query=Crocodylus%20siamensis&searchType=species"
+   },
+   {
+    "label": "维基百科：Siamese crocodile",
+    "url": "https://en.wikipedia.org/wiki/Siamese_crocodile"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Philippine crocodile": {
+  "traits": {
+   "length": "成年很少超过 2.7 米，最大记录约 3.5 米；约 1.5 米即可繁殖",
+   "weight": "成年很少超过 90 千克；约 15 千克即可繁殖"
+  },
+  "population": {
+   "estimate": "约 100 只（不含幼体）",
+   "scope": "野外种群"
+  },
+  "iucnYear": "2016",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Crocodylus mindorensis",
+    "url": "https://www.iucnredlist.org/search?query=Crocodylus%20mindorensis&searchType=species"
+   },
+   {
+    "label": "维基百科：Philippine crocodile",
+    "url": "https://en.wikipedia.org/wiki/Philippine_crocodile"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Orinoco crocodile": {
+  "traits": {
+   "length": "过去曾报道雄性最长 6.8 米，目前较被接受的最大值约 5.2 米；今天的大型雄性约 4.2 米",
+   "weight": "大型雄性最重约 450 千克，雌性最大约 225 千克",
+   "lifespan": "没有迫害时可能达 70–80 年"
+  },
+  "behavior": {
+   "food": "顶级捕食者，偏鱼食但食性灵活，会捕食鸟类、哺乳动物和爬行动物，偶尔包括凯门鳄",
+   "social": "雌鳄守护幼鳄群通常约一年，最长可超过三年",
+   "breeding": "在沙地里挖洞产卵"
+  },
+  "population": {
+   "trend": "1940–1960 年代有数以千计的个体在奥里诺科河和平原湿地被杀，几近灭绝"
+  },
+  "iucnYear": "2018",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Crocodylus intermedius",
+    "url": "https://www.iucnredlist.org/search?query=Crocodylus%20intermedius&searchType=species"
+   },
+   {
+    "label": "维基百科：Orinoco crocodile",
+    "url": "https://en.wikipedia.org/wiki/Orinoco_crocodile"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Radiated tortoise": {
+  "traits": {
+   "length": "背甲长 26–38 厘米",
+   "weight": "2.5–8.8 千克",
+   "lifespan": "最长记录 188 年（名为“图伊·马利拉”的个体，估计年龄）"
+  },
+  "behavior": {
+   "food": "草食，草占食物的 80–90%，也吃果实和多肉植物",
+   "breeding": "雌龟一次产 3–12 枚蛋，埋在约 15–20 厘米深的洞里，然后离开"
+  },
+  "iucnYear": "2008",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Astrochelys radiata",
+    "url": "https://www.iucnredlist.org/search?query=Astrochelys%20radiata&searchType=species"
+   },
+   {
+    "label": "维基百科：Radiated tortoise",
+    "url": "https://en.wikipedia.org/wiki/Radiated_tortoise"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Ploughshare tortoise": {
+  "traits": {
+   "length": "雄性背甲长最长约 43 厘米"
+  },
+  "behavior": {
+   "food": "在竹丛中开阔的石地上吃草，也曾观察到取食野猪等动物的干粪"
+  },
+  "population": {
+   "estimate": "约 800 只",
+   "scope": "野外种群（马达加斯加西北部）",
+   "year": "2005 年估计（较早的数字）"
+  },
+  "iucnYear": "2008",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Astrochelys yniphora",
+    "url": "https://www.iucnredlist.org/search?query=Astrochelys%20yniphora&searchType=species"
+   },
+   {
+    "label": "维基百科：Angonoka tortoise",
+    "url": "https://en.wikipedia.org/wiki/Angonoka_tortoise"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Yangtze giant softshell turtle": {
+  "traits": {
+   "length": "成年体长超过 100 厘米，宽超过 70 厘米",
+   "weight": "70–100 千克"
+  },
+  "behavior": {
+   "food": "吃鱼、蟹、螺、蛙，以及水葫芦等水生植物",
+   "breeding": "每窝通常产 20–80 枚蛋，多在夜间或清晨产卵"
+  },
+  "population": {
+   "trend": "2013 年前的六个繁殖季共产 80 枚蛋，没有一枚能孵化；2008 年曾把一只可繁殖的雌龟转到苏州动物园，与已知唯一的圈养雄龟（约 100 岁）配对"
+  },
+  "iucnYear": "2022",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Rafetus swinhoei",
+    "url": "https://www.iucnredlist.org/search?query=Rafetus%20swinhoei&searchType=species"
+   },
+   {
+    "label": "维基百科：Yangtze giant softshell turtle",
+    "url": "https://en.wikipedia.org/wiki/Yangtze_giant_softshell_turtle"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Leatherback turtle": {
+  "traits": {
+   "length": "最长约 2.7 米",
+   "weight": "最重约 500 千克",
+   "lifespan": "寿命所知甚少"
+  },
+  "behavior": {
+   "food": "主要吃水母，摄食区在水温较低的海域",
+   "activity": "太平洋的棱皮龟会从印度尼西亚的产卵地迁徙约 9,700 公里，到加利福尼亚海域取食水母；潜水最深记录约 1,280 米"
+  },
+  "iucnYear": "2013",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Dermochelys coriacea",
+    "url": "https://www.iucnredlist.org/search?query=Dermochelys%20coriacea&searchType=species"
+   },
+   {
+    "label": "维基百科：Leatherback sea turtle",
+    "url": "https://en.wikipedia.org/wiki/Leatherback_sea_turtle"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Kemp's ridley turtle": {
+  "traits": {
+   "length": "背甲长 58–70 厘米",
+   "weight": "成熟时约 36–45 千克"
+  },
+  "behavior": {
+   "food": "吃软体动物、甲壳类（漂浮的蟹和虾）、水母、鱼、藻类和海胆；幼体主要在海面取食，成体机会性地在海底觅食，主要吃蟹",
+   "breeding": "多数雌龟每年回到同一片海滩——墨西哥塔毛利帕斯州的兰乔新（Rancho Nuevo）产卵"
+  },
+  "population": {
+   "trend": "产卵雌龟估计从 1947 年的约 89,000 只降到 1985 年的约 7,702 只"
+  },
+  "iucnYear": "2019",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Lepidochelys kempii",
+    "url": "https://www.iucnredlist.org/search?query=Lepidochelys%20kempii&searchType=species"
+   },
+   {
+    "label": "维基百科：Kemp's ridley sea turtle",
+    "url": "https://en.wikipedia.org/wiki/Kemp%27s_ridley_sea_turtle"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Loggerhead turtle": {
+  "traits": {
+   "length": "成年背甲平均约 90 厘米",
+   "weight": "成年平均约 135 千克，最大约 200 千克",
+   "lifespan": "性成熟需 17–33 年；野外估计最长寿命 47–67 年"
+  },
+  "behavior": {
+   "food": "杂食，主要吃海底的无脊椎动物",
+   "breeding": "生殖率低：雌龟平均产约 4 窝卵后，会休息 2–3 年不产卵"
+  },
+  "iucnYear": "2017",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Caretta caretta",
+    "url": "https://www.iucnredlist.org/search?query=Caretta%20caretta&searchType=species"
+   },
+   {
+    "label": "维基百科：Loggerhead sea turtle",
+    "url": "https://en.wikipedia.org/wiki/Loggerhead_sea_turtle"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Komodo dragon": {
+  "traits": {
+   "length": "雄性最长约 3 米",
+   "weight": "雄性最重约 150 千克；野外成年通常约 70 千克",
+   "lifespan": "8–11 年成熟，估计可活约 30 年（部分估计达 62 年）"
+  },
+  "behavior": {
+   "food": "成年主要吃爪哇鹿和野猪，也吃大量腐肉",
+   "activity": "变温动物，白天最活跃，也有一些夜间活动",
+   "social": "独居，只在繁殖和进食时相聚",
+   "breeding": "5–8 月交配，9 月产卵，一次最多约 20 枚，产在废弃的冢雉巢或自己挖的洞里；孵化约 7–8 个月，次年 4 月孵出"
+  },
+  "iucnYear": "2021",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Varanus komodoensis",
+    "url": "https://www.iucnredlist.org/search?query=Varanus%20komodoensis&searchType=species"
+   },
+   {
+    "label": "维基百科：Komodo dragon",
+    "url": "https://en.wikipedia.org/wiki/Komodo_dragon"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Marine iguana": {
+  "traits": {
+   "length": "雄性明显更长",
+   "weight": "成年雄性最大体重因岛而异，从南伊莎贝拉岛的 12 千克到赫诺韦萨岛的 1 千克",
+   "lifespan": "最长可达 60 年，但平均寿命 12 年或更短"
+  },
+  "behavior": {
+   "food": "几乎只吃藻类；大型雄性潜水觅食，雌性和较小的雄性在退潮时的潮间带取食",
+   "social": "群居在岩岸，群体通常 20–500 只，有时超过 1,000 只",
+   "breeding": "大型雄性短期占领领地，小雄性有别的繁殖策略；雌性在土里挖洞产卵，数月后卵自行孵化"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Amblyrhynchus cristatus",
+    "url": "https://www.iucnredlist.org/search?query=Amblyrhynchus%20cristatus&searchType=species"
+   },
+   {
+    "label": "维基百科：Marine iguana",
+    "url": "https://en.wikipedia.org/wiki/Marine_iguana"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Panamanian golden frog": {
+  "traits": {
+   "length": "雌性 45–63 毫米，雄性 35–48 毫米",
+   "weight": "雌性 4–15 克，雄性 3–12 克",
+   "lifespan": "约 12 年"
+  },
+  "behavior": {
+   "food": "蝌蚪吃藻类，发育约需 6–7 个月",
+   "social": "雄蛙相当独居、好斗；会用喉部发声和“挥手”与其他两栖动物交流"
+  },
+  "population": {
+   "captive": "圈养繁育项目分布在北美和巴拿马的 50 多家机构",
+   "trend": "埃尔科佩（El Copé）种群在 2004 年因壶菌病迅速崩溃"
+  },
+  "iucnYear": "2019",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Atelopus zeteki",
+    "url": "https://www.iucnredlist.org/search?query=Atelopus%20zeteki&searchType=species"
+   },
+   {
+    "label": "维基百科：Panamanian golden frog",
+    "url": "https://en.wikipedia.org/wiki/Panamanian_golden_frog"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Mountain chicken": {
+  "traits": {
+   "length": "吻肛长最长约 22 厘米，典型成体 17–18 厘米",
+   "weight": "最重约 1 千克",
+   "lifespan": "约 12 年；约 3 岁成熟"
+  },
+  "behavior": {
+   "food": "严格肉食，主要吃蟋蟀等昆虫，也吃马陆、甲壳类、蜘蛛，甚至蛙、蛇和蝙蝠等小型脊椎动物",
+   "activity": "地栖、夜行",
+   "breeding": "蝌蚪孵出后，母蛙会产下多达约 25,000 枚未受精的“营养卵”给蝌蚪吃"
+  },
+  "population": {
+   "trend": "1995–2004 年种群至少下降 80%；蒙特塞拉特几乎没有野外个体，依靠多家动物园的圈养繁育项目"
+  },
+  "iucnYear": "2017",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Leptodactylus fallax",
+    "url": "https://www.iucnredlist.org/search?query=Leptodactylus%20fallax&searchType=species"
+   },
+   {
+    "label": "维基百科：Leptodactylus fallax",
+    "url": "https://en.wikipedia.org/wiki/Leptodactylus_fallax"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Chinese giant salamander": {
+  "traits": {
+   "length": "成年平均约 1.3 米，最长约 1.8 米",
+   "weight": "成年平均约 25–30 千克，最重约 50 千克"
+  },
+  "behavior": {
+   "food": "吃昆虫、马陆、两栖动物、淡水蟹、虾、鱼和水鼩",
+   "activity": "水温高于 20°C 时多数个体停止进食，28°C 时几乎完全不吃"
+  },
+  "population": {
+   "trend": "野外种群自 1950 年代以来估计下降了 80% 以上"
+  },
+  "china": {
+   "level": "国家二级重点保护野生动物",
+   "note": "依据《国家重点保护野生动物名录》。"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Andrias davidianus",
+    "url": "https://www.iucnredlist.org/search?query=Andrias%20davidianus&searchType=species"
+   },
+   {
+    "label": "维基百科：Chinese giant salamander",
+    "url": "https://en.wikipedia.org/wiki/Chinese_giant_salamander"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "European sturgeon": {
+  "traits": {
+   "length": "最长可达约 6 米，常见约 1.25 米",
+   "weight": "最重约 400 千克"
+  },
+  "behavior": {
+   "activity": "大部分时间生活在海水中，洄游到河流上游产卵"
+  },
+  "population": {
+   "estimate": "不足 800 只成熟个体（没有具体的种群估计）",
+   "scope": "全球野外",
+   "year": "评估时（2020 年）估计为 20–750 只成熟个体"
+  },
+  "iucnYear": "2022",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Acipenser sturio",
+    "url": "https://www.iucnredlist.org/search?query=Acipenser%20sturio&searchType=species"
+   },
+   {
+    "label": "维基百科：European sea sturgeon",
+    "url": "https://en.wikipedia.org/wiki/European_sea_sturgeon"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Mekong giant catfish": {
+  "traits": {
+   "length": "最长约 3 米",
+   "weight": "生长极快，约 6 年可达 150–200 千克"
+  },
+  "behavior": {
+   "food": "稚鱼吃浮游动物（有同类相食）；约一岁后变为草食，吃丝状藻类",
+   "activity": "雨季开始时聚集并溯河产卵（洄游规律尚未完全弄清）"
+  },
+  "population": {
+   "estimate": "野外数量未知",
+   "trend": "渔获数据显示，种群在 14 年内下降了约 80%（较早的资料）"
+  },
+  "iucnYear": "2011",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Pangasianodon gigas",
+    "url": "https://www.iucnredlist.org/search?query=Pangasianodon%20gigas&searchType=species"
+   },
+   {
+    "label": "维基百科：Mekong giant catfish",
+    "url": "https://en.wikipedia.org/wiki/Mekong_giant_catfish"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Great hammerhead": {
+  "traits": {
+   "length": "典型个体至少约 3.5 米，最大约 4.6 米",
+   "weight": "典型个体超过 230 千克，最重记录约 449.5 千克",
+   "lifespan": "典型寿命 20–30 年；有一只记录雌鲨估计 40–50 岁"
+  },
+  "behavior": {
+   "food": "强壮的独居顶级捕食者，吃甲壳类、头足类、硬骨鱼和较小的鲨鱼",
+   "activity": "会洄游；佛罗里达外海和南海的种群夏季向极地方向移动",
+   "social": "独居",
+   "breeding": "胎生，每两年产仔，每胎 2–49 只"
+  },
+  "iucnYear": "2019",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Sphyrna mokarran",
+    "url": "https://www.iucnredlist.org/search?query=Sphyrna%20mokarran&searchType=species"
+   },
+   {
+    "label": "维基百科：Great hammerhead",
+    "url": "https://en.wikipedia.org/wiki/Great_hammerhead"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Oceanic whitetip shark": {
+  "traits": {
+   "length": "最大个体超过 4 米，通常最长约 3 米",
+   "weight": "通常最重约 150 千克",
+   "lifespan": "圈养最长记录超过 3 年（蒙特雷湾水族馆的一只雌鲨）"
+  },
+  "behavior": {
+   "food": "主要吃鱿鱼等远洋头足类，以及帆蜥鱼、鲹、鲯鳅、枪鱼、金枪鱼和鲭鱼等硬骨鱼",
+   "activity": "多数时间在海洋上层 150 米以内，偏爱远海深水区",
+   "social": "通常独居，食物集中处会大量聚集",
+   "breeding": "胎生；西北大西洋和西南印度洋多在初夏交配和产仔，太平洋则全年都发现带胚胎的雌鲨"
+  },
+  "iucnYear": "2019",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Carcharhinus longimanus",
+    "url": "https://www.iucnredlist.org/search?query=Carcharhinus%20longimanus&searchType=species"
+   },
+   {
+    "label": "维基百科：Oceanic whitetip shark",
+    "url": "https://en.wikipedia.org/wiki/Oceanic_whitetip_shark"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Southern bluefin tuna": {
+  "traits": {
+   "length": "最长约 2.5 米",
+   "weight": "最重约 260 千克",
+   "lifespan": "性成熟约在 9–12 岁"
+  },
+  "behavior": {
+   "food": "机会性捕食者，吃多种鱼类、甲壳类、头足类和樽海鞘",
+   "activity": "冬季在澳大利亚周边的南半球温带水域觅食，春季到秋季迁往印度洋西北部的热带海域产卵"
+  },
+  "population": {
+   "trend": "澳大利亚渔获量 1982 年达到高峰（约 21,500 吨），此后总种群估计已下降约 92%（较早的估算）"
+  },
+  "iucnYear": "2021",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Thunnus maccoyii",
+    "url": "https://www.iucnredlist.org/search?query=Thunnus%20maccoyii&searchType=species"
+   },
+   {
+    "label": "维基百科：Southern bluefin tuna",
+    "url": "https://en.wikipedia.org/wiki/Southern_bluefin_tuna"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Elkhorn coral": {
+  "behavior": {
+   "food": "可通过滤食获得营养（白化或水体长期浑浊时尤其如此）",
+   "breeding": "只在几个夜晚通过“广播式产卵”把卵和精子释放到水中，受精后幼虫附着在硬质表面长成新群体"
+  },
+  "population": {
+   "trend": "1980–2006 年间种群下降约 97%（列入美国《濒危物种法》时的估计）"
+  },
+  "iucnYear": "2008",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Acropora palmata",
+    "url": "https://www.iucnredlist.org/search?query=Acropora%20palmata&searchType=species"
+   },
+   {
+    "label": "维基百科：Elkhorn coral",
+    "url": "https://en.wikipedia.org/wiki/Elkhorn_coral"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Staghorn coral": {
+  "traits": {
+   "length": "长成的健康群体高度和宽度可超过 2 米"
+  },
+  "behavior": {
+   "food": "夜间用长长的触手捕食浮游动物，同时依靠体内共生的虫黄藻获得能量",
+   "breeding": "卵和精子在一次同步事件中同时释放"
+  },
+  "population": {
+   "trend": "白带病（1979 年首次发现）被认为是鹿角珊瑚和麋角珊瑚等浅水造礁珊瑚在过去 30 年里衰退的主要原因，衰退幅度最高约 95%"
+  },
+  "iucnYear": "2008",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Acropora cervicornis",
+    "url": "https://www.iucnredlist.org/search?query=Acropora%20cervicornis&searchType=species"
+   },
+   {
+    "label": "维基百科：Staghorn coral",
+    "url": "https://en.wikipedia.org/wiki/Staghorn_coral"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Rusty patched bumble bee": {
+  "traits": {
+   "lifespan": "蜂群约存活 4–5 个月；蜂后平均约 77 天"
+  },
+  "behavior": {
+   "food": "蜂后先采集花蜜和花粉，喂养最初的一批幼虫",
+   "social": "蜂群通常有 50–400 只，圈养蜂群可更大",
+   "breeding": "蜂后用前一年秋天交配时保存的精子使卵受精；卵约 4 天孵化，最多 5 周发育为成虫"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Bombus affinis",
+    "url": "https://www.iucnredlist.org/search?query=Bombus%20affinis&searchType=species"
+   },
+   {
+    "label": "维基百科：Bombus affinis",
+    "url": "https://en.wikipedia.org/wiki/Bombus_affinis"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Monarch butterfly": {
+  "traits": {
+   "length": "翼展 8.9–10.2 厘米",
+   "lifespan": "繁殖季里的成虫通常能活 2–5 周"
+  },
+  "behavior": {
+   "food": "幼虫以马利筋为食",
+   "activity": "北美东部种群每年夏末秋季从美国北部、中部和加拿大南部迁往佛罗里达和墨西哥，行程数千公里，春季由下几代返回",
+   "breeding": "完全变态发育，分卵、幼虫、蛹和成虫四个阶段；温暖的夏季从卵到成虫最快约 25 天，凉爽的春季可长达 7 周"
+  },
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Danaus plexippus",
+    "url": "https://www.iucnredlist.org/search?query=Danaus%20plexippus&searchType=species"
+   },
+   {
+    "label": "维基百科：Monarch butterfly",
+    "url": "https://en.wikipedia.org/wiki/Monarch_butterfly"
+   }
+  ],
+  "updated": "2026-11-08"
+ },
+ "Black abalone": {
+  "traits": {
+   "length": "壳长最大约 20 厘米，典型 10–14 厘米",
+   "lifespan": "估计可活 25–75 年；3–7 岁开始繁殖"
+  },
+  "behavior": {
+   "food": "草食性腹足动物，主要吃漂流的藻类和海带",
+   "activity": "广播式产卵，成功繁殖需要个体彼此靠得很近",
+   "breeding": "春季和初夏产卵，偶尔秋季再产一次"
+  },
+  "population": {
+   "trend": "在许多地点，90% 以上的个体已经消失，有些地方种群完全消失"
+  },
+  "iucnYear": "2021",
+  "sources": [
+   {
+    "label": "IUCN 红色名录（按学名检索）：Haliotis cracherodii",
+    "url": "https://www.iucnredlist.org/search?query=Haliotis%20cracherodii&searchType=species"
+   },
+   {
+    "label": "维基百科：Haliotis cracherodii",
+    "url": "https://en.wikipedia.org/wiki/Haliotis_cracherodii"
+   }
+  ],
+  "updated": "2026-11-08"
+ }
+}

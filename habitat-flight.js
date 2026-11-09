@@ -128,15 +128,6 @@
             '<section class="dive-chapter__intro">' +
                 '<p class="habitat-caption__label"></p><h2 class="habitat-caption__title"></h2>' +
                 '<p class="habitat-caption__place"></p>' +
-                '<div class="habitat-loss" hidden>' +
-                    '<p class="habitat-loss__context">Human-impact illustration · not recorded damage at this site</p>' +
-                    '<label class="habitat-loss__label" for="habitat-loss"><span class="habitat-loss__name"></span> <output class="habitat-loss__stage" for="habitat-loss"></output></label>' +
-                    '<input type="range" id="habitat-loss" class="habitat-loss__range" min="0" max="100" step="0.1" value="0" disabled aria-describedby="loss-context">' +
-                    '<p class="habitat-loss__note"></p>' +
-                    '<div class="habitat-loss__actions"><button type="button" class="loss-play" disabled>Play impact</button><button type="button" class="loss-reset" disabled>Reset view</button><button type="button" class="loss-retry" hidden>Retry images</button></div>' +
-                    '<p class="habitat-loss__context" id="loss-context">Illustrative human-impact scenario. The altered image does not document damage at this location. The slider shows a visual sequence, not a measured pollution level.</p>' +
-                    '<p class="habitat-loss__status" role="status"></p>' +
-                '</div>' +
                 '<p class="habitat-caption__note"></p>' +
                 '<div class="dive-chapter__actions"><button type="button" class="habitat-caption__back">Back to space</button></div>' +
             '</section>' +
@@ -147,13 +138,7 @@
         article.querySelector('.habitat-caption__title').textContent = s.title;
         article.querySelector('.habitat-caption__place').textContent = s.place;
         article.querySelector('.habitat-caption__note').textContent = s.credit + ' · ' + pollutionScenes[habitat].credit;
-        article.querySelector('.habitat-loss__name').textContent = s.lossLabel || 'Habitat loss';
         article.querySelector('.habitat-caption__back').addEventListener('click', () => dive.exit());
-        const range = article.querySelector('.habitat-loss__range');
-        range.addEventListener('input', () => player?.set(range.value / 100));
-        article.querySelector('.loss-play').addEventListener('click', () => player?.toggle());
-        article.querySelector('.loss-reset').addEventListener('click', () => player?.set(0));
-        article.querySelector('.loss-retry').addEventListener('click', enableLoss);
         const list = article.querySelector('.dive-chapter__animals ul');
         animalData().then(all => {
             const here = all.filter(a => (a.habitats || []).includes(habitat))
@@ -172,10 +157,33 @@
         });
         return article;
     }
-    let content = null;
+
+    // ---- Human-impact controls ----------------------------------------------------------------
+    // A panel docked in the bottom-right corner of the destination photo, above the dive's scroller.
+    // It appears once the photo is whole on screen and steps aside before the chapter slides up.
+    function lossControls(s) {
+        const box = document.createElement('div');
+        box.className = 'habitat-loss';
+        box.hidden = true;
+        box.innerHTML =
+            '<p class="habitat-loss__context">Human-impact illustration · not recorded damage at this site</p>' +
+            '<label class="habitat-loss__label" for="habitat-loss"><span class="habitat-loss__name"></span> <output class="habitat-loss__stage" for="habitat-loss"></output></label>' +
+            '<input type="range" id="habitat-loss" class="habitat-loss__range" min="0" max="100" step="0.1" value="0" disabled aria-describedby="loss-context">' +
+            '<p class="habitat-loss__note"></p>' +
+            '<div class="habitat-loss__actions"><button type="button" class="loss-play" disabled>Play impact</button><button type="button" class="loss-reset" disabled>Reset view</button><button type="button" class="loss-retry" hidden>Retry images</button></div>' +
+            '<p class="habitat-loss__context" id="loss-context">Illustrative human-impact scenario. The altered image does not document damage at this location. The slider shows a visual sequence, not a measured pollution level.</p>' +
+            '<p class="habitat-loss__status" role="status"></p>';
+        box.querySelector('.habitat-loss__name').textContent = s.lossLabel || 'Habitat loss';
+        const range = box.querySelector('.habitat-loss__range');
+        range.addEventListener('input', () => player?.set(range.value / 100));
+        box.querySelector('.loss-play').addEventListener('click', () => player?.toggle());
+        box.querySelector('.loss-reset').addEventListener('click', () => player?.set(0));
+        box.querySelector('.loss-retry').addEventListener('click', enableLoss);
+        return box;
+    }
+    let content = null, box = null;
     function setLoss(value) {
-        if (!site || !site.loss || !content) return;
-        const box = content.querySelector('.habitat-loss');
+        if (!site || !site.loss || !box) return;
         const stage = site.loss.filter(s => value >= s[0]).pop();
         box.querySelector('.habitat-loss__stage').textContent = stage[1];
         box.querySelector('.habitat-loss__note').textContent = stage[2];
@@ -187,37 +195,44 @@
     }
     async function enableLoss() {
         if (!site.loss || !ready(site.photo.image) || !window.habitatLoss) return;
-        const request = ++lossRequest, selected = current;
-        const box = content.querySelector('.habitat-loss');
-        box.hidden = false;
-        box.querySelector('.loss-retry').hidden = true;
-        box.querySelector('.habitat-loss__status').textContent = 'Loading the human-impact scene…';
+        const request = ++lossRequest, selected = current, panel = box;
+        if (!panel) return;
+        panel.hidden = false;
+        panel.querySelector('.loss-retry').hidden = true;
+        panel.querySelector('.habitat-loss__status').textContent = 'Loading the human-impact scene…';
         try {
             const next = await habitatLoss.create(selected, photoLayer, site.photo.image);
             if (request !== lossRequest || selected !== current || !landed) { next.destroy(); return; }
             loss?.destroy(); loss = next;
             player?.destroy();
             player = habitatLoss.playback(setLoss, playing => {
-                box.querySelector('.loss-play').textContent = playing ? 'Pause impact' : 'Play impact';
-                box.querySelector('.loss-play').setAttribute('aria-pressed', String(playing));
+                panel.querySelector('.loss-play').textContent = playing ? 'Pause impact' : 'Play impact';
+                panel.querySelector('.loss-play').setAttribute('aria-pressed', String(playing));
             });
-            box.querySelectorAll('input, .loss-play, .loss-reset').forEach(control => control.disabled = false);
-            box.querySelector('.habitat-loss__status').textContent = '';
+            panel.querySelectorAll('input, .loss-play, .loss-reset').forEach(control => control.disabled = false);
+            panel.querySelector('.habitat-loss__status').textContent = '';
             layoutPhoto(); setLoss(0);
         } catch (error) {
             if (request !== lossRequest || selected !== current) return;
-            box.querySelector('.habitat-loss__status').textContent = 'The impact scene could not load. The original photograph remains available.';
-            box.querySelector('.loss-retry').hidden = false;
+            panel.querySelector('.habitat-loss__status').textContent = 'The impact scene could not load. The original photograph remains available.';
+            panel.querySelector('.loss-retry').hidden = false;
         }
     }
 
     // ---- Sequence ------------------------------------------------------------------------------
-    let current = '';
+    let current = '', queued = null, switching = false;
     async function land(habitat) {
         const s = SITES[habitat];
-        if (!s) { if (dive.isActive()) dive.exit(); return; }
-        if (dive.isActive() && current === habitat) return;
-        if (dive.isActive()) dive.exit({ immediate: true });
+        if (!s) { queued = null; if (dive.isActive()) dive.exit(); return; }
+        // Already in a habitat: fly back out to space first (the same exit as "Back to space"), then
+        // dive into the new one. Choosing again while that exit plays just changes the destination.
+        if (dive.isActive()) {
+            if (current === habitat && !queued) return;
+            queued = habitat;
+            if (s.photo) loadPhoto(s.photo);   // fetch the next photograph while the exit plays
+            if (!switching) { switching = true; dive.exit(); }
+            return;
+        }
         resetPhoto();
         current = habitat;
         site = s;
@@ -240,12 +255,24 @@
                     const e = 1 - Math.pow(1 - t, 3);
                     photoLayer.style.transform = `scale(${(1 + .24 * (1 - e)).toFixed(4)})`;
                     if (t >= 1 && !landed) { landed = true; enableLoss(); }
-                    // Flying back up leaves the valley as it was.
-                    else if (t < .98 && landed) { landed = false; player?.set(0); setLoss(0); }
+                    // Flying back up leaves the valley as it was, and takes the controls away.
+                    else if (t < .98 && landed) { landed = false; player?.set(0); setLoss(0); if (box) box.hidden = true; }
                 },
+                // The first downward scroll: the controls step aside, then (after this delay) the chapter rises.
+                beforeChapter() {
+                    if (!box) return 0;
+                    const showing = !box.hidden;
+                    box.classList.add('is-away');   // also keeps it away if it is still loading
+                    return showing ? 420 : 0;
+                },
+                // Scrolled back to the top: the photo is whole again, with its controls.
+                afterChapter() { box?.classList.remove('is-away'); },
                 leave() { resetPhoto(); }
             };
         }
+        box?.remove();
+        box = s.loss ? lossControls(s) : null;
+        if (box) dive.element.append(box);
         content = chapter(habitat, s);
         const started = dive.enter({
             lat: s.lat, lng: s.lng, heading: s.heading, endAltitude: s.endAltitude, endPitch: s.endPitch,
@@ -254,7 +281,12 @@
             horizon: s.photo ? () => { layoutPhoto(); return s.photo.horizon ?? .5; } : null
         }, {
             scene, content,
-            onExit: () => { current = ''; site = null; }
+            onExit: () => {
+                current = ''; site = null; box?.remove(); box = null;
+                switching = false;
+                const next = queued; queued = null;
+                if (next) land(next);
+            }
         });
         if (started && s.photo) layoutPhoto();
     }
@@ -267,6 +299,6 @@
     }
 
     document.addEventListener('habitatchoose', event => land(event.detail.habitat));
-    canvas.addEventListener('earthhome', () => { if (dive.isActive()) dive.exit({ immediate: true }); });
+    canvas.addEventListener('earthhome', () => { queued = null; if (dive.isActive()) dive.exit({ immediate: true }); });
     addEventListener('resize', () => { if (dive.isActive()) layoutPhoto(); });
 })();

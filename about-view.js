@@ -42,27 +42,37 @@
     document.querySelector('.earth-viewport').after(view);
     const grid = view.querySelector('.animal-list-view__grid');
 
-    CARDS.forEach(([src, alt, heading, kicker, paragraphs]) => {
-        const article = document.createElement('article');
-        article.className = 'list-card';
-        if (src) {
-            const figure = document.createElement('figure');
-            figure.className = 'list-card__image';
-            const image = document.createElement('img');
-            image.src = src;
-            image.alt = alt;
-            image.loading = 'lazy';
-            image.decoding = 'async';
-            image.addEventListener('error', () => { image.remove(); figure.classList.add('is-unavailable'); }, { once: true });
-            figure.append(image);
-            article.append(figure);
-        }
-        const body = document.createElement('div');
-        body.className = 'list-card__body';
-        body.innerHTML = `<p class="list-card__meta"><span>${kicker}</span></p><h3>${heading}</h3>` +
-            paragraphs.map(text => `<p>${text}</p>`).join('');
-        article.append(body);
-        grid.append(article);
+    const t = text => window.i18n ? i18n.t(text) : text;
+    // Built with i18n.t() so the cards can be rebuilt in the other language when it is switched.
+    function buildCards() {
+        grid.replaceChildren();
+        CARDS.forEach(([src, alt, heading, kicker, paragraphs]) => {
+            const article = document.createElement('article');
+            article.className = 'list-card';
+            if (src) {
+                const figure = document.createElement('figure');
+                figure.className = 'list-card__image';
+                const image = document.createElement('img');
+                image.src = src;
+                image.alt = t(alt);
+                image.loading = 'lazy';
+                image.decoding = 'async';
+                image.addEventListener('error', () => { image.remove(); figure.classList.add('is-unavailable'); }, { once: true });
+                figure.append(image);
+                article.append(figure);
+            }
+            const body = document.createElement('div');
+            body.className = 'list-card__body';
+            body.innerHTML = `<p class="list-card__meta"><span>${t(kicker)}</span></p><h3>${t(heading)}</h3>` +
+                paragraphs.map(text => `<p>${t(text)}</p>`).join('');
+            article.append(body);
+            grid.append(article);
+        });
+    }
+    buildCards();
+    document.addEventListener('langchange', () => {
+        buildCards();
+        if (open) { unwatch(); grid.querySelectorAll('.list-card').forEach(c => c.classList.add('is-shown')); }
     });
 
     // Cards fade in one by one as they come into view, as in the animal list.

@@ -2,7 +2,23 @@
 
 All notable changes to Vanishing Wild. Dates are YYYY-MM-DD.
 
-## [Unreleased] - 2026-11-05
+## 2026-11-09
+
+### Added
+- Filled `images/animals/animal-details.json` for all 100 species: IUCN assessment year, size, weight, lifespan, food, activity, social life, breeding and population figures, compiled from Wikipedia and the IUCN assessments it cites, with scope and year kept next to every number. Ecology, conservation actions and fun facts are still empty and show "No reliable data yet". An English copy lives in `images/animals/animal-details-en.json`.
+- Species cards and detail page: cards show photo with credit, Chinese and English names, IUCN tag, range, a one-line hook and a "Learn more" button; the detail page (`animal-detail.js`, `animal-data.js`, Chinese text in `animal-detail-zh.js`) covers status, features, range map, behaviour, population, threats, ecology, conservation, actions, a fact and sources. Facts live in `images/animals/animal-details.json`; anything not hand-checked shows "No reliable data yet".
+- English / 中文 language switch: a "Settings" item above "About" in the menu opens a language choice. `i18n.js` swaps page text and key attributes (including text added later by other scripts) using the dictionary in `i18n-zh.js`, remembers the choice in `localStorage`, and fades the page out and back in while switching. The about view and the field-guide page (`project.html`) switch too.
+- "Learn more" button in the globe's animal panel opens the same detail page.
+
+### Changed
+- The animal list now builds its cards from `animal-data.js` instead of parsing `project.html`.
+- Conservation status uses one two-part IUCN badge ("CR | Critically endangered") on the globe hover card, the animal panel, the list and the detail page, with shared `--status-cr/en/vu` colours.
+- Globe markers lie flat on the surface: they squash and fade towards the edge of the globe and hide just before going round the back.
+- Habitat dives no longer jump straight into the chapter after landing: the destination is shown whole first, and the first downward scroll, swipe or key opens the chapter. Scrolling back to the top shows the destination again.
+- The Habitats sub-menu unfolds on hover and shares the menu handling with the new Settings menu (`nav.js`).
+- Bumped the cache-busting versions of changed scripts and styles in `index.html`.
+
+## 2026-11-05
 
 ### Added
 - Interactive Earth homepage: a native WebGL textured 3D globe with a twinkling starfield, drag/scroll/pinch/keyboard control and no CDN or build step (`earth.js`, `earth.css`, `images/earth/`).

@@ -1,0 +1,2164 @@
+{
+  "_readme": [
+    "English text for animal-details.json, keyed and shaped the same way. Only text fields are here; numbers, links and dates are read from animal-details.json. The detail page uses this file in English and animal-details.json in Chinese, so the two must be kept in step."
+  ],
+  "Saola": {
+    "traits": {
+      "length": "Head and body: about 150 cm, measured on one captive female (very few specimens)"
+    },
+    "behavior": {
+      "food": "Herbivore; reported to eat plants such as Schismatoglottis",
+      "breeding": "May have a set breeding season (about late August to mid-November); every recorded birth was a single calf, mostly between mid-April and late June"
+    },
+    "population": {
+      "estimate": "About 50–300",
+      "scope": "Annamite Mountains of Vietnam and Laos (worldwide)",
+      "year": "2015 estimate"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Pseudoryx nghetinhensis"
+      },
+      {
+        "label": "Wikipedia: Saola"
+      }
+    ]
+  },
+  "Okapi": {
+    "traits": {
+      "length": "Body about 2.5 m long, about 1.5 m tall at the shoulder",
+      "weight": "200–350 kg",
+      "lifespan": "Typically 20–30 years"
+    },
+    "behavior": {
+      "food": "Herbivore: leaves, buds, grasses, ferns, fruit and fungi",
+      "activity": "Mainly active by day, but may also be active for a few hours at night",
+      "social": "Largely solitary, coming together only to breed",
+      "breeding": "Pregnancy lasts about 440–450 days, usually with a single calf"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Okapia johnstoni"
+      },
+      {
+        "label": "Wikipedia: Okapi"
+      }
+    ]
+  },
+  "Aye-aye": {
+    "traits": {
+      "length": "Head and body 36–43 cm, tail 56–61 cm",
+      "weight": "About 2 kg"
+    },
+    "behavior": {
+      "food": "Omnivore: seeds, nuts, fruit, nectar, fungi, wood-boring insect larvae and honey",
+      "activity": "Nocturnal and tree-dwelling; the world's largest nocturnal primate",
+      "breeding": "Mates at any time of year; females start breeding at about 3–4 years old and have one young every 2–3 years"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Daubentonia madagascariensis"
+      },
+      {
+        "label": "Wikipedia: Aye-aye"
+      }
+    ]
+  },
+  "Proboscis monkey": {
+    "traits": {
+      "length": "Head and body: males 66–76 cm, females 53–62 cm",
+      "weight": "Males mostly 16–22.5 kg, females 7–12 kg"
+    },
+    "behavior": {
+      "food": "Mainly fruit and leaves, plus flowers, seeds and a few insects",
+      "social": "Usually groups of one adult male with several females and young, as well as all-male groups; one-male groups have 3–19 members, and larger bands reach up to 60"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Nasalis larvatus"
+      },
+      {
+        "label": "Wikipedia: Proboscis monkey"
+      }
+    ]
+  },
+  "Hirola": {
+    "traits": {
+      "length": "Head and body 1.2–2 m, 99–125 cm tall at the shoulder",
+      "weight": "73–118 kg",
+      "lifespan": "No data from the wild; the longest captive record is about 15 years"
+    },
+    "behavior": {
+      "food": "Mainly grass; may also browse leaves and shoots in the dry season",
+      "social": "Females give birth alone, then return to nursery herds of females and young",
+      "breeding": "Seasonal breeder; most calves are born in September–November"
+    },
+    "population": {
+      "estimate": "300–500",
+      "scope": "Worldwide population; none in captivity"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Beatragus hunteri"
+      },
+      {
+        "label": "Wikipedia: Hirola"
+      }
+    ]
+  },
+  "Pygmy three-toed sloth": {
+    "traits": {
+      "length": "Head and body 48–53 cm",
+      "weight": "2.5–3.5 kg"
+    },
+    "behavior": {
+      "food": "Lives in trees and eats leaves",
+      "breeding": "No details of mating or breeding have been recorded"
+    },
+    "population": {
+      "estimate": "About 500–1,500 (a high estimate gives 3,200)",
+      "scope": "Only Isla Escudo de Veraguas, Panama",
+      "year": "2015 study",
+      "trend": "A 2012 survey of the coastal mangroves counted only about 79; a 2015 study considered that figure a serious undercount"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Bradypus pygmaeus"
+      },
+      {
+        "label": "Wikipedia: Pygmy three-toed sloth"
+      }
+    ]
+  },
+  "Sunda pangolin": {
+    "traits": {
+      "length": "Head and body 40–65 cm, tail 35–56 cm",
+      "weight": "Up to about 10 kg"
+    },
+    "behavior": {
+      "food": "Toothless; licks up ants and termites with a long, sticky tongue",
+      "activity": "Its eyes are adapted to night vision; mainly active at night",
+      "breeding": "1–2 young a year; mates in autumn and gives birth in a burrow in winter"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Manis javanica"
+      },
+      {
+        "label": "Wikipedia: Sunda pangolin"
+      }
+    ]
+  },
+  "Axolotl": {
+    "traits": {
+      "length": "Adults 15–45 cm long, most commonly about 23 cm",
+      "lifespan": "About 10–15 years in the wild"
+    },
+    "behavior": {
+      "food": "Carnivore: molluscs, worms, aquatic insects, crayfish and small fish, as well as other salamanders"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Ambystoma mexicanum"
+      },
+      {
+        "label": "Wikipedia: Axolotl"
+      }
+    ]
+  },
+  "Gharial": {
+    "traits": {
+      "length": "Females 2.6–4.5 m, males 3–6 m"
+    },
+    "behavior": {
+      "food": "Young gharials eat insects, tadpoles, small fish and frogs",
+      "breeding": "Females gather to dig nests in spring and lay 20–95 eggs per clutch"
+    },
+    "population": {
+      "trend": "The wild population has fallen sharply since the 1930s and now occupies only about 2% of its historical range"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Gavialis gangeticus"
+      },
+      {
+        "label": "Wikipedia: Gharial"
+      }
+    ]
+  },
+  "Hawksbill turtle": {
+    "traits": {
+      "lifespan": "Lifespan unknown"
+    },
+    "behavior": {
+      "breeding": "Matures late: a central Pacific study estimated maturity at about 29 years (range 23–36)"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Eretmochelys imbricata"
+      },
+      {
+        "label": "Wikipedia: Hawksbill sea turtle"
+      }
+    ]
+  },
+  "Kākāpō": {
+    "traits": {
+      "length": "Up to about 64 cm long",
+      "weight": "Males about 1.5–3 kg, females about 0.95–1.6 kg",
+      "lifespan": "Long-lived: average life expectancy about 60 years (±20), with reports of up to 100 years"
+    },
+    "behavior": {
+      "food": "Entirely herbivorous: fruit, seeds, leaves, stems and rhizomes",
+      "activity": "Nocturnal, ground-dwelling and flightless",
+      "breeding": "The only parrot that breeds on a lek, with one male mating with several females; males take no part in raising chicks"
+    },
+    "population": {
+      "estimate": "325 (known living birds)",
+      "scope": "Every known bird is tagged and named; they live on four predator-free islands in New Zealand, plus a 2023 reintroduction to a mainland sanctuary",
+      "year": "As of 2026"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Strigops habroptilus"
+      },
+      {
+        "label": "Wikipedia: Kākāpō"
+      }
+    ]
+  },
+  "Helmeted hornbill": {
+    "traits": {
+      "length": "Longer overall than any other hornbill (its central tail feathers are especially long)",
+      "weight": "About 3 kg, of which the casque makes up about 11%"
+    },
+    "behavior": {
+      "social": "Thought to be territorial and monogamous, but little is known about its social behaviour",
+      "breeding": "Breeds once a year, raising one chick each time"
+    },
+    "threats": [
+      "According to TRAFFIC, 2,170 casques were seized in just three years in China and Indonesia alone"
+    ],
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Rhinoplax vigil"
+      },
+      {
+        "label": "Wikipedia: Helmeted hornbill"
+      }
+    ]
+  },
+  "Philippine eagle": {
+    "traits": {
+      "length": "86–102 cm long",
+      "weight": "4.04–8.0 kg",
+      "lifespan": "Estimated 30–60 years in the wild; the longest captive record is 41 years (Rome Zoo)"
+    },
+    "behavior": {
+      "food": "An opportunistic top predator that takes whatever local prey is plentiful and easy to catch (not almost exclusively monkeys)",
+      "breeding": "Each breeding pair needs a very large home range, which makes the species especially sensitive to deforestation"
+    },
+    "population": {
+      "estimate": "About 82–233 breeding pairs on Mindanao",
+      "scope": "Mindanao only (the island where the species is most numerous)"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Pithecophaga jefferyi"
+      },
+      {
+        "label": "Wikipedia: Philippine eagle"
+      }
+    ]
+  },
+  "African penguin": {
+    "traits": {
+      "length": "60–70 cm tall",
+      "weight": "2.2–3.5 kg on average",
+      "lifespan": "About 10–25 years in the wild; up to about 34 years in captivity"
+    },
+    "behavior": {
+      "food": "Pursuit diver that mainly eats fish and squid; as sardines declined, its diet shifted partly to anchovies",
+      "social": "Colonial, breeding on 27 islands between Namibia and Algoa Bay in South Africa, with two mainland colonies near Cape Town",
+      "breeding": "The only penguin that breeds in Africa"
+    },
+    "population": {
+      "estimate": "About 150,000–180,000",
+      "scope": "Worldwide population",
+      "year": "2000 (an older figure)",
+      "trend": "Estimated at about 1.5 million in 1910; only about 10% remained by the end of the 20th century"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Spheniscus demersus"
+      },
+      {
+        "label": "Wikipedia: African penguin"
+      }
+    ]
+  },
+  "Vaquita": {
+    "traits": {
+      "length": "Maximum length: females about 150 cm, males about 140 cm (the smallest living cetacean)",
+      "weight": "About 27–68 kg",
+      "lifespan": "Estimated at about 20 years; mature at 3–6 years"
+    },
+    "behavior": {
+      "food": "Mainly bottom-dwelling fish (such as croakers), plus crustaceans and squid",
+      "social": "Usually seen alone or in pairs, often with a calf; small groups of up to 10 have been seen",
+      "breeding": "Possibly polygynous, with males competing for females"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Phocoena sinus"
+      },
+      {
+        "label": "Wikipedia: Vaquita"
+      }
+    ]
+  },
+  "Whale shark": {
+    "behavior": {
+      "food": "Filter feeder: mainly plankton, krill, fish eggs and small schooling fish such as sardines and anchovies",
+      "activity": "Highly migratory; gathers seasonally at places such as Ningaloo Reef in Australia, the Yucatán Peninsula in Mexico, and off Gujarat and Kerala in India",
+      "breeding": "Birth has never been observed; mating has been recorded only twice, at Saint Helena"
+    },
+    "population": {
+      "trend": "The population fell by more than 50% over the past 75 years (the basis of the IUCN assessment)"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Rhincodon typus"
+      },
+      {
+        "label": "Wikipedia: Whale shark"
+      }
+    ]
+  },
+  "Largetooth sawfish": {
+    "traits": {
+      "length": "The largest confirmed individual was about 7 m; most today are 2–2.5 m",
+      "weight": "Large individuals can reach 500–600 kg",
+      "lifespan": "Lifespan unknown; four estimates give 30, 35, 44 and 80 years"
+    },
+    "behavior": {
+      "food": "Eats fish, molluscs and crustaceans",
+      "activity": "Uses its saw to stir up the bottom in search of prey, or slashes through schools of fish",
+      "breeding": "Breeds seasonally and gives birth to live young; the timing varies by region"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Pristis pristis"
+      },
+      {
+        "label": "Wikipedia: Largetooth sawfish"
+      }
+    ]
+  },
+  "Giant oceanic manta ray": {
+    "traits": {
+      "length": "Disc up to about 7 m across, commonly about 4.5 m",
+      "weight": "Up to about 3,000 kg"
+    },
+    "behavior": {
+      "food": "Filters zooplankton such as copepods, mysid shrimp and krill, and occasionally small fish",
+      "activity": "An ocean-going species that travels with the currents, alone or in groups of up to 50",
+      "breeding": "Males mature at a disc width of about 4 m, females at about 5 m"
+    },
+    "population": {
+      "trend": "Numbers have dropped sharply over the last 20 years because of overfishing"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Mobula birostris"
+      },
+      {
+        "label": "Wikipedia: Giant oceanic manta ray"
+      }
+    ]
+  },
+  "European eel": {
+    "traits": {
+      "lifespan": "About 15–20 years in the wild; some captive eels have lived more than 80 years"
+    },
+    "behavior": {
+      "food": "Forages at night by smell: worms, fish, molluscs, crustaceans, and occasionally plankton when it is abundant",
+      "breeding": "Spawns in the Sargasso Sea; mating in the wild has never been observed"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Anguilla anguilla"
+      },
+      {
+        "label": "Wikipedia: European eel"
+      }
+    ]
+  },
+  "Golden poison frog": {
+    "traits": {
+      "length": "Adults about 6 cm long",
+      "weight": "Nearly 30 g"
+    },
+    "behavior": {
+      "food": "Tadpoles eat algae and mosquito larvae",
+      "activity": "Active by day",
+      "social": "Individuals are evenly spaced and do not form large groups"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Phyllobates terribilis"
+      },
+      {
+        "label": "Wikipedia: Golden poison frog"
+      }
+    ]
+  },
+  "Javan rhinoceros": {
+    "traits": {
+      "length": "3.1–3.2 m long",
+      "weight": "The heaviest individuals reach about 2,300 kg",
+      "lifespan": "About 30–45 years in the wild"
+    },
+    "behavior": {
+      "food": "Herbivore: shoots, twigs, young leaves and fallen fruit; the most flexible feeder of all rhinos",
+      "social": "Largely solitary, apart from mating pairs and mothers with calves"
+    },
+    "population": {
+      "estimate": "About 74",
+      "scope": "Only Ujung Kulon National Park, Indonesia"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Rhinoceros sondaicus"
+      },
+      {
+        "label": "Wikipedia: Javan rhinoceros"
+      }
+    ]
+  },
+  "Sumatran rhinoceros": {
+    "traits": {
+      "length": "Head and body 2.36–3.18 m, 112–145 cm tall at the shoulder",
+      "weight": "500–1,000 kg, averaging about 700–800 kg",
+      "lifespan": "Estimated at about 30–45 years in the wild"
+    },
+    "behavior": {
+      "social": "Largely solitary, together only for courtship and raising young"
+    },
+    "population": {
+      "estimate": "Fewer than 80 mature individuals",
+      "scope": "Worldwide; only 5 sizeable wild populations (4 on Sumatra, 1 on Borneo)"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Dicerorhinus sumatrensis"
+      },
+      {
+        "label": "Wikipedia: Sumatran rhinoceros"
+      }
+    ]
+  },
+  "Black rhinoceros": {
+    "traits": {
+      "length": "1.32–1.8 m tall at the shoulder, 2.8–3.75 m long",
+      "weight": "Adults mostly 800–1,400 kg",
+      "lifespan": "About 35–50 years without poaching pressure"
+    },
+    "behavior": {
+      "food": "Plucks leaves and twigs with its pointed, grasping upper lip",
+      "social": "Generally considered solitary; the only lasting bond is between mother and calf"
+    },
+    "population": {
+      "estimate": "3,142 mature individuals",
+      "scope": "Worldwide in the wild (IUCN estimate)"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Diceros bicornis"
+      },
+      {
+        "label": "Wikipedia: Black rhinoceros"
+      }
+    ]
+  },
+  "African forest elephant": {
+    "traits": {
+      "length": "Bulls about 2.4–3 m tall at the shoulder, cows about 1.8–2.4 m",
+      "weight": "Bulls about 4–7 tonnes, cows about 2–4 tonnes (a 2000 study)",
+      "lifespan": "About 60–70 years"
+    },
+    "behavior": {
+      "food": "Herbivore; gathers at mineral-rich water holes and salt licks to take in minerals",
+      "social": "Matriarchal family groups of up to about 20, made up of adult cows and their offspring",
+      "breeding": "Adult bulls join family groups only in the mating season; family members share the care of calves"
+    },
+    "population": {
+      "estimate": "Fewer than 30,000",
+      "scope": "Worldwide",
+      "year": "2013 estimate",
+      "trend": "Excessive hunting in the 20th century caused a steep decline"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Loxodonta cyclotis"
+      },
+      {
+        "label": "Wikipedia: African forest elephant"
+      }
+    ]
+  },
+  "Asian elephant": {
+    "traits": {
+      "weight": "Bulls average about 4 tonnes, cows about 2.7 tonnes",
+      "lifespan": "About 60 years in the wild"
+    },
+    "behavior": {
+      "food": "Herbivore that eats about 150 kg of plants a day, both grazing and browsing",
+      "social": "Cows and calves live in herds; bulls live alone or in bachelor groups",
+      "breeding": "In the breeding season, bulls temporarily join cow herds to mate"
+    },
+    "population": {
+      "trend": "Listed as Endangered since 1986; the population has fallen by at least 50% over about 60–75 years (three elephant generations)"
+    },
+    "china": {
+      "level": "Class I state-protected wild animal",
+      "note": "Under China's List of Wild Animals under State Key Protection."
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Elephas maximus"
+      },
+      {
+        "label": "Wikipedia: Asian elephant"
+      }
+    ]
+  },
+  "Sumatran orangutan": {
+    "traits": {
+      "weight": "Males about 90 kg, females about 45 kg",
+      "lifespan": "In the wild, females about 44–53 years, males about 47–58 years"
+    },
+    "behavior": {
+      "food": "Mainly soft fruit; eats more fruit and more insects than the Bornean orangutan",
+      "breeding": "Females begin giving birth at about 8 years old"
+    },
+    "population": {
+      "estimate": "About 14,613",
+      "scope": "Wild population on Sumatra",
+      "year": "2016 survey"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Pongo abelii"
+      },
+      {
+        "label": "Wikipedia: Sumatran orangutan"
+      }
+    ]
+  },
+  "Tapanuli orangutan": {
+    "traits": {
+      "weight": "Males about 70–90 kg and about 137 cm tall; females about 40–50 kg and about 110 cm tall"
+    },
+    "behavior": {
+      "food": "An unusual diet that includes caterpillars and conifer cones"
+    },
+    "population": {
+      "estimate": "About 800",
+      "scope": "Worldwide (the species lives only in the Batang Toru area)",
+      "year": "2018"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Pongo tapanuliensis"
+      },
+      {
+        "label": "Wikipedia: Tapanuli orangutan"
+      }
+    ]
+  },
+  "Bornean orangutan": {
+    "traits": {
+      "lifespan": "About 35–45 years in the wild; up to about 60 years in captivity"
+    },
+    "behavior": {
+      "food": "More than 400 kinds of food, including fruit, seeds, flowers, bird eggs, sap and vines",
+      "social": "More solitary than the Sumatran orangutan",
+      "breeding": "Larger males dominate, but smaller males also breed successfully"
+    },
+    "population": {
+      "estimate": "About 104,700",
+      "scope": "Wild population on Borneo"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Pongo pygmaeus"
+      },
+      {
+        "label": "Wikipedia: Bornean orangutan"
+      }
+    ]
+  },
+  "Cross River gorilla": {
+    "traits": {
+      "weight": "Males average about 140–200 kg, females about 100 kg"
+    },
+    "behavior": {
+      "activity": "Lives at 11 sites within an area of about 12,000 km²",
+      "social": "Groups usually consist of 1 male, 6–7 females and their young"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Gorilla gorilla diehli"
+      },
+      {
+        "label": "Wikipedia: Cross River gorilla"
+      }
+    ]
+  },
+  "Bonobo": {
+    "traits": {
+      "weight": "34–60 kg; males average about 45 kg, females about 33 kg",
+      "lifespan": "Usually about 40 years in captivity; lifespan in the wild unknown"
+    },
+    "behavior": {
+      "food": "Mainly fruit",
+      "social": "Females usually get first access to food"
+    },
+    "population": {
+      "estimate": "No exact figure; estimates range from 29,500 to 50,000",
+      "scope": "Worldwide in the wild"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Pan paniscus"
+      },
+      {
+        "label": "Wikipedia: Bonobo"
+      }
+    ]
+  },
+  "Red panda": {
+    "traits": {
+      "length": "Head and body 51–63.5 cm, tail 28–48.5 cm",
+      "weight": "About 3.2–15 kg (sources give a wide range)",
+      "lifespan": "Up to about 14 years in captivity"
+    },
+    "behavior": {
+      "food": "Mainly bamboo shoots and leaves, plus fruit and flowers",
+      "activity": "Solitary and mostly lives in trees; active at night and at dawn and dusk",
+      "breeding": "Mates in early spring and gives birth in summer, to up to 4 cubs"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Ailurus fulgens"
+      },
+      {
+        "label": "Wikipedia: Red panda"
+      }
+    ]
+  },
+  "Ethiopian wolf": {
+    "traits": {
+      "length": "84–101 cm long, 53–62 cm tall at the shoulder"
+    },
+    "behavior": {
+      "food": "Highly specialised: mainly hunts rodents of the Afroalpine meadows",
+      "social": "Lives in packs; family groups have up to about 20 adults, commonly about 6",
+      "breeding": "Apart from the breeding female, reproduction is suppressed in other pack members"
+    },
+    "population": {
+      "estimate": "360–440 adults",
+      "scope": "Only 7 isolated mountain ranges (3,000–4,500 m above sea level), more than half in the Bale Mountains",
+      "year": "2011 estimate"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Canis simensis"
+      },
+      {
+        "label": "Wikipedia: Ethiopian wolf"
+      }
+    ]
+  },
+  "African wild dog": {
+    "traits": {
+      "length": "Head and body 71–112 cm, 60–75 cm tall at the shoulder",
+      "weight": "18–36 kg",
+      "lifespan": "About 10–11 years on average in the wild"
+    },
+    "behavior": {
+      "food": "Specialises in hunting hoofed land mammals, mostly at dawn and dusk, though it is also active by day",
+      "social": "Lives in stable packs of 2–27 adults and yearlings",
+      "breeding": "Breeding is usually monopolised by the dominant pair"
+    },
+    "population": {
+      "estimate": "About 6,600 adults (about 1,400 of them mature)",
+      "scope": "Worldwide, spread across 39 subpopulations; the largest may have fewer than 250",
+      "year": "IUCN assessment"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Lycaon pictus"
+      },
+      {
+        "label": "Wikipedia: African wild dog"
+      }
+    ]
+  },
+  "Tiger": {
+    "traits": {
+      "length": "Head and body 1.4–2.8 m, tail 0.6–1.1 m, 0.8–1.1 m tall at the shoulder",
+      "lifespan": "The longest captive record is about 19 years (International Tiger Studbook)"
+    },
+    "behavior": {
+      "social": "Solitary most of the time; males and females each guard their own home range",
+      "breeding": "Tigresses usually have 2–3 cubs, which stay with their mother for about two years"
+    },
+    "china": {
+      "level": "Class I state-protected wild animal",
+      "note": "Under China's List of Wild Animals under State Key Protection."
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Panthera tigris"
+      },
+      {
+        "label": "Wikipedia: Tiger"
+      }
+    ]
+  },
+  "Iberian lynx": {
+    "traits": {
+      "length": "Head and body: males about 74.7–82 cm, females about 68.2–77.5 cm",
+      "weight": "Males about 7–15.9 kg, females about 9.2–10 kg",
+      "lifespan": "Up to about 13 years in the wild"
+    },
+    "behavior": {
+      "food": "Mainly European rabbits, supplemented by red-legged partridges and rodents, and occasionally small hoofed animals"
+    },
+    "population": {
+      "estimate": "94 (2002)",
+      "scope": "Two isolated populations in Andalusia",
+      "year": "2002",
+      "trend": "This was the historic low of 2002, not the current situation; the range has since expanded, with reintroduction projects in several places"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Lynx pardinus"
+      },
+      {
+        "label": "Wikipedia: Iberian lynx"
+      }
+    ]
+  },
+  "Mediterranean monk seal": {
+    "traits": {
+      "length": "Adults average about 2.4 m",
+      "weight": "240–400 kg (males average about 320 kg, females about 300 kg)",
+      "lifespan": "Up to about 45 years, averaging about 20–25 years"
+    },
+    "behavior": {
+      "food": "Forages by day for fish, crustaceans and molluscs (mainly octopus, squid, lobster, mullet, flatfish, tuna, sardines and eels), eating up to about 3 kg a day",
+      "breeding": "No fixed breeding season: pups are born all year round, most in September–November; mature at about 4 years old"
+    },
+    "population": {
+      "estimate": "About 800–1,000",
+      "scope": "Scattered across the Aegean Sea, the Madeira Islands and Cap Blanc between Mauritania and Western Sahara",
+      "year": "2026 estimate"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Monachus monachus"
+      },
+      {
+        "label": "Wikipedia: Mediterranean monk seal"
+      }
+    ]
+  },
+  "Hawaiian monk seal": {
+    "traits": {
+      "length": "Males about 2.1 m long, females about 2.4 m",
+      "weight": "Males about 140–180 kg, females about 180–270 kg",
+      "lifespan": "Up to about 25–30 years"
+    },
+    "behavior": {
+      "food": "Mainly bony reef fish, plus cephalopods and crustaceans"
+    },
+    "population": {
+      "estimate": "About 1,400",
+      "scope": "Hawaiian Islands",
+      "trend": "A 2010 estimate put the population at only about 1,100"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Neomonachus schauinslandi"
+      },
+      {
+        "label": "Wikipedia: Hawaiian monk seal"
+      }
+    ]
+  },
+  "North Atlantic right whale": {
+    "traits": {
+      "length": "Adults average 13–18 m",
+      "weight": "About 40,000–90,000 kg",
+      "lifespan": "Estimated at 70 years or more; but a 2024 study found an average lifespan of only about 22 years, possibly linked to losses caused by whaling"
+    },
+    "behavior": {
+      "activity": "Migrates between feeding grounds in the Labrador Sea and winter calving grounds off Georgia and Florida"
+    },
+    "population": {
+      "estimate": "About 380, of which about 70 are breeding females",
+      "scope": "Western North Atlantic",
+      "year": "2026 estimate"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Eubalaena glacialis"
+      },
+      {
+        "label": "Wikipedia: North Atlantic right whale"
+      }
+    ]
+  },
+  "Blue whale": {
+    "traits": {
+      "length": "The largest confirmed length is about 30 m",
+      "weight": "Up to about 190–200 tonnes",
+      "lifespan": "At least 40–45 years (long-term photo-identification studies in the northeast Pacific)"
+    },
+    "behavior": {
+      "food": "Filter feeder whose diet is almost entirely krill",
+      "activity": "Generally migrates seasonally, feeding near the poles in summer and moving to breeding grounds near the tropics in winter",
+      "social": "Usually alone or in small groups, with no clear social structure beyond mother and calf"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Balaenoptera musculus"
+      },
+      {
+        "label": "Wikipedia: Blue whale"
+      }
+    ]
+  },
+  "Antarctic blue whale": {
+    "traits": {
+      "length": "For the blue whale species as a whole, the largest confirmed length is about 30 m",
+      "weight": "For the blue whale species as a whole, up to about 190–200 tonnes",
+      "lifespan": "For the blue whale species as a whole, at least 40–45 years"
+    },
+    "behavior": {
+      "food": "For the blue whale species as a whole, the diet is almost entirely krill"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Balaenoptera musculus intermedia"
+      },
+      {
+        "label": "Wikipedia: Blue whale"
+      }
+    ]
+  },
+  "Dugong": {
+    "traits": {
+      "weight": "Adults usually weigh 250–900 kg",
+      "lifespan": "More than 70 years"
+    },
+    "behavior": {
+      "food": "Herbivore that grazes seagrass from the seabed with its downturned snout",
+      "breeding": "Breeds very slowly"
+    },
+    "population": {
+      "estimate": "More than 20,000",
+      "scope": "Only the Gulf of Carpentaria in Australia's Northern Territory (a regional figure, not worldwide)",
+      "trend": "The worldwide population is generally thought to have fallen by about 20% over the last 90 years, but the total is uncertain"
+    },
+    "china": {
+      "level": "Class I state-protected wild animal",
+      "note": "Under China's List of Wild Animals under State Key Protection."
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Dugong dugon"
+      },
+      {
+        "label": "Wikipedia: Dugong"
+      }
+    ]
+  },
+  "Amazon river dolphin": {
+    "traits": {
+      "length": "Males up to about 2.5 m long",
+      "weight": "Males up to about 185 kg (males are about 16% longer and 55% heavier than females)",
+      "lifespan": "Lifespan in the wild unknown; healthy captive animals have lived 10–30 years"
+    },
+    "behavior": {
+      "food": "A very broad diet of up to 53 fish species, such as croakers, catfish, characins and piranhas",
+      "social": "Usually seen alone or in pairs; groups rarely exceed 8",
+      "activity": "In the rainy season the sexes separate: males mostly stay in river channels, while females with calves use flooded areas"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Inia geoffrensis"
+      },
+      {
+        "label": "Wikipedia: Amazon river dolphin"
+      }
+    ]
+  },
+  "Indus river dolphin": {
+    "traits": {
+      "lifespan": "The oldest recorded individual was a 28-year-old male, 199 cm long"
+    },
+    "population": {
+      "estimate": "About 2,100",
+      "scope": "Indus River, Pakistan (survey by the Sindh Wildlife Department)",
+      "year": "2021 survey",
+      "trend": "Estimated at about 1,800 in 2017 (about 1,200 in 2001)"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Platanista minor"
+      },
+      {
+        "label": "Wikipedia: Indus river dolphin"
+      }
+    ]
+  },
+  "Polar bear": {
+    "traits": {
+      "length": "Males about 200–250 cm long",
+      "weight": "Males 300–800 kg",
+      "lifespan": "Up to about 30 years"
+    },
+    "behavior": {
+      "food": "Mostly carnivorous, specialising in hunting seals, especially ringed seals",
+      "social": "Usually solitary, though bears may gather on land",
+      "breeding": "In the breeding season, males guard females and keep rivals away"
+    },
+    "population": {
+      "estimate": "22,000–31,000",
+      "scope": "Worldwide (IUCN estimate)"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Ursus maritimus"
+      },
+      {
+        "label": "Wikipedia: Polar bear"
+      }
+    ]
+  },
+  "Giant panda": {
+    "traits": {
+      "length": "1.2–1.9 m long",
+      "weight": "Adults about 100–115 kg"
+    },
+    "behavior": {
+      "food": "Feeds almost entirely on bamboo.",
+      "social": "Solitary, coming together only in the mating season",
+      "breeding": "Females raise their cubs for 18–24 months on average"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List: Ailuropoda melanoleuca"
+      },
+      {
+        "label": "WWF: Giant panda"
+      }
+    ],
+    "china": {
+      "level": "Class I state-protected wild animal",
+      "note": "Under China's List of Wild Animals under State Key Protection."
+    },
+    "habitat": "Mountain bamboo forests of central and western China, in parts of the mountain ranges of Sichuan, Shaanxi and Gansu.",
+    "population": {
+      "estimate": "About 1,864 (adults and subadults, not including cubs)",
+      "scope": "Wild population in China (Fourth National Giant Panda Survey)",
+      "year": "Surveyed 2011–2014, published 2015",
+      "trend": "The 2016 IUCN assessment marked the population trend as \"increasing\"; this reflects the wild population only, not captive animals."
+    },
+    "threats": [
+      "Roads, development and farming divide its habitat, cutting the population into small, isolated patches.",
+      "Climate change may affect where bamboo grows and how well it grows."
+    ],
+    "ecology": "The giant panda is often treated as an \"umbrella species\": protecting the bamboo and mountain forests it depends on also protects many other plants and animals that live alongside it.",
+    "conservation": [
+      "Since 2021, China has been building Giant Panda National Park, joining previously separate reserves into a larger whole.",
+      "In 2016 the IUCN moved it from \"Endangered\" to \"Vulnerable\", a sign that conservation work is paying off, though its habitat still needs continued protection."
+    ],
+    "didYouKnow": {
+      "text": "The giant panda's \"sixth finger\" is really a specialised wrist bone (the radial sesamoid). Working with the first digit, it lets the panda grip bamboo nimbly.",
+      "source": "Widely reported in reputable popular-science sources; see the sources below."
+    }
+  },
+  "Koala": {
+    "traits": {
+      "length": "About 60–85 cm long",
+      "weight": "4–15 kg",
+      "lifespan": "About 13–18 years in the wild (males face greater risks and may live shorter lives)"
+    },
+    "behavior": {
+      "food": "Mainly eats eucalyptus leaves, and usually lives in open eucalypt woodland",
+      "social": "Not social; the only bond is between a mother and her dependent young",
+      "breeding": "After birth, the young spends its first 6–7 months in the pouch"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Phascolarctos cinereus"
+      },
+      {
+        "label": "Wikipedia: Koala"
+      }
+    ]
+  },
+  "Tasmanian devil": {
+    "traits": {
+      "lifespan": "Few live longer than 5 years in the wild"
+    },
+    "behavior": {
+      "food": "Carnivore; the largest living carnivorous marsupial",
+      "social": "Usually solitary, but sometimes several feed together in one place",
+      "breeding": "Pregnancy lasts about three weeks and produces 20–30 young; the young leave the pouch after about 100 days"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Sarcophilus harrisii"
+      },
+      {
+        "label": "Wikipedia: Tasmanian devil"
+      }
+    ]
+  },
+  "Northern hairy-nosed wombat": {
+    "traits": {
+      "length": "About 35 cm tall and up to about 1 m long",
+      "weight": "Up to about 40 kg"
+    },
+    "behavior": {
+      "food": "Eats native grasses and various roots; spends little time feeding each day (about 6 hours in winter, about 2 hours in summer)",
+      "activity": "Nocturnal, living in networks of underground burrows",
+      "breeding": "Females are slightly larger than males"
+    },
+    "population": {
+      "estimate": "113 (about 30 of them breeding females)",
+      "scope": "Epping Forest National Park, Queensland",
+      "year": "2003 (an older figure)"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Lasiorhinus krefftii"
+      },
+      {
+        "label": "Wikipedia: Northern hairy-nosed wombat"
+      }
+    ]
+  },
+  "Ring-tailed lemur": {
+    "traits": {
+      "length": "Head and body 39–46 cm, tail 56–63 cm",
+      "weight": "About 2.2 kg on average",
+      "lifespan": "The longest record in the wild is a female that lived 20 years; females rarely live beyond 16"
+    },
+    "behavior": {
+      "food": "Omnivore; the most ground-adapted of all living lemurs",
+      "social": "Lives in groups (\"troops\") of up to about 30"
+    },
+    "population": {
+      "estimate": "About 2,000",
+      "scope": "Wild population in Madagascar (possibly as low as this figure)",
+      "year": "Early 2017"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Lemur catta"
+      },
+      {
+        "label": "Wikipedia: Ring-tailed lemur"
+      }
+    ]
+  },
+  "Greater bamboo lemur": {
+    "traits": {
+      "length": "Head and body 40–42 cm, tail 45–48 cm",
+      "weight": "Males average about 2.75 kg, females about 2.61 kg"
+    },
+    "behavior": {
+      "food": "A bamboo specialist: woody bamboo makes up as much as 95% of its diet, plus fruit, flowers and other grasses; its food contains high levels of cyanide",
+      "social": "Lives in groups of up to about 28; the only lemur in which males are dominant",
+      "breeding": "Females first give birth at 2–3 years old; mothers forage carrying their young on their backs or in their mouths"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Prolemur simus"
+      },
+      {
+        "label": "Wikipedia: Greater bamboo lemur"
+      }
+    ]
+  },
+  "California condor": {
+    "traits": {
+      "length": "Wingspan about 3.0 m, the widest of any North American bird",
+      "weight": "Up to about 14 kg",
+      "lifespan": "Can live up to about 60 years, one of the longest-lived birds in the world"
+    },
+    "behavior": {
+      "food": "Scavenger that eats large amounts of carrion",
+      "social": "Large groups have a developed social hierarchy, with pecking order settled through body language, competitive play, hisses and grunts"
+    },
+    "population": {
+      "trend": "In 1987 all 27 remaining wild birds were taken into captivity; captive breeding then increased their numbers, and releases to the wild began in 1991"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Gymnogyps californianus"
+      },
+      {
+        "label": "Wikipedia: California condor"
+      }
+    ]
+  },
+  "Whooping crane": {
+    "traits": {
+      "length": "Wingspan about 2–2.3 m; the tallest bird in North America",
+      "lifespan": "Estimated at 22–30 years or more in the wild"
+    },
+    "population": {
+      "estimate": "About 560",
+      "scope": "Wild migratory population (between coastal Texas and Canada's Northwest Territories, known as the Aransas–Wood Buffalo population)",
+      "year": "2025",
+      "trend": "About 140 more live in two reintroduced wild populations in Wisconsin and Louisiana; all populations together (including captive birds) total just over 830"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Grus americana"
+      },
+      {
+        "label": "Wikipedia: Whooping crane"
+      }
+    ]
+  },
+  "African grey parrot": {
+    "traits": {
+      "length": "About 33 cm long, wingspan 46–52 cm",
+      "weight": "Adults about 418–526 g",
+      "lifespan": "Up to 40–60 years in captivity; about 23 years on average in the wild"
+    },
+    "behavior": {
+      "food": "Mainly fruit, plus nuts and seeds (including oil-palm fruit); sometimes feeds on the ground"
+    },
+    "population": {
+      "estimate": "Estimated at between 630,000 and 13 million, very uncertain",
+      "scope": "Worldwide",
+      "trend": "A 2015 study found the Ghana population almost \"wiped out\", down 90–99% since 1992"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Psittacus erithacus"
+      },
+      {
+        "label": "Wikipedia: Grey parrot"
+      }
+    ]
+  },
+  "Shoebill": {
+    "traits": {
+      "length": "100–140 cm long, wingspan 230–260 cm",
+      "weight": "Reported at 4–7 kg"
+    },
+    "behavior": {
+      "food": "Mainly fish, but also hunts many other wetland vertebrates",
+      "social": "Solitary, a habit that extends to its breeding behaviour",
+      "breeding": "Both parents incubate the eggs, shade, guard and feed the chicks"
+    },
+    "population": {
+      "estimate": "About 5,000–8,000",
+      "scope": "Most live in the swamps of South Sudan, Uganda, the eastern Democratic Republic of the Congo and Zambia"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Balaeniceps rex"
+      },
+      {
+        "label": "Wikipedia: Shoebill"
+      }
+    ]
+  },
+  "Secretarybird": {
+    "traits": {
+      "length": "1.1–1.5 m long, wingspan 1.9–2.1 m",
+      "weight": "3.74–4.27 kg, averaging about 4.05 kg",
+      "lifespan": "About 10–15 years in the wild; up to about 19 years in captivity"
+    },
+    "behavior": {
+      "food": "Hunts on the ground, often stamping prey to death; eats insects and small vertebrates",
+      "social": "Up to 50 may gather at water holes in dry areas, or where rodents or locusts are swarming",
+      "breeding": "May breed at any time of year, mostly late in the dry season; nests on top of thorny trees, with 1–3 eggs per clutch"
+    },
+    "population": {
+      "estimate": "6,700–67,000",
+      "scope": "Worldwide (widespread but sparse)",
+      "year": "2016 estimate"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Sagittarius serpentarius"
+      },
+      {
+        "label": "Wikipedia: Secretarybird"
+      }
+    ]
+  },
+  "White-backed vulture": {
+    "traits": {
+      "length": "78–98 cm long, wingspan 1.96–2.25 m",
+      "weight": "4.2–7.2 kg"
+    },
+    "behavior": {
+      "food": "Its bill cannot tear tough hide, so it eats only soft tissue such as internal organs",
+      "social": "A social vulture that relies on others of its kind for information about food and carcasses"
+    },
+    "population": {
+      "trend": "The most widespread and common vulture in Africa, but declining fast; in one survey area, breeding pairs fell from 73 in 2007 to 22 in 2017"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Gyps africanus"
+      },
+      {
+        "label": "Wikipedia: White-backed vulture"
+      }
+    ]
+  },
+  "Hooded vulture": {
+    "traits": {
+      "length": "62–72 cm long, wingspan 155–180 cm",
+      "weight": "1.5–2.6 kg"
+    },
+    "behavior": {
+      "food": "Scavenger of carcasses and refuse; circles over savanna and settlements looking for rubbish dumps and slaughterhouses",
+      "social": "Can form loose colonies; in West Africa 50–250 often feed together, while in southern Africa it is solitary and secretive",
+      "breeding": "Builds a stick nest in a tree (often a palm) and lays 1 egg at a time"
+    },
+    "population": {
+      "trend": "Populations in areas such as Dakar, Senegal, have lost more than 85% over the past 50 years"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Necrosyrtes monachus"
+      },
+      {
+        "label": "Wikipedia: Hooded vulture"
+      }
+    ]
+  },
+  "Egyptian vulture": {
+    "traits": {
+      "lifespan": "Up to about 51 years in captivity; at least 21 years in the wild"
+    },
+    "behavior": {
+      "food": "Mainly a scavenger, but also opportunistically hunts small mammals, birds and reptiles; eats other birds' eggs, throwing stones to crack large ones",
+      "activity": "Populations that breed in temperate regions migrate south in winter; tropical populations are relatively sedentary",
+      "breeding": "In the Spanish population, young birds fledge after 90–110 days"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Neophron percnopterus"
+      },
+      {
+        "label": "Wikipedia: Egyptian vulture"
+      }
+    ]
+  },
+  "Great Indian bustard": {
+    "behavior": {
+      "food": "Omnivore; eats crops such as peanuts, millet and bean pods in farmland",
+      "social": "Solitary in the breeding season; forms small flocks in winter"
+    },
+    "population": {
+      "estimate": "About 150",
+      "scope": "India",
+      "year": "2018 estimate",
+      "trend": "About 250 in 2011; it has disappeared from about 90% of its former range"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Ardeotis nigriceps"
+      },
+      {
+        "label": "Wikipedia: Great Indian bustard"
+      }
+    ]
+  },
+  "Bengal florican": {
+    "traits": {
+      "length": "66–68 cm long, about 55 cm tall",
+      "weight": "Females about 1.7–1.9 kg, males about 1.2–1.5 kg"
+    },
+    "behavior": {
+      "activity": "Moves only short distances, perhaps a few tens of kilometres, and spends most of its time on its breeding grounds; easiest to see in the March–August breeding season, most often early in the morning and in the evening"
+    },
+    "population": {
+      "estimate": "Fewer than 1,000",
+      "scope": "Worldwide; the South Asian population has fewer than 350 adults, about 85% of them in India",
+      "year": "2017 estimate"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Houbaropsis bengalensis"
+      },
+      {
+        "label": "Wikipedia: Bengal florican"
+      }
+    ]
+  },
+  "Spoon-billed sandpiper": {
+    "traits": {
+      "length": "14–16 cm long"
+    },
+    "behavior": {
+      "food": "Sweeps its bill from side to side as it feeds; on the breeding grounds it eats small animals such as mosquitoes, flies, beetles and spiders"
+    },
+    "population": {
+      "estimate": "350–500 breeding birds",
+      "scope": "Worldwide breeding population",
+      "year": "2000 estimate (an older figure)",
+      "trend": "The breeding population has fallen markedly since the 1970s"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Calidris pygmaea"
+      },
+      {
+        "label": "Wikipedia: Spoon-billed sandpiper"
+      }
+    ]
+  },
+  "Yellow-crested cockatoo": {
+    "behavior": {
+      "food": "Mainly seeds, buds, fruit, nuts and herbaceous plants",
+      "breeding": "Eggs are white, usually 2 per clutch, and both parents incubate them"
+    },
+    "population": {
+      "estimate": "Fewer than 2,500",
+      "scope": "Worldwide",
+      "trend": "And thought to be still declining"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Cacatua sulphurea"
+      },
+      {
+        "label": "Wikipedia: Yellow-crested cockatoo"
+      }
+    ]
+  },
+  "Bali myna": {
+    "traits": {
+      "length": "Up to about 25 cm long"
+    },
+    "behavior": {
+      "food": "Eats fruit, seeds, worms and insects",
+      "social": "Young birds often move in flocks, which helps them find food and watch for predators",
+      "breeding": "Breeds in Bali's rainy season: males call loudly and bob their heads to attract females; nests in tree holes, where the female lays and incubates 2–3 eggs"
+    },
+    "population": {
+      "estimate": "Fewer than 50 adults",
+      "scope": "Wild population on Bali",
+      "year": "2020 estimate"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Leucopsar rothschildi"
+      },
+      {
+        "label": "Wikipedia: Bali starling"
+      }
+    ]
+  },
+  "Orange-bellied parrot": {
+    "traits": {
+      "length": "About 20 cm long"
+    },
+    "behavior": {
+      "food": "Eats the seeds and berries of small coastal grasses and shrubs",
+      "activity": "One of only three migratory parrots; breeds only in south-west Tasmania and winters on the southern coast of mainland Australia"
+    },
+    "population": {
+      "estimate": "91",
+      "scope": "Wild population",
+      "year": "November 2025",
+      "trend": "Only 14 remained in the wild in February 2017; several organisations run captive-breeding programmes"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Neophema chrysogaster"
+      },
+      {
+        "label": "Wikipedia: Orange-bellied parrot"
+      }
+    ]
+  },
+  "Regent honeyeater": {
+    "behavior": {
+      "food": "Mainly nectar from eucalypts and mistletoe, plus insects, honeydew and fruit",
+      "breeding": "Breeds mainly from August to January, matching the flowering of key eucalypts and mistletoe"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Anthochaera phrygia"
+      },
+      {
+        "label": "Wikipedia: Regent honeyeater"
+      }
+    ]
+  },
+  "Yellow-eyed penguin": {
+    "traits": {
+      "length": "62–79 cm tall",
+      "weight": "3–8.5 kg (heaviest before moulting)"
+    },
+    "behavior": {
+      "food": "Mainly fish",
+      "social": "Usually nests in separate pairs or loose small groups, not in large colonies like other penguins",
+      "breeding": "For the first six weeks after hatching, one parent guards the chicks by day while the other forages at sea"
+    },
+    "population": {
+      "trend": "Numbers on the Otago Peninsula have fallen by 75% since the mid-1990s; the trend suggests it could disappear locally from the peninsula within the next 20–40 years"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Megadyptes antipodes"
+      },
+      {
+        "label": "Wikipedia: Yellow-eyed penguin"
+      }
+    ]
+  },
+  "Galápagos penguin": {
+    "traits": {
+      "length": "48–50 cm tall",
+      "weight": "About 2–4 kg",
+      "lifespan": "15–20 years, possibly shorter in the wild because of predators and other factors"
+    },
+    "behavior": {
+      "food": "Eats fish and crustaceans in the waters fed by the Cromwell Current",
+      "breeding": "Monogamous and can breed at any time of year; parents take turns guarding the nest and foraging at sea"
+    },
+    "population": {
+      "estimate": "About 1,000 breeding pairs",
+      "scope": "Worldwide",
+      "year": "Average population of about 1,500 birds in 1993–2003"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Spheniscus mendiculus"
+      },
+      {
+        "label": "Wikipedia: Galapagos penguin"
+      }
+    ]
+  },
+  "Blue-throated macaw": {
+    "traits": {
+      "length": "About 85 cm long (including tail feathers), wingspan about 90 cm",
+      "weight": "About 900–1,100 g",
+      "lifespan": "Can live more than 50 years in captivity"
+    },
+    "behavior": {
+      "social": "Mostly in monogamous pairs, also in small flocks of 7–9; one large roost of 70 birds is known",
+      "breeding": "Usually breeds once a year; if eggs or chicks are lost, it may lay again in the same season"
+    },
+    "population": {
+      "estimate": "About 208–303 adults",
+      "scope": "Wild population"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Ara glaucogularis"
+      },
+      {
+        "label": "Wikipedia: Blue-throated macaw"
+      }
+    ]
+  },
+  "Lear's macaw": {
+    "traits": {
+      "length": "70–75 cm long",
+      "weight": "About 950 g",
+      "lifespan": "The highest captive record is 38.3 years"
+    },
+    "behavior": {
+      "food": "Mainly the nuts of the licuri palm (Syagrus coronata), eating up to 350 a day, plus other seeds and agave flowers; also takes farmers' maize",
+      "social": "Often forages in flocks",
+      "breeding": "The breeding season begins with the summer rains early in the year, and the young leave the nest in May"
+    },
+    "population": {
+      "trend": "Under stronger protection, the worldwide population grew about thirtyfold in the first two decades of the 21st century"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Anodorhynchus leari"
+      },
+      {
+        "label": "Wikipedia: Lear's macaw"
+      }
+    ]
+  },
+  "Harpy eagle": {
+    "traits": {
+      "weight": "Females usually about 6–9 kg"
+    },
+    "behavior": {
+      "food": "Mainly hunts tree-dwelling mammals, above all sloths; females can snatch howler monkeys, spider monkeys or adult sloths of 6–9 kg in flight",
+      "breeding": "Nests and hunts in the upper canopy (the emergent layer) of tropical lowland rainforest"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Harpia harpyja"
+      },
+      {
+        "label": "Wikipedia: Harpy eagle"
+      }
+    ]
+  },
+  "Andean condor": {
+    "traits": {
+      "length": "Wingspan up to about 3.3 m",
+      "weight": "Up to about 15 kg, averaging about 11.3 kg (males about 12.5, females about 10.1)",
+      "lifespan": "Some individuals live more than 70 years"
+    },
+    "behavior": {
+      "food": "Mainly a scavenger",
+      "social": "Large groups have a developed social hierarchy, with pecking order settled through body language, competitive play and calls",
+      "breeding": "Usually lays 1–2 eggs per clutch"
+    },
+    "population": {
+      "estimate": "About 10,000",
+      "scope": "Worldwide",
+      "year": "Around 2020"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Vultur gryphus"
+      },
+      {
+        "label": "Wikipedia: Andean condor"
+      }
+    ]
+  },
+  "Grey crowned crane": {
+    "traits": {
+      "length": "About 1 m tall, wingspan about 2 m",
+      "weight": "About 3.5 kg"
+    },
+    "behavior": {
+      "food": "Omnivore: plants, seeds, grain, insects, frogs, worms, snakes, small fish and the eggs of aquatic animals",
+      "activity": "Has no fixed migration route; birds nearer the tropics are mostly resident"
+    },
+    "population": {
+      "estimate": "58,000–77,000",
+      "scope": "Worldwide estimate"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Balearica regulorum"
+      },
+      {
+        "label": "Wikipedia: Grey crowned crane"
+      }
+    ]
+  },
+  "Northern bald ibis": {
+    "traits": {
+      "length": "70–80 cm long, wingspan 125–135 cm",
+      "weight": "1.0–1.3 kg on average",
+      "lifespan": "20–25 years on average in captivity (the oldest male lived 37 years, the oldest female 30)"
+    },
+    "behavior": {
+      "food": "Forages in semi-arid steppe and fallow fields, eating small animals such as lizards and insects",
+      "social": "Breeds in colonies on sea or mountain cliffs",
+      "breeding": "Builds stick nests, usually with 2–3 eggs per clutch"
+    },
+    "population": {
+      "trend": "The Birecik colony in Turkey had about 500 breeding pairs in the first half of the 20th century, and about 3,000 birds around 1930; numbers crashed in the 1970s. Recent reintroductions brought Turkey's semi-wild colony close to 250 birds in 2018"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Geronticus eremita"
+      },
+      {
+        "label": "Wikipedia: Northern bald ibis"
+      }
+    ]
+  },
+  "Atlantic puffin": {
+    "behavior": {
+      "food": "Zooplankton, small fish and crabs, caught by diving and swimming with its wings",
+      "social": "Breeds in clifftop colonies",
+      "breeding": "Digs a burrow to nest in and lays a single white egg"
+    },
+    "population": {
+      "estimate": "9.54–11.6 million adults (4.77–5.78 million pairs)",
+      "scope": "More than 90% of the worldwide population is in Europe; Iceland's colonies hold about 60% of the world total"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Fratercula arctica"
+      },
+      {
+        "label": "Wikipedia: Atlantic puffin"
+      }
+    ]
+  },
+  "Macaroni penguin": {
+    "traits": {
+      "length": "Adults average about 70 cm",
+      "weight": "About 5.5 kg on average (varying greatly with season and sex)"
+    },
+    "behavior": {
+      "food": "Eats krill and other crustaceans, plus small fish and cephalopods; consumes more marine life each year than any other seabird",
+      "social": "Breeding colonies reach up to about 100,000 birds, among the densest of any penguin"
+    },
+    "population": {
+      "estimate": "About 18 million",
+      "scope": "Worldwide",
+      "year": "An older estimate; later assessments show numbers have declined"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Eudyptes chrysolophus"
+      },
+      {
+        "label": "Wikipedia: Macaroni penguin"
+      }
+    ]
+  },
+  "Chinese alligator": {
+    "traits": {
+      "length": "Adults 1.5–2.1 m long",
+      "weight": "Adults 36–45 kg",
+      "lifespan": "Can exceed 50 years; up to about 70 years in captivity"
+    },
+    "behavior": {
+      "food": "Opportunistic feeder, mainly eating fish and invertebrates",
+      "activity": "Nocturnal in summer; spends the winter dormant in burrows",
+      "breeding": "Mates in early summer; females usually lay 20–30 eggs, the smallest eggs of any crocodilian"
+    },
+    "population": {
+      "estimate": "About 300",
+      "scope": "Wild population",
+      "year": "2017",
+      "trend": "About 1,000 in the wild in the 1970s, falling to fewer than 130 in 2001, with a recovery after 2003"
+    },
+    "china": {
+      "level": "Class I state-protected wild animal",
+      "note": "Under China's List of Wild Animals under State Key Protection."
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Alligator sinensis"
+      },
+      {
+        "label": "Wikipedia: Chinese alligator"
+      }
+    ]
+  },
+  "Siamese crocodile": {
+    "traits": {
+      "length": "Young 1.2–1.5 m, adults 2.1–3 m",
+      "weight": "Adults 40–120 kg"
+    },
+    "behavior": {
+      "food": "Adults mainly eat fish and snakes, plus amphibians and small mammals",
+      "breeding": "In captive observations it breeds in the rainy season (April–May), laying 15–50 eggs and guarding them until they hatch; the female helps the young out of their shells and carries them to the water in her mouth"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Crocodylus siamensis"
+      },
+      {
+        "label": "Wikipedia: Siamese crocodile"
+      }
+    ]
+  },
+  "Philippine crocodile": {
+    "traits": {
+      "length": "Adults rarely exceed 2.7 m, with a maximum record of about 3.5 m; can breed at about 1.5 m",
+      "weight": "Adults rarely exceed 90 kg; can breed at about 15 kg"
+    },
+    "population": {
+      "estimate": "About 100 (not counting juveniles)",
+      "scope": "Wild population"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Crocodylus mindorensis"
+      },
+      {
+        "label": "Wikipedia: Philippine crocodile"
+      }
+    ]
+  },
+  "Orinoco crocodile": {
+    "traits": {
+      "length": "Males of up to 6.8 m were once reported; the more widely accepted maximum is about 5.2 m, and large males today are about 4.2 m",
+      "weight": "Large males up to about 450 kg, females up to about 225 kg",
+      "lifespan": "Possibly 70–80 years without persecution"
+    },
+    "behavior": {
+      "food": "A top predator that favours fish but has a flexible diet, taking birds, mammals and reptiles, occasionally including caimans",
+      "social": "Females guard their group of young, usually for about a year and sometimes for more than three",
+      "breeding": "Digs holes in sand to lay its eggs"
+    },
+    "population": {
+      "trend": "Thousands were killed in the Orinoco River and the Llanos wetlands from the 1940s to the 1960s, bringing it close to extinction"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Crocodylus intermedius"
+      },
+      {
+        "label": "Wikipedia: Orinoco crocodile"
+      }
+    ]
+  },
+  "Radiated tortoise": {
+    "traits": {
+      "length": "Shell 26–38 cm long",
+      "weight": "2.5–8.8 kg",
+      "lifespan": "The longest record is 188 years (an estimated age, for a tortoise named Tu'i Malila)"
+    },
+    "behavior": {
+      "food": "Herbivore; grass makes up 80–90% of its diet, along with fruit and succulents",
+      "breeding": "Females lay 3–12 eggs at a time, bury them in a hole about 15–20 cm deep and then leave"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Astrochelys radiata"
+      },
+      {
+        "label": "Wikipedia: Radiated tortoise"
+      }
+    ]
+  },
+  "Ploughshare tortoise": {
+    "traits": {
+      "length": "Males have a shell up to about 43 cm long"
+    },
+    "behavior": {
+      "food": "Grazes on open rocky ground among bamboo thickets, and has been seen eating the dried dung of animals such as bushpigs"
+    },
+    "population": {
+      "estimate": "About 800",
+      "scope": "Wild population (north-western Madagascar)",
+      "year": "2005 estimate (an older figure)"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Astrochelys yniphora"
+      },
+      {
+        "label": "Wikipedia: Angonoka tortoise"
+      }
+    ]
+  },
+  "Yangtze giant softshell turtle": {
+    "traits": {
+      "length": "Adults more than 100 cm long and more than 70 cm wide",
+      "weight": "70–100 kg"
+    },
+    "behavior": {
+      "food": "Eats fish, crabs, snails and frogs, as well as aquatic plants such as water hyacinth",
+      "breeding": "Usually lays 20–80 eggs per clutch, mostly at night or early in the morning"
+    },
+    "population": {
+      "trend": "In the six breeding seasons before 2013, 80 eggs were laid and none hatched; in 2008 a fertile female was moved to Suzhou Zoo to pair with the only known captive male (about 100 years old)"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Rafetus swinhoei"
+      },
+      {
+        "label": "Wikipedia: Yangtze giant softshell turtle"
+      }
+    ]
+  },
+  "Leatherback turtle": {
+    "traits": {
+      "length": "Up to about 2.7 m long",
+      "weight": "Up to about 500 kg",
+      "lifespan": "Little is known about its lifespan"
+    },
+    "behavior": {
+      "food": "Mainly eats jellyfish, feeding in cooler waters",
+      "activity": "Pacific leatherbacks migrate about 9,700 km from nesting beaches in Indonesia to feed on jellyfish off California; the deepest recorded dive is about 1,280 m"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Dermochelys coriacea"
+      },
+      {
+        "label": "Wikipedia: Leatherback sea turtle"
+      }
+    ]
+  },
+  "Kemp's ridley turtle": {
+    "traits": {
+      "length": "Shell 58–70 cm long",
+      "weight": "About 36–45 kg at maturity"
+    },
+    "behavior": {
+      "food": "Eats molluscs, crustaceans (floating crabs and shrimp), jellyfish, fish, algae and sea urchins; young turtles feed mainly at the surface, while adults forage opportunistically on the seabed, mainly for crabs",
+      "breeding": "Most females return each year to the same beach, Rancho Nuevo in Tamaulipas, Mexico, to nest"
+    },
+    "population": {
+      "trend": "Nesting females are estimated to have fallen from about 89,000 in 1947 to about 7,702 in 1985"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Lepidochelys kempii"
+      },
+      {
+        "label": "Wikipedia: Kemp's ridley sea turtle"
+      }
+    ]
+  },
+  "Loggerhead turtle": {
+    "traits": {
+      "length": "Adult shells average about 90 cm",
+      "weight": "Adults average about 135 kg, up to about 200 kg",
+      "lifespan": "Takes 17–33 years to mature; estimated maximum lifespan in the wild 47–67 years"
+    },
+    "behavior": {
+      "food": "Omnivore, mainly eating invertebrates on the seabed",
+      "breeding": "Low reproductive rate: after laying about 4 clutches on average, a female rests for 2–3 years before nesting again"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Caretta caretta"
+      },
+      {
+        "label": "Wikipedia: Loggerhead sea turtle"
+      }
+    ]
+  },
+  "Komodo dragon": {
+    "traits": {
+      "length": "Males up to about 3 m long",
+      "weight": "Males up to about 150 kg; wild adults usually about 70 kg",
+      "lifespan": "Matures at 8–11 years and is estimated to live about 30 years (some estimates reach 62)"
+    },
+    "behavior": {
+      "food": "Adults mainly eat Javan deer and wild boar, along with a great deal of carrion",
+      "activity": "Cold-blooded; most active by day, with some activity at night",
+      "social": "Solitary, coming together only to breed and feed",
+      "breeding": "Mates in May–August and lays eggs in September, up to about 20 at a time, in abandoned megapode nests or in holes it digs itself; incubation takes about 7–8 months, and the young hatch the following April"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Varanus komodoensis"
+      },
+      {
+        "label": "Wikipedia: Komodo dragon"
+      }
+    ]
+  },
+  "Marine iguana": {
+    "traits": {
+      "length": "Males are clearly longer",
+      "weight": "The maximum weight of adult males varies by island, from 12 kg on southern Isabela to 1 kg on Genovesa",
+      "lifespan": "Up to 60 years, but the average lifespan is 12 years or less"
+    },
+    "behavior": {
+      "food": "Eats almost nothing but algae; large males dive to feed, while females and smaller males feed in the intertidal zone at low tide",
+      "social": "Lives in colonies on rocky shores, usually of 20–500 and sometimes more than 1,000",
+      "breeding": "Large males hold territories for short periods, while smaller males use other breeding strategies; females dig holes in the soil to lay eggs, which hatch on their own months later"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Amblyrhynchus cristatus"
+      },
+      {
+        "label": "Wikipedia: Marine iguana"
+      }
+    ]
+  },
+  "Panamanian golden frog": {
+    "traits": {
+      "length": "Females 45–63 mm, males 35–48 mm",
+      "weight": "Females 4–15 g, males 3–12 g",
+      "lifespan": "About 12 years"
+    },
+    "behavior": {
+      "food": "Tadpoles eat algae and take about 6–7 months to develop",
+      "social": "Males are fairly solitary and aggressive; they communicate with other amphibians using throat calls and \"waving\""
+    },
+    "population": {
+      "captive": "Captive-breeding programmes run at more than 50 institutions in North America and Panama",
+      "trend": "The El Copé population collapsed rapidly in 2004 because of chytrid fungus disease"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Atelopus zeteki"
+      },
+      {
+        "label": "Wikipedia: Panamanian golden frog"
+      }
+    ]
+  },
+  "Mountain chicken": {
+    "traits": {
+      "length": "Snout–vent length up to about 22 cm; typical adults 17–18 cm",
+      "weight": "Up to about 1 kg",
+      "lifespan": "About 12 years; mature at about 3 years"
+    },
+    "behavior": {
+      "food": "Strictly carnivorous: mainly insects such as crickets, plus millipedes, crustaceans, spiders, and even small vertebrates such as frogs, snakes and bats",
+      "activity": "Ground-dwelling and nocturnal",
+      "breeding": "After the tadpoles hatch, the mother lays up to about 25,000 unfertilised \"food eggs\" for them to eat"
+    },
+    "population": {
+      "trend": "The population fell by at least 80% in 1995–2004; almost none remain in the wild on Montserrat, and the species depends on captive-breeding programmes at several zoos"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Leptodactylus fallax"
+      },
+      {
+        "label": "Wikipedia: Leptodactylus fallax"
+      }
+    ]
+  },
+  "Chinese giant salamander": {
+    "traits": {
+      "length": "Adults average about 1.3 m, up to about 1.8 m",
+      "weight": "Adults average about 25–30 kg, up to about 50 kg"
+    },
+    "behavior": {
+      "food": "Eats insects, millipedes, amphibians, freshwater crabs, shrimp, fish and water shrews",
+      "activity": "Most individuals stop feeding when the water is warmer than 20°C, and almost none feed at 28°C"
+    },
+    "population": {
+      "trend": "The wild population is estimated to have fallen by more than 80% since the 1950s"
+    },
+    "china": {
+      "level": "Class II state-protected wild animal",
+      "note": "Under China's List of Wild Animals under State Key Protection."
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Andrias davidianus"
+      },
+      {
+        "label": "Wikipedia: Chinese giant salamander"
+      }
+    ]
+  },
+  "European sturgeon": {
+    "traits": {
+      "length": "Up to about 6 m long, commonly about 1.25 m",
+      "weight": "Up to about 400 kg"
+    },
+    "behavior": {
+      "activity": "Spends most of its life at sea and migrates up rivers to spawn"
+    },
+    "population": {
+      "estimate": "Fewer than 800 mature individuals (no specific population estimate)",
+      "scope": "Worldwide in the wild",
+      "year": "At the time of assessment (2020) estimated at 20–750 mature individuals"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Acipenser sturio"
+      },
+      {
+        "label": "Wikipedia: European sea sturgeon"
+      }
+    ]
+  },
+  "Mekong giant catfish": {
+    "traits": {
+      "length": "Up to about 3 m long",
+      "weight": "Grows extremely fast, reaching 150–200 kg in about 6 years"
+    },
+    "behavior": {
+      "food": "Young fish eat zooplankton (including each other); after about a year they become herbivores, eating filamentous algae",
+      "activity": "Gathers and swims upriver to spawn at the start of the rainy season (its migration is not yet fully understood)"
+    },
+    "population": {
+      "estimate": "Number in the wild unknown",
+      "trend": "Catch data show the population fell by about 80% over 14 years (older data)"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Pangasianodon gigas"
+      },
+      {
+        "label": "Wikipedia: Mekong giant catfish"
+      }
+    ]
+  },
+  "Great hammerhead": {
+    "traits": {
+      "length": "Typical individuals are at least about 3.5 m long, up to about 4.6 m",
+      "weight": "Typical individuals weigh more than 230 kg; the heaviest record is about 449.5 kg",
+      "lifespan": "Typically 20–30 years; one recorded female was estimated at 40–50 years old"
+    },
+    "behavior": {
+      "food": "A powerful, solitary top predator that eats crustaceans, cephalopods, bony fish and smaller sharks",
+      "activity": "Migratory; populations off Florida and in the South China Sea move towards the poles in summer",
+      "social": "Solitary",
+      "breeding": "Gives birth to live young every two years, 2–49 pups per litter"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Sphyrna mokarran"
+      },
+      {
+        "label": "Wikipedia: Great hammerhead"
+      }
+    ]
+  },
+  "Oceanic whitetip shark": {
+    "traits": {
+      "length": "The largest individuals exceed 4 m, but most reach about 3 m at most",
+      "weight": "Usually up to about 150 kg",
+      "lifespan": "The longest captive record is just over 3 years (a female at Monterey Bay Aquarium)"
+    },
+    "behavior": {
+      "food": "Mainly ocean-going cephalopods such as squid, and bony fish such as lancetfish, jacks, dolphinfish, marlin, tuna and mackerel",
+      "activity": "Spends most of its time within the top 150 m of the ocean, preferring deep offshore waters",
+      "social": "Usually solitary, but large numbers gather where food is concentrated",
+      "breeding": "Gives birth to live young; in the northwest Atlantic and southwest Indian Ocean it mostly mates and gives birth in early summer, while in the Pacific pregnant females are found all year round"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Carcharhinus longimanus"
+      },
+      {
+        "label": "Wikipedia: Oceanic whitetip shark"
+      }
+    ]
+  },
+  "Southern bluefin tuna": {
+    "traits": {
+      "length": "Up to about 2.5 m long",
+      "weight": "Up to about 260 kg",
+      "lifespan": "Reaches maturity at about 9–12 years"
+    },
+    "behavior": {
+      "food": "An opportunistic predator of many kinds of fish, crustaceans, cephalopods and salps",
+      "activity": "Feeds in temperate southern waters around Australia in winter, and from spring to autumn migrates to tropical waters in the north-west Indian Ocean to spawn"
+    },
+    "population": {
+      "trend": "Australian catches peaked in 1982 (about 21,500 tonnes); since then the total population is estimated to have fallen by about 92% (an older estimate)"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Thunnus maccoyii"
+      },
+      {
+        "label": "Wikipedia: Southern bluefin tuna"
+      }
+    ]
+  },
+  "Elkhorn coral": {
+    "behavior": {
+      "food": "Can also feed by filtering food from the water (especially when bleached or when the water stays murky for long periods)",
+      "breeding": "Releases eggs and sperm into the water on only a few nights through \"broadcast spawning\"; after fertilisation the larvae settle on hard surfaces and grow into new colonies"
+    },
+    "population": {
+      "trend": "The population fell by about 97% between 1980 and 2006 (the estimate when it was listed under the US Endangered Species Act)"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Acropora palmata"
+      },
+      {
+        "label": "Wikipedia: Elkhorn coral"
+      }
+    ]
+  },
+  "Staghorn coral": {
+    "traits": {
+      "length": "Healthy mature colonies can grow more than 2 m tall and wide"
+    },
+    "behavior": {
+      "food": "Catches zooplankton at night with long tentacles, while also getting energy from the symbiotic zooxanthellae living in its tissue",
+      "breeding": "Eggs and sperm are released together in one synchronised event"
+    },
+    "population": {
+      "trend": "White band disease (first found in 1979) is thought to be the main cause of the decline of shallow reef-building corals such as staghorn and elkhorn coral over the past 30 years, a decline of up to about 95%"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Acropora cervicornis"
+      },
+      {
+        "label": "Wikipedia: Staghorn coral"
+      }
+    ]
+  },
+  "Rusty patched bumble bee": {
+    "traits": {
+      "lifespan": "A colony lasts about 4–5 months; queens live about 77 days on average"
+    },
+    "behavior": {
+      "food": "The queen first gathers nectar and pollen to feed the first batch of larvae",
+      "social": "Colonies usually have 50–400 bees; captive colonies can be larger",
+      "breeding": "The queen fertilises her eggs with sperm stored from mating the previous autumn; eggs hatch in about 4 days and become adults within 5 weeks at most"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Bombus affinis"
+      },
+      {
+        "label": "Wikipedia: Bombus affinis"
+      }
+    ]
+  },
+  "Monarch butterfly": {
+    "traits": {
+      "length": "Wingspan 8.9–10.2 cm",
+      "lifespan": "Adults usually live 2–5 weeks during the breeding season"
+    },
+    "behavior": {
+      "food": "Caterpillars feed on milkweed",
+      "activity": "Each late summer and autumn, the eastern North American population migrates thousands of kilometres from the northern and central United States and southern Canada to Florida and Mexico; later generations return in spring",
+      "breeding": "Complete metamorphosis in four stages: egg, caterpillar, chrysalis and adult; from egg to adult takes as little as about 25 days in warm summers and up to 7 weeks in cool springs"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Danaus plexippus"
+      },
+      {
+        "label": "Wikipedia: Monarch butterfly"
+      }
+    ]
+  },
+  "Black abalone": {
+    "traits": {
+      "length": "Shell up to about 20 cm long, typically 10–14 cm",
+      "lifespan": "Estimated to live 25–75 years; starts breeding at 3–7 years old"
+    },
+    "behavior": {
+      "food": "A herbivorous sea snail that mainly eats drifting algae and kelp",
+      "activity": "A broadcast spawner: successful breeding needs individuals to live close to one another",
+      "breeding": "Spawns in spring and early summer, occasionally again in autumn"
+    },
+    "population": {
+      "trend": "At many sites more than 90% have disappeared, and at some the population has vanished entirely"
+    },
+    "sources": [
+      {
+        "label": "IUCN Red List (search by scientific name): Haliotis cracherodii"
+      },
+      {
+        "label": "Wikipedia: Haliotis cracherodii"
+      }
+    ]
+  }
+}

@@ -411,7 +411,8 @@
             const p=[Math.cos(lat)*Math.sin(lon), Math.sin(lat), Math.cos(lat)*Math.cos(lon)];
             const x=m[0]*p[0]+m[3]*p[1]+m[6]*p[2], y=m[1]*p[0]+m[4]*p[1]+m[7]*p[2], sz=m[2]*p[0]+m[5]*p[1]+m[8]*p[2];
             const radius=layout().radius*state.zoom;
-            return {x:layout().x+x*radius,y:layout().y-y*radius,visible:sz>0};
+            // depth: 1 facing the viewer, 0 on the limb; (nx, ny) is the outward screen direction.
+            return {x:layout().x+x*radius,y:layout().y-y*radius,visible:sz>.06,depth:Math.max(0,sz),nx:x,ny:-y};
         }
     };
 })();

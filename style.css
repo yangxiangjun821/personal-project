@@ -8,7 +8,11 @@
     --primary-soft: #bdd0b9;
     --accent: #d59a3a;
     --accent-soft: #f3e2bc;
-    --danger: #a84f34;
+    --danger: #a8432e;
+    /* IUCN status colours, shared by the field-guide page and every badge on the home page. */
+    --status-cr: var(--danger);
+    --status-en: #b67627;
+    --status-vu: #677446;
     --text: #1e2d25;
     --muted: #5d6b62;
     --line: #cbd0c4;
@@ -586,9 +590,9 @@ main {
 .animal-profile h3 { margin: .85rem 0 0; color: var(--text); font-family: Georgia, "Times New Roman", serif; font-size: 1.55rem; }
 .animal-profile p { margin: 0; color: var(--muted); }
 .status { align-self: start; width: fit-content; padding: .28rem .55rem; color: white !important; font-size: .75rem; font-weight: 800; line-height: 1.25; text-transform: uppercase; border-radius: 4px; }
-.status--critical { background: var(--danger); }
-.status--endangered { background: #b67627; }
-.status--vulnerable { background: #677446; }
+.status--critical { background: var(--status-cr); }
+.status--endangered { background: var(--status-en); }
+.status--vulnerable { background: var(--status-vu); }
 .filter-status { margin: .9rem 0 0; color: var(--muted); font-size: .9rem; }
 .coursework-plan { max-width: 780px; padding: 4rem 0 1rem; }
 
@@ -763,3 +767,15 @@ a:focus-visible {
         transition-duration: 160ms;
     }
 }
+
+/* Language menu under "Settings" on the field-guide page (the home page styles it as .habitat-menu). */
+body:not(.home) nav .links li { position: relative; }
+body:not(.home) .settings-menu { position: absolute; top: calc(100% + .6rem); right: 0; z-index: 20; display: none; min-width: 7rem; margin: 0; padding: .5rem .8rem; list-style: none; color: var(--text); background: var(--surface); border: 1px solid rgba(0,0,0,.15); border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,.18); }
+body:not(.home) .settings-menu.is-open { display: grid; gap: .4rem; }
+body:not(.home) .settings-menu button { padding: 0; color: inherit; font: inherit; text-align: left; background: none; border: 0; cursor: pointer; opacity: .75; }
+body:not(.home) .settings-menu button:hover, body:not(.home) .settings-menu button:focus-visible { opacity: 1; }
+body:not(.home) .settings-menu button[aria-pressed="true"] { color: var(--accent); font-weight: 700; opacity: 1; }
+
+/* Language switch: page text fades out, changes language, then fades back in (i18n.js). */
+html.i18n-out body > :not(.earth-viewport):not(script):not(style) { opacity: 0 !important; transition: opacity .9s ease !important; }
+html.i18n-in body > :not(.earth-viewport):not(script):not(style) { transition: opacity 1.4s ease !important; }

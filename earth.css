@@ -17,7 +17,7 @@ body.home header .nav-toggle { order: 0; margin-left: 0; }
 body.home .nav-panel { display: flex; flex-direction: column; align-items: flex-end; gap: .9rem; max-height: 760px; padding: .25rem .25rem .5rem; overflow: hidden; opacity: 1; transition: max-height .35s ease, opacity .25s ease, visibility 0s; }
 body.home .nav-panel .links { display: flex; flex-direction: column; align-items: flex-end; gap: .9rem; width: auto; margin: 0; }
 body.home .nav-panel .links li { display: flex; flex-direction: column; align-items: flex-end; }
-body.home header.is-collapsed .nav-panel { display: flex; max-height: 0; opacity: 0; visibility: hidden; transition: max-height .35s ease, opacity .2s ease, visibility 0s .35s; }
+body.home header.is-collapsed .nav-panel { display: flex; max-height: 0; opacity: 0; visibility: hidden; transition: max-height .4s cubic-bezier(.4,0,.2,1), opacity .3s ease .1s, visibility 0s .4s; }
 .earth-heading { text-shadow: 0 2px 18px #020510; position: absolute; z-index: 1; top: 15%; left: max(5%, calc((100vw - 1200px) / 2)); width: 32%; pointer-events: none; }
 /* The heading fades out while the menu is open or while the user explores the globe. */
 .earth-heading { transition: opacity .9s ease, visibility 0s; }
@@ -76,7 +76,8 @@ body.home:has(#site-header.has-toggle:not(.is-collapsed)) .earth-heading { opaci
 .earth-card div { display: grid; gap: 4px; min-width: 0; }
 .earth-card strong { font-family: Georgia, serif; font-size: 1.15rem; font-weight: 400; line-height: 1.2; }
 .earth-card__place { color: #c3d2c8; font-size: .82rem; line-height: 1.4; }
-.earth-card__status { justify-self: start; color: #fff; padding: 2px 8px; border-radius: 999px; font-size: .68rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; background: rgba(242,240,231,.14); }
+/* The status itself is drawn by the shared .iucn badge (see "Species cards" below). */
+.earth-card__status { justify-self: start; max-width: 100%; font-size: .66rem; white-space: nowrap; }
 .earth-card__status:empty, .earth-card__latin:empty, .earth-card__feature:empty { display: none; }
 .earth-card__latin { color: #b9cabe; font-size: .78rem; }
 .earth-card__feature { color: #e6e3d8; font-size: .8rem; line-height: 1.45; }
@@ -92,6 +93,7 @@ body.home header nav a.is-active::after { transform: scaleX(1); }
 .earth-marker.is-selected::after { content: ""; position: absolute; inset: 0; border: 2px solid #edbc70; border-radius: 50%; animation: marker-pulse 1.8s ease-out infinite; pointer-events: none; }
 @keyframes marker-pulse { from { transform: scale(.6); opacity: 1; } to { transform: scale(2.4); opacity: 0; } }
 .earth-marker.is-behind::after { display: none; }
+.earth-marker span { filter: opacity(var(--edge, 1)); }
 
 .animal-panel { position: fixed; z-index: 3; top: 50%; right: clamp(16px, 4vw, 64px); width: min(400px, calc(100vw - 32px)); max-height: calc(100svh - 200px); overflow: auto; color: #f2f0e7; background: rgba(3,7,17,.62); border: 1px solid rgba(242,240,231,.22); border-radius: 18px; backdrop-filter: blur(14px); box-shadow: 0 20px 60px rgba(0,0,0,.5); scrollbar-color: rgba(242,240,231,.28) transparent; opacity: 0; visibility: hidden; transform: translate(40px, -50%); transition: opacity .6s ease, transform .8s cubic-bezier(.2,.8,.2,1), visibility 0s .8s; scrollbar-width: thin; }
 .animal-panel.is-open { opacity: 1; visibility: visible; transform: translate(0, -50%); transition: opacity .6s ease .2s, transform .8s cubic-bezier(.2,.8,.2,1) .2s, visibility 0s; }
@@ -101,10 +103,6 @@ body.home header nav a.is-active::after { transform: scaleX(1); }
 .animal-panel__body { padding: 18px 22px 22px; }
 .animal-panel__meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 10px; font-size: .75rem; }
 .animal-panel__meta span:empty { display: none; }
-.animal-panel__status { padding: 2px 10px; color: #fff; font-weight: 700; border-radius: 999px; background: rgba(242,240,231,.18); }
-.animal-panel__status.status--critical { background: #a8432e; }
-.animal-panel__status.status--endangered { background: #b67627; }
-.animal-panel__status.status--vulnerable { background: #677446; }
 .animal-panel__habitat { color: #c3d2c8; letter-spacing: .08em; text-transform: uppercase; }
 .animal-panel h2 { margin: 0; color: #f2f0e7; font-family: Georgia, serif; font-size: 1.9rem; font-weight: 400; line-height: 1.15; }
 .animal-panel__scientific { margin: 4px 0 0; color: #b9cabe; font-style: italic; font-size: .9rem; }
@@ -154,6 +152,8 @@ body.home .habitat-menu button[aria-pressed="true"]::before { content: "● "; f
 .earth-dive__rail li.is-past { color: rgba(242,240,231,.62); }
 .earth-dive__rail li.is-past::after { background: #edbc70; border-color: #edbc70; }
 .earth-dive__rail li.is-active { color: #f2f0e7; }
+/* The stage names are not shown: the rail is just the dots and the progress line. */
+.earth-dive__rail li span { display: none; }
 .earth-dive__rail li.is-active::after { background: #edbc70; border-color: #edbc70; box-shadow: 0 0 0 4px rgba(237,188,112,.18); }
 .earth-dive__hint { position: absolute; left: 50%; bottom: clamp(26px, 7vh, 64px); margin: 0; color: #f2f0e7; font-size: .85rem; letter-spacing: .08em; text-align: center; text-shadow: 0 1px 10px #020510; transform: translateX(-50%); transition: opacity .6s ease; }
 .earth-dive__hint::after { content: ""; display: block; width: 1px; height: 34px; margin: 12px auto 0; background: linear-gradient(#f2f0e7, transparent); animation: dive-hint 2.2s ease-in-out infinite; }
@@ -202,8 +202,15 @@ body.is-diving .earth-heading, body.is-diving .earth-markers, body.is-diving .an
 .habitat-caption__title { margin: 0; color: #f2f0e7; font-family: Georgia, serif; font-size: 1.8rem; font-weight: 400; line-height: 1.15; }
 .habitat-caption__place { margin: 10px 0 0; color: #d8e2da; font-size: .92rem; line-height: 1.55; }
 .habitat-caption__note { margin: 12px 0 0; color: #9fb2a6; font-size: .72rem; line-height: 1.45; }
-.habitat-loss { margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(242,240,231,.16); }
+/* Human-impact controls: docked in the bottom-right corner of the destination photo (above the
+   imagery credit), in the same glass as the chapter cards. They fade away before the chapter rises. */
+.habitat-loss { position: absolute; right: clamp(16px, 3vw, 40px); bottom: clamp(52px, 8vh, 76px); z-index: 2; width: min(360px, calc(100vw - 32px)); max-height: calc(100% - 140px); overflow-y: auto; padding: 16px 20px 18px; color: #f2f0e7; background: rgba(3,7,17,.6); border: 1px solid rgba(242,240,231,.22); border-radius: 18px; backdrop-filter: blur(12px); box-shadow: 0 20px 60px rgba(0,0,0,.4); scrollbar-width: thin; transition: opacity .4s ease, transform .4s ease, visibility 0s; }
+.habitat-loss > :first-child { margin-top: 0; }
+.habitat-loss.is-away { opacity: 0; visibility: hidden; transform: translateY(16px); pointer-events: none; transition: opacity .4s ease, transform .4s ease, visibility 0s .4s; }
 .habitat-loss[hidden] { display: none; }
+/* On arrival the flight-progress rail has done its job; it gives the docked controls the corner. */
+.earth-dive__rail { transition: opacity .4s ease; }
+.earth-dive:has(.habitat-loss:not([hidden]):not(.is-away)) .earth-dive__rail { opacity: 0; }
 .habitat-loss__label { display: flex; justify-content: space-between; gap: 12px; color: #9fb2a6; font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
 .habitat-loss__stage { color: #edbc70; letter-spacing: .08em; }
 .habitat-loss__range { width: 100%; margin: 10px 0 0; accent-color: #edbc70; cursor: pointer; }
@@ -212,9 +219,12 @@ body.is-diving .earth-heading, body.is-diving .earth-markers, body.is-diving .an
 .habitat-caption__back:hover, .habitat-caption__back:focus-visible { background: rgba(3,7,17,.6); }
 @media (max-width: 760px) {
     .earth-dive__rail { gap: 16px; }
-    .earth-dive__rail li span { display: none; }
     .earth-dive__credit { max-width: 70vw; font-size: .56rem; }
     .dive-chapter__intro, .dive-chapter__animals { padding: 18px; }
+    .habitat-loss { right: 16px; left: 16px; bottom: 44px; width: auto; padding: 14px 16px 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .habitat-loss, .habitat-loss.is-away { transform: none; }
 }
 
 /* Animal list: the Earth sinks into the bottom-right quarter as a locked backdrop (the stars keep
@@ -243,9 +253,9 @@ body.home.is-listing .earth-markers .earth-marker { pointer-events: none; }
 .list-card__body { padding: 16px 18px 18px; }
 .list-card__meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 10px; color: #c3d2c8; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; }
 .list-card__status { padding: 2px 9px; color: #fff; font-weight: 700; letter-spacing: .03em; border-radius: 999px; background: rgba(242,240,231,.18); }
-.list-card__status.status--critical { background: #a8432e; }
-.list-card__status.status--endangered { background: #b67627; }
-.list-card__status.status--vulnerable { background: #677446; }
+.list-card__status.status--critical { background: var(--status-cr); }
+.list-card__status.status--endangered { background: var(--status-en); }
+.list-card__status.status--vulnerable { background: var(--status-vu); }
 .list-card h3 { margin: 0; color: #f2f0e7; font-family: Georgia, serif; font-size: 1.4rem; font-weight: 400; line-height: 1.2; }
 .list-card__latin { margin: 3px 0 0; color: #b9cabe; font-size: .85rem; font-style: italic; }
 .list-card__body > p:not(.list-card__meta):not(.list-card__latin) { margin: 10px 0 0; color: #d8e2da; font-size: .86rem; line-height: 1.55; }
@@ -264,11 +274,91 @@ body.home.is-listing .earth-markers .earth-marker { pointer-events: none; }
     .list-card, .animal-list-view__head { transition-duration: .01s; transform: none; }
 }
 /* Opening the menu over the list: give it its own solid panel so the two never blend together. */
-body.home.is-listing header .nav-panel { transition: max-height .35s ease, opacity .25s ease, visibility 0s, background .3s ease; }
-body.home:has(.animal-panel.is-open) header .nav-panel { transition: max-height .35s ease, opacity .25s ease, visibility 0s, background .3s ease; }
+/* The solid panel keeps its look while it folds; only its height and vertical padding close up. */
+body.home.is-listing header .nav-panel,
+body.home:has(.animal-panel.is-open) header .nav-panel { min-width: 220px; padding: 0 22px; background: #070d1c; border: 1px solid rgba(242,240,231,.2); border-radius: 16px; box-shadow: 0 18px 50px rgba(0,0,0,.55); transition: max-height .35s ease, padding .35s ease, opacity .25s ease, visibility 0s; }
+body.home:has(.animal-panel.is-open) header.is-collapsed .nav-panel,
+body.home.is-listing header.is-collapsed .nav-panel { transition: max-height .4s cubic-bezier(.4,0,.2,1), padding .4s cubic-bezier(.4,0,.2,1), opacity .3s ease .1s, visibility 0s .4s; }
 body.home:has(.animal-panel.is-open) header:not(.is-collapsed) .nav-panel,
-body.home.is-listing header:not(.is-collapsed) .nav-panel { min-width: 220px; padding: 18px 22px 20px; background: #070d1c; border: 1px solid rgba(242,240,231,.2); border-radius: 16px; box-shadow: 0 18px 50px rgba(0,0,0,.55); }
+body.home.is-listing header:not(.is-collapsed) .nav-panel { padding: 18px 22px 20px; }
 body.home.is-listing header nav { text-shadow: none; }
 /* Shown only if a habitat is chosen before the dive's shaders have finished compiling. */
 .earth-dive-preparing { position: fixed; left: 50%; bottom: clamp(24px, 6vh, 56px); z-index: 16; margin: 0; padding: 9px 18px; color: #f2f0e7; font-size: .85rem; letter-spacing: .04em; background: rgba(3,7,17,.6); border: 1px solid rgba(242,240,231,.25); border-radius: 999px; backdrop-filter: blur(8px); opacity: 0; visibility: hidden; transform: translate(-50%, 8px); transition: opacity .3s ease, transform .3s ease, visibility 0s .3s; pointer-events: none; }
 .earth-dive-preparing.is-visible { opacity: 1; visibility: visible; transform: translate(-50%, 0); transition: opacity .3s ease, transform .3s ease, visibility 0s; }
+
+/* ---- Species cards (animal-list.js) ---------------------------------------------------------- */
+.species-card .list-card__image { aspect-ratio: auto; background: none; }
+.species-card .list-card__frame { aspect-ratio: 16 / 10; overflow: hidden; background: rgba(242,240,231,.06); }
+.species-card .list-card__frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.species-card .list-card__frame.is-unavailable { display: grid; place-items: center; }
+.species-card .list-card__frame.is-unavailable::after { content: "Photo unavailable"; color: #8fa196; font-size: .8rem; }
+.photo-credit { margin: 0; padding: 6px 14px; color: #93a69a; font-size: .68rem; line-height: 1.4; background: rgba(3,7,17,.5); }
+.photo-credit a { color: #b9cabe; text-decoration: underline; text-decoration-color: rgba(185,202,190,.4); text-underline-offset: 2px; }
+.photo-credit a:hover, .photo-credit a:focus-visible { color: #edbc70; }
+.iucn { display: inline-flex; align-items: stretch; overflow: hidden; color: #fff; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: none; border-radius: 999px; background: rgba(242,240,231,.18); }
+.iucn b { padding: 3px 9px; font-weight: 800; letter-spacing: .06em; background: rgba(0,0,0,.28); }
+.iucn span { padding: 3px 11px 3px 8px; }
+.iucn--critical { background: var(--status-cr); }
+.iucn--endangered { background: var(--status-en); }
+.iucn--vulnerable { background: var(--status-vu); }
+.species-card .card-alt { margin: 3px 0 0; color: #b9cabe; font-size: .88rem; }
+.species-card .card-range { margin: 12px 0 0; color: #c3d2c8; font-size: .82rem; line-height: 1.5; }
+.species-card .card-line { margin: 8px 0 0; color: #e7eee9; font-size: .92rem; line-height: 1.55; }
+.card-more, .ad-back { min-height: 40px; margin-top: 14px; padding: 6px 18px; color: #1b1405; font: inherit; font-size: .88rem; font-weight: 700; background: #edbc70; border: 0; border-radius: 999px; cursor: pointer; transition: background .2s ease, transform .2s ease; }
+.card-more:hover, .card-more:focus-visible { background: #f6cd8c; transform: translateX(2px); outline: 2px solid #fff1d9; outline-offset: 2px; }
+.card-more::after { content: " →"; }
+.ad-back { margin: 0; color: #f2f0e7; background: rgba(3,7,17,.35); border: 1px solid rgba(242,240,231,.35); backdrop-filter: blur(6px); }
+.ad-back::before { content: "← "; }
+.ad-back:hover, .ad-back:focus-visible { transform: none; background: rgba(3,7,17,.7); outline: 2px solid #edbc70; outline-offset: 2px; }
+.animal-panel__more { margin: 14px 0 0; }
+
+/* ---- Species detail page (animal-detail.js) -------------------------------------------------- */
+.animal-detail { position: fixed; inset: 0; z-index: 14; overflow-y: auto; overscroll-behavior: contain; padding: 88px clamp(16px, 5vw, 72px) 72px; color: #f2f0e7; background: linear-gradient(100deg, rgba(2,5,14,.98), rgba(2,5,14,.93) 62%, rgba(2,5,14,.25) 92%); backdrop-filter: blur(5px); opacity: 0; transition: opacity .45s ease; scrollbar-width: thin; scrollbar-color: rgba(242,240,231,.28) transparent; }
+.animal-detail[hidden] { display: none; }
+.animal-detail.is-open { opacity: 1; }
+.animal-detail__inner { max-width: min(880px, 100%); }
+.ad-top { margin-bottom: 20px; }
+.ad-hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 28px; align-items: start; margin-bottom: 32px; }
+.ad-kicker { margin: 0 0 8px; color: #b9cabe; font-size: .74rem; letter-spacing: .08em; text-transform: uppercase; }
+.ad-hero h2 { margin: 0; color: #f2f0e7; font-family: Georgia, "Songti SC", serif; font-size: clamp(2rem, 4.4vw, 3.4rem); font-weight: 400; line-height: 1.1; letter-spacing: -.01em; text-shadow: 0 2px 18px #020510; }
+.ad-alt { margin: 6px 0 0; color: #d8e2da; font-size: 1.1rem; }
+.ad-latin { margin: 2px 0 0; color: #b9cabe; font-style: italic; }
+.ad-badges { margin: 16px 0 0; }
+.ad-badges .iucn { font-size: .85rem; }
+.ad-intro { margin: 16px 0 0; color: #e7eee9; font-size: 1.08rem; line-height: 1.7; }
+.ad-photo { margin: 0; overflow: hidden; background: rgba(5,10,22,.84); border: 1px solid rgba(242,240,231,.2); border-radius: 16px; box-shadow: 0 18px 50px rgba(0,0,0,.4); }
+.ad-photo img { display: block; width: 100%; aspect-ratio: 4 / 3; margin: 0; object-fit: cover; border: 0; border-radius: 0; box-shadow: none; }
+.ad-photo.is-unavailable { min-height: 160px; }
+.ad-body { display: grid; gap: 18px; }
+.ad-section { padding: 20px 22px 22px; background: rgba(5,10,22,.78); border: 1px solid rgba(242,240,231,.16); border-radius: 16px; backdrop-filter: blur(8px); }
+.ad-section h3 { margin: 0 0 14px; color: #edbc70; font-family: Georgia, "Songti SC", serif; font-size: 1.25rem; font-weight: 400; }
+.ad-section p { margin: 0; line-height: 1.7; }
+.ad-facts { display: grid; gap: 0; margin: 0; }
+.ad-facts__row { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr); gap: 4px 16px; padding: 10px 0; border-top: 1px solid rgba(242,240,231,.12); }
+.ad-facts__row:first-child { border-top: 0; padding-top: 0; }
+.ad-facts dt { color: #b9cabe; font-size: .88rem; }
+.ad-facts dd { margin: 0; color: #f2f0e7; line-height: 1.65; }
+.ad-nodata { color: #8fa196; font-style: italic; }
+.ad-note { margin-top: 14px !important; color: #93a69a; font-size: .8rem; line-height: 1.6 !important; }
+.ad-note a, .ad-sources a { color: #edbc70; }
+.ad-scale { display: flex; gap: 4px; margin: 0 0 16px; padding: 0; list-style: none; }
+.ad-scale li { flex: 1; padding: 6px 0; color: #8fa196; font-size: .74rem; font-weight: 700; text-align: center; letter-spacing: .05em; background: rgba(242,240,231,.07); border-radius: 6px; }
+.ad-scale li.is-current { color: #1b1405; background: #edbc70; box-shadow: 0 0 0 2px rgba(237,188,112,.35); }
+.ad-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.ad-tags li { padding: 2px 12px; color: #d8e2da; font-size: .82rem; background: rgba(242,240,231,.1); border-radius: 999px; }
+.ad-map { margin: 18px 0 0; }
+.ad-map__canvas { position: relative; aspect-ratio: 2 / 1; overflow: hidden; background: #0a1a2c url("images/earth/surface.jpg") center / 100% 100% no-repeat; border: 1px solid rgba(242,240,231,.18); border-radius: 12px; }
+.ad-map__dot { position: absolute; width: 12px; height: 12px; margin: -6px 0 0 -6px; background: #edbc70; border: 2px solid #fff1d9; border-radius: 50%; box-shadow: 0 0 0 5px rgba(237,188,112,.3), 0 0 14px rgba(237,188,112,.9); }
+.ad-map figcaption { display: grid; gap: 2px; margin-top: 8px; color: #b9cabe; font-size: .8rem; line-height: 1.5; }
+.ad-map figcaption strong { color: #f2f0e7; font-weight: 600; }
+.ad-lead { color: #f2f0e7; font-size: 1.02rem; }
+.ad-list { display: grid; gap: 10px; margin: 0; padding: 0 0 0 1.2rem; line-height: 1.65; }
+.ad-lead + .ad-list { margin-top: 12px; }
+.ad-fun { padding: 14px 16px; background: rgba(237,188,112,.09); border-left: 3px solid #edbc70; border-radius: 4px 12px 12px 4px; }
+.ad-fun small { display: block; margin-top: 8px; color: #93a69a; }
+@media (max-width: 760px) {
+    .animal-detail { padding-top: 76px; background: rgba(2,5,14,.9); }
+    .ad-hero { grid-template-columns: 1fr; }
+    .ad-facts__row { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) { .animal-detail, .card-more { transition-duration: .01s; } }

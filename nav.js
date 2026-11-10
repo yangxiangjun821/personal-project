@@ -13,36 +13,48 @@ function addNavToggle() {
     nav.append(button, panel);
     header.classList.add('has-toggle');
     // ---- Sub-lists (Habitats, Settings) ----------------------------------------------------------
-    // Each sub-list stays folded until its item is hovered (or reached with the keyboard), and only
-    // one is open at a time. On touch screens a tap on the item opens or folds it instead.
+    // Each sub-list stays folded until its item is hovered (or reached with the keyboard). On touch
+    // screens a tap on the item opens or folds it instead, one at a time.
     let lastPointer = 'mouse';
     document.addEventListener('pointerdown', event => { lastPointer = event.pointerType; }, true);
     const submenuOf = li => li && li.querySelector(':scope > .habitat-menu');
-    function setSubmenu(li, open) {
+    function setSubmenu(li, open, keepOthers = false) {
         const menu = submenuOf(li);
         if (!menu) return;
-        if (open) panel.querySelectorAll('.links > li').forEach(other => { if (other !== li) setSubmenu(other, false); });
+        if (open && !keepOthers) panel.querySelectorAll('.links > li').forEach(other => { if (other !== li) setSubmenu(other, false); });
         if (open && !menu.classList.contains('is-open')) void menu.offsetHeight;   // start the unfold from the folded state
         menu.classList.toggle('is-open', open);
         li.querySelector(':scope > a')?.setAttribute('aria-expanded', String(open));
     }
     const closeSubmenus = () => panel.querySelectorAll('.links > li').forEach(li => setSubmenu(li, false));
+    // With a mouse nothing folds while the pointer is still inside the menu, so no item ever slides out
+    // from under it: a sub-list opens once the pointer rests on its item (merely passing over one does
+    // not open it), and every open sub-list folds only after the pointer has been outside the whole
+    // menu for a moment.
+    const OPEN_DELAY = 300, CLOSE_DELAY = 800;
+    let outsideTimer = 0;
+    panel.addEventListener('pointerenter', event => { if (event.pointerType !== 'touch') clearTimeout(outsideTimer); });
+    panel.addEventListener('pointerleave', event => {
+        if (event.pointerType === 'touch') return;
+        clearTimeout(outsideTimer);
+        outsideTimer = setTimeout(() => {
+            if (panel.matches(':hover')) return;
+            panel.querySelectorAll('.links > li').forEach(li => { if (!li.querySelector(':focus-visible')) setSubmenu(li, false); });
+        }, CLOSE_DELAY);
+    });
     panel.querySelectorAll('.links > li').forEach(li => {
-        let leaveTimer = 0;
+        let enterTimer = 0;
         const keyboardFocus = () => !!li.querySelector(':focus-visible');
         li.addEventListener('pointerenter', event => {
-            if (event.pointerType === 'touch') return;
-            clearTimeout(leaveTimer);
-            setSubmenu(li, true);
+            if (event.pointerType === 'touch' || !submenuOf(li)) return;
+            clearTimeout(enterTimer);
+            enterTimer = setTimeout(() => { if (li.matches(':hover')) setSubmenu(li, true, true); }, OPEN_DELAY);
         });
-        // A short grace period lets the pointer cross the gap between the item and its sub-list.
-        li.addEventListener('pointerleave', event => {
-            if (event.pointerType === 'touch') return;
-            clearTimeout(leaveTimer);
-            leaveTimer = setTimeout(() => { if (!li.matches(':hover') && !keyboardFocus()) setSubmenu(li, false); }, 300);
-        });
-        li.addEventListener('focusin', () => { if (keyboardFocus()) { clearTimeout(leaveTimer); setSubmenu(li, true); } });
-        li.addEventListener('focusout', event => { if (!li.contains(event.relatedTarget) && !li.matches(':hover')) setSubmenu(li, false); });
+        li.addEventListener('pointerleave', () => clearTimeout(enterTimer));
+        li.addEventListener('focusin', () => { if (keyboardFocus()) setSubmenu(li, true); });
+        // Keyboard users: leaving the item with Tab folds it. A pointer still inside the menu leaves
+        // folding to the timer above.
+        li.addEventListener('focusout', event => { if (!li.contains(event.relatedTarget) && !panel.matches(':hover')) setSubmenu(li, false); });
     });
     // Called by the scripts that own a sub-list (earth-markers.js, i18n.js) when its item is clicked.
     // With a mouse the sub-list is already open from hovering, so the click keeps it open.
@@ -50,7 +62,7 @@ function addNavToggle() {
         const li = link.closest('li');
         const open = link.getAttribute('aria-expanded') !== 'true';
         if (!open && lastPointer === 'mouse' && li.matches(':hover')) return;
-        setSubmenu(li, open);
+        setSubmenu(li, open, lastPointer === 'mouse');
     }
 
     // Folding starts from the menu's real height (not the 760px ceiling in the CSS), so it visibly

@@ -10,7 +10,11 @@ All notable changes to Vanishing Wild. Dates are YYYY-MM-DD.
 
 ### Changed
 - The globe hover card and the animal profile panel no longer show latitude and longitude; they show only the place and country (`earth-markers.js`, `earth.css`).
-- Bumped the `i18n-zh.js` cache version in `index.html` and `project.html`, and the `earth.css` and `earth-markers.js` versions in `index.html`.
+- New home-page headline: "One planet. Vanishing lives." with "Each light marks a species at risk. Touch one to meet it where it lives." (Chinese in `i18n-zh.js`).
+- Every page now opens in English. Chinese appears only after it is chosen from Settings; the choice is no longer remembered and the browser language is no longer consulted, and the value older versions saved in `localStorage` is cleared (`i18n.js`).
+- `index.html` and `project.html` are marked `translate="no"` so Edge and Chrome no longer offer to machine-translate a site that has its own Chinese version.
+- Menu sub-lists (Habitats, Settings) open only when the pointer rests on their item for a moment, and fold only after the pointer has left the whole menu, so items no longer slide out from under the mouse (`nav.js`).
+- Bumped the `i18n-zh.js`, `i18n.js` and `nav.js` cache versions in `index.html` and `project.html`, and the `earth.css` and `earth-markers.js` versions in `index.html`.
 
 ## 2026-11-09
 

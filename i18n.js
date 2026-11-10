@@ -1,8 +1,8 @@
 /* English / Simplified Chinese switch. The pages are written in English; when Chinese is chosen this
    module swaps every text node and a few attributes for the matching string in i18n-zh.js, and keeps
    doing so for anything the other scripts add later (menus, animal cards, habitat dives). Switching
-   back restores the original English. The choice is remembered in localStorage and is changed from
-   the "Settings" item in the menu. Modules that build their own markup can call i18n.t(text) and
+   back restores the original English. Every page loads in English; Chinese is shown only after it
+   is chosen from the "Settings" item in the menu. Modules that build their own markup can call i18n.t(text) and
    listen for the "langchange" event on document. */
 (() => {
     'use strict';
@@ -87,9 +87,11 @@
         return one(text) || segments(text);
     }
 
+    // Every page loads in English. Chinese is shown only after it is chosen from "Settings" on that page;
+    // nothing is remembered, and the browser's language is not consulted.
     let lang = 'en';
-    try { lang = localStorage.getItem(STORE) || ''; } catch (e) { lang = ''; }
-    if (lang !== 'zh' && lang !== 'en') lang = /^zh/i.test(navigator.language || '') ? 'zh' : 'en';
+    // Earlier versions remembered the choice; clear what they left behind.
+    try { localStorage.removeItem(STORE); sessionStorage.removeItem(STORE); } catch (e) {}
 
     const textRecord = new WeakMap();   // text node -> { en, zh }
     const attrRecord = new WeakMap();   // element -> { attribute: { en, zh } }
@@ -174,7 +176,6 @@
         if (next !== 'zh' && next !== 'en') return;
         const changed = next !== lang;
         lang = next;
-        try { localStorage.setItem(STORE, lang); } catch (e) {}
         document.querySelectorAll('.settings-menu button[data-lang]').forEach(button =>
             button.setAttribute('aria-pressed', String(button.dataset.lang === lang)));
         if (!changed) return;

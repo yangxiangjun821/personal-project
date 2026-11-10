@@ -9,7 +9,8 @@ All notable changes to Vanishing Wild. Dates are YYYY-MM-DD.
 - Chinese names for the 47 new places and countries in `i18n-zh.js`, so the hover cards and profile panel read fully in Chinese.
 
 ### Changed
-- Bumped the `i18n-zh.js` cache version in `index.html` and `project.html`.
+- The globe hover card and the animal profile panel no longer show latitude and longitude; they show only the place and country (`earth-markers.js`, `earth.css`).
+- Bumped the `i18n-zh.js` cache version in `index.html` and `project.html`, and the `earth.css` and `earth-markers.js` versions in `index.html`.
 
 ## 2026-11-09
 

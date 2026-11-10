@@ -13,7 +13,7 @@
     card.setAttribute('role', 'tooltip');
     card.id = 'earth-card';
     card.innerHTML = '<img alt=""><div><span class="earth-card__status"></span><strong></strong><em class="earth-card__latin"></em>' +
-        '<span class="earth-card__feature"></span><span class="earth-card__place"></span><span class="earth-card__coords"></span></div>';
+        '<span class="earth-card__feature"></span><span class="earth-card__place"></span></div>';
     layer.appendChild(card);
     document.querySelector('.earth-viewport').after(layer);
 
@@ -27,15 +27,12 @@
             '<p class="animal-panel__meta"><span class="animal-panel__status"></span><span class="animal-panel__habitat"></span></p>' +
             '<h2 id="animal-panel-title"></h2><p class="animal-panel__scientific"></p>' +
             '<div class="animal-panel__facts"></div>' +
-            '<p class="animal-panel__location"><span class="animal-panel__place"></span><span class="animal-panel__coords"></span></p>' +
+            '<p class="animal-panel__location"><span class="animal-panel__place"></span></p>' +
             '<button type="button" class="card-more animal-panel__more">Learn more</button>' +
         '</div>';
     layer.after(panel);
 
     let markers = [], active = null, selected = null, loading = null;
-    const coords = animal =>
-        Math.abs(animal.lat).toFixed(2) + '°' + (animal.lat >= 0 ? 'N' : 'S') + '  ' +
-        Math.abs(animal.lng).toFixed(2) + '°' + (animal.lng >= 0 ? 'E' : 'W');
 
     // Profile text is reused from the animal field guide page, matched by name.
     const normalise = name => name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z]/g, '');
@@ -101,7 +98,6 @@
         card.querySelector('img').src = animal.image;
         card.querySelector('strong').textContent = animal.name;
         card.querySelector('.earth-card__place').textContent = animal.place + ', ' + animal.country;
-        card.querySelector('.earth-card__coords').textContent = coords(animal);
         const status = card.querySelector('.earth-card__status');
         const latin = card.querySelector('.earth-card__latin');
         const feature = card.querySelector('.earth-card__feature');
@@ -174,7 +170,6 @@
         panel.querySelector('h2').textContent = animal.name;
         panel.querySelector('.animal-panel__more').onclick = () => window.animalDetail && animalDetail.open(animal.name);
         panel.querySelector('.animal-panel__place').textContent = animal.place + ', ' + animal.country;
-        panel.querySelector('.animal-panel__coords').textContent = coords(animal);
         const status = panel.querySelector('.animal-panel__status');
         const habitat = panel.querySelector('.animal-panel__habitat');
         const scientific = panel.querySelector('.animal-panel__scientific');

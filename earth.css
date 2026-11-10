@@ -81,7 +81,6 @@ body.home:has(#site-header.has-toggle:not(.is-collapsed)) .earth-heading { opaci
 .earth-card__status:empty, .earth-card__latin:empty, .earth-card__feature:empty { display: none; }
 .earth-card__latin { color: #b9cabe; font-size: .78rem; }
 .earth-card__feature { color: #e6e3d8; font-size: .8rem; line-height: 1.45; }
-.earth-card__coords { color: #edbc70; font-size: .75rem; font-variant-numeric: tabular-nums; }
 body.home header nav a.is-active::after { transform: scaleX(1); }
 
 /* Selecting a marker: the others dim, the chosen one pulses, and the profile panel slides in on the right. */
@@ -110,7 +109,6 @@ body.home header nav a.is-active::after { transform: scaleX(1); }
 .animal-panel__facts p { margin: 12px 0 0; color: #d8e2da; font-size: .9rem; line-height: 1.6; }
 .animal-panel__facts strong { color: #edbc70; font-weight: 600; }
 .animal-panel__location { display: grid; gap: 2px; margin: 16px 0 0; padding-top: 14px; border-top: 1px solid rgba(242,240,231,.18); font-size: .82rem; color: #c3d2c8; }
-.animal-panel__coords { color: #edbc70; font-variant-numeric: tabular-nums; }
 @media (max-width: 760px) {
     .animal-panel { top: auto; right: 16px; bottom: 16px; left: 16px; width: auto; max-height: 52svh; transform: translateY(40px); }
     .animal-panel.is-open { transform: none; }

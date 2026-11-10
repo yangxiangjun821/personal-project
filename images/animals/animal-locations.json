@@ -55,14 +55,25 @@
     ]
   },
   {
-    "name": "Amur leopard",
-    "image": "images/amur-leopard.jpg",
-    "place": "Land of the Leopard National Park",
-    "country": "Russia",
-    "lat": 43.1,
-    "lng": 131.5,
+    "name": "Andean condor",
+    "image": "images/animals/andean-condor.jpg",
+    "place": "Colca Canyon",
+    "country": "Peru",
+    "lat": -15.6,
+    "lng": -71.9,
     "habitats": [
-      "forest"
+      "grassland"
+    ]
+  },
+  {
+    "name": "Antarctic blue whale",
+    "image": "images/animals/blue-whale.jpg",
+    "place": "Ross Sea",
+    "country": "Antarctica",
+    "lat": -75.0,
+    "lng": -178.0,
+    "habitats": [
+      "ocean"
     ]
   },
   {
@@ -75,6 +86,18 @@
     "habitats": [
       "forest",
       "grassland"
+    ]
+  },
+  {
+    "name": "Atlantic puffin",
+    "image": "images/animals/atlantic-puffin.jpg",
+    "place": "Westman Islands",
+    "country": "Iceland",
+    "lat": 63.43,
+    "lng": -20.27,
+    "habitats": [
+      "ocean",
+      "island"
     ]
   },
   {
@@ -124,6 +147,17 @@
     ]
   },
   {
+    "name": "Black abalone",
+    "image": "images/animals/black-abalone.jpg",
+    "place": "Big Sur coast, California",
+    "country": "United States",
+    "lat": 36.1,
+    "lng": -121.6,
+    "habitats": [
+      "ocean"
+    ]
+  },
+  {
     "name": "Black rhinoceros",
     "image": "images/animals/black-rhinoceros.jpg",
     "place": "Etosha National Park",
@@ -143,6 +177,18 @@
     "lng": -119.8,
     "habitats": [
       "ocean"
+    ]
+  },
+  {
+    "name": "Blue-throated macaw",
+    "image": "images/animals/blue-throated-macaw.jpg",
+    "place": "Barba Azul Nature Reserve, Beni",
+    "country": "Bolivia",
+    "lat": -13.77,
+    "lng": -66.1,
+    "habitats": [
+      "forest",
+      "grassland"
     ]
   },
   {
@@ -179,6 +225,28 @@
     ]
   },
   {
+    "name": "Chinese alligator",
+    "image": "images/animals/chinese-alligator.jpg",
+    "place": "Anhui Chinese Alligator National Nature Reserve",
+    "country": "China",
+    "lat": 30.95,
+    "lng": 118.75,
+    "habitats": [
+      "freshwater"
+    ]
+  },
+  {
+    "name": "Chinese giant salamander",
+    "image": "images/animals/chinese-giant-salamander.jpg",
+    "place": "Zhangjiajie, Hunan",
+    "country": "China",
+    "lat": 29.35,
+    "lng": 110.45,
+    "habitats": [
+      "freshwater"
+    ]
+  },
+  {
     "name": "Cross River gorilla",
     "image": "images/animals/cross-river-gorilla.jpg",
     "place": "Afi Mountain Wildlife Sanctuary",
@@ -212,6 +280,17 @@
     ]
   },
   {
+    "name": "Elkhorn coral",
+    "image": "images/animals/elkhorn-coral.jpg",
+    "place": "Buck Island Reef National Monument",
+    "country": "U.S. Virgin Islands",
+    "lat": 17.79,
+    "lng": -64.62,
+    "habitats": [
+      "ocean"
+    ]
+  },
+  {
     "name": "Ethiopian wolf",
     "image": "images/animals/ethiopian-wolf.jpg",
     "place": "Sanetti Plateau, Bale Mountains",
@@ -229,6 +308,18 @@
     "country": "North Atlantic",
     "lat": 26,
     "lng": -62,
+    "habitats": [
+      "freshwater",
+      "ocean"
+    ]
+  },
+  {
+    "name": "European sturgeon",
+    "image": "images/animals/european-sturgeon.jpg",
+    "place": "Gironde estuary",
+    "country": "France",
+    "lat": 45.3,
+    "lng": -0.75,
     "habitats": [
       "freshwater",
       "ocean"
@@ -292,6 +383,17 @@
     ]
   },
   {
+    "name": "Great hammerhead",
+    "image": "images/animals/great-hammerhead.jpg",
+    "place": "Bimini",
+    "country": "The Bahamas",
+    "lat": 25.73,
+    "lng": -79.28,
+    "habitats": [
+      "ocean"
+    ]
+  },
+  {
     "name": "Great Indian bustard",
     "image": "images/animals/great-indian-bustard.jpg",
     "place": "Desert National Park, Rajasthan",
@@ -312,6 +414,29 @@
     "habitats": [
       "forest",
       "freshwater"
+    ]
+  },
+  {
+    "name": "Grey crowned crane",
+    "image": "images/animals/grey-crowned-crane.jpg",
+    "place": "Queen Elizabeth National Park",
+    "country": "Uganda",
+    "lat": -0.2,
+    "lng": 29.9,
+    "habitats": [
+      "freshwater",
+      "grassland"
+    ]
+  },
+  {
+    "name": "Harpy eagle",
+    "image": "images/animals/harpy-eagle.jpg",
+    "place": "Manú National Park",
+    "country": "Peru",
+    "lat": -11.9,
+    "lng": -71.5,
+    "habitats": [
+      "forest"
     ]
   },
   {
@@ -417,6 +542,17 @@
     ]
   },
   {
+    "name": "Kemp's ridley turtle",
+    "image": "images/animals/kemp-s-ridley-turtle.jpg",
+    "place": "Rancho Nuevo, Tamaulipas",
+    "country": "Mexico",
+    "lat": 23.18,
+    "lng": -97.76,
+    "habitats": [
+      "ocean"
+    ]
+  },
+  {
     "name": "Koala",
     "image": "images/animals/koala.jpg",
     "place": "Port Macquarie, New South Wales",
@@ -424,6 +560,18 @@
     "lat": -31.43,
     "lng": 152.9,
     "habitats": [
+      "forest"
+    ]
+  },
+  {
+    "name": "Komodo dragon",
+    "image": "images/animals/komodo-dragon.jpg",
+    "place": "Riung, northern Flores",
+    "country": "Indonesia",
+    "lat": -8.42,
+    "lng": 121.03,
+    "habitats": [
+      "island",
       "forest"
     ]
   },
@@ -440,6 +588,64 @@
     ]
   },
   {
+    "name": "Lear's macaw",
+    "image": "images/animals/lear-s-macaw.jpg",
+    "place": "Raso da Catarina, Bahia",
+    "country": "Brazil",
+    "lat": -9.75,
+    "lng": -38.5,
+    "habitats": [
+      "forest",
+      "grassland"
+    ]
+  },
+  {
+    "name": "Leatherback turtle",
+    "image": "images/animals/leatherback-turtle.jpg",
+    "place": "Las Baulas National Marine Park",
+    "country": "Costa Rica",
+    "lat": 10.33,
+    "lng": -85.85,
+    "habitats": [
+      "ocean"
+    ]
+  },
+  {
+    "name": "Loggerhead turtle",
+    "image": "images/animals/loggerhead-turtle.jpg",
+    "place": "Archie Carr National Wildlife Refuge, Florida",
+    "country": "United States",
+    "lat": 27.85,
+    "lng": -80.45,
+    "habitats": [
+      "ocean"
+    ]
+  },
+  {
+    "name": "Macaroni penguin",
+    "image": "images/animals/macaroni-penguin.jpg",
+    "place": "Bird Island, South Georgia",
+    "country": "United Kingdom",
+    "lat": -54.0,
+    "lng": -38.05,
+    "habitats": [
+      "ocean",
+      "island"
+    ]
+  },
+  {
+    "name": "Marine iguana",
+    "image": "images/animals/marine-iguana.jpg",
+    "place": "Punta Suárez, Española Island",
+    "country": "Ecuador",
+    "lat": -1.37,
+    "lng": -89.74,
+    "habitats": [
+      "island",
+      "ocean"
+    ]
+  },
+  {
     "name": "Mediterranean monk seal",
     "image": "images/animals/mediterranean-monk-seal.jpg",
     "place": "Cabo Blanco peninsula",
@@ -451,14 +657,38 @@
     ]
   },
   {
-    "name": "Mountain gorilla",
-    "image": "images/mountain-gorilla.jpg",
-    "place": "Bwindi Impenetrable National Park",
-    "country": "Uganda",
-    "lat": -1,
-    "lng": 29.65,
+    "name": "Mekong giant catfish",
+    "image": "images/animals/mekong-giant-catfish.jpg",
+    "place": "Tonle Sap Lake",
+    "country": "Cambodia",
+    "lat": 12.9,
+    "lng": 104.0,
     "habitats": [
-      "forest"
+      "freshwater"
+    ]
+  },
+  {
+    "name": "Monarch butterfly",
+    "image": "images/animals/monarch-butterfly.jpg",
+    "place": "Monarch Butterfly Biosphere Reserve, Michoacán",
+    "country": "Mexico",
+    "lat": 19.6,
+    "lng": -100.27,
+    "habitats": [
+      "forest",
+      "grassland"
+    ]
+  },
+  {
+    "name": "Mountain chicken",
+    "image": "images/animals/mountain-chicken.jpg",
+    "place": "Morne Diablotin National Park",
+    "country": "Dominica",
+    "lat": 15.5,
+    "lng": -61.4,
+    "habitats": [
+      "forest",
+      "island"
     ]
   },
   {
@@ -473,6 +703,17 @@
     ]
   },
   {
+    "name": "Northern bald ibis",
+    "image": "images/animals/northern-bald-ibis.jpg",
+    "place": "Souss-Massa National Park",
+    "country": "Morocco",
+    "lat": 30.1,
+    "lng": -9.6,
+    "habitats": [
+      "grassland"
+    ]
+  },
+  {
     "name": "Northern hairy-nosed wombat",
     "image": "images/animals/northern-hairy-nosed-wombat.jpg",
     "place": "Epping Forest National Park, Queensland",
@@ -481,6 +722,17 @@
     "lng": 146.7,
     "habitats": [
       "grassland"
+    ]
+  },
+  {
+    "name": "Oceanic whitetip shark",
+    "image": "images/animals/oceanic-whitetip-shark.jpg",
+    "place": "Brothers Islands, Red Sea",
+    "country": "Egypt",
+    "lat": 26.31,
+    "lng": 34.86,
+    "habitats": [
+      "ocean"
     ]
   },
   {
@@ -507,6 +759,40 @@
     ]
   },
   {
+    "name": "Orinoco crocodile",
+    "image": "images/animals/orinoco-crocodile.jpg",
+    "place": "El Tuparro National Park",
+    "country": "Colombia",
+    "lat": 5.35,
+    "lng": -67.9,
+    "habitats": [
+      "freshwater"
+    ]
+  },
+  {
+    "name": "Panamanian golden frog",
+    "image": "images/animals/panamanian-golden-frog.jpg",
+    "place": "El Valle de Antón",
+    "country": "Panama",
+    "lat": 8.6,
+    "lng": -80.13,
+    "habitats": [
+      "forest",
+      "freshwater"
+    ]
+  },
+  {
+    "name": "Philippine crocodile",
+    "image": "images/animals/philippine-crocodile.jpg",
+    "place": "San Mariano, Isabela",
+    "country": "Philippines",
+    "lat": 16.98,
+    "lng": 122.02,
+    "habitats": [
+      "freshwater"
+    ]
+  },
+  {
     "name": "Philippine eagle",
     "image": "images/animals/philippine-eagle.jpg",
     "place": "Mount Apo Natural Park, Mindanao",
@@ -516,6 +802,17 @@
     "habitats": [
       "forest",
       "island"
+    ]
+  },
+  {
+    "name": "Ploughshare tortoise",
+    "image": "images/animals/ploughshare-tortoise.jpg",
+    "place": "Baly Bay National Park",
+    "country": "Madagascar",
+    "lat": -16.0,
+    "lng": 45.3,
+    "habitats": [
+      "grassland"
     ]
   },
   {
@@ -553,6 +850,18 @@
     ]
   },
   {
+    "name": "Radiated tortoise",
+    "image": "images/animals/radiated-tortoise.jpg",
+    "place": "Tsimanampetsotsa National Park",
+    "country": "Madagascar",
+    "lat": -24.1,
+    "lng": 43.8,
+    "habitats": [
+      "forest",
+      "grassland"
+    ]
+  },
+  {
     "name": "Red panda",
     "image": "images/animals/red-panda.jpg",
     "place": "Singalila National Park",
@@ -584,6 +893,18 @@
     "habitats": [
       "forest",
       "grassland"
+    ]
+  },
+  {
+    "name": "Rusty patched bumble bee",
+    "image": "images/animals/rusty-patched-bumble-bee.jpg",
+    "place": "Minneapolis–Saint Paul, Minnesota",
+    "country": "United States",
+    "lat": 44.95,
+    "lng": -93.15,
+    "habitats": [
+      "grassland",
+      "forest"
     ]
   },
   {
@@ -620,14 +941,25 @@
     ]
   },
   {
-    "name": "Snow leopard",
-    "image": "images/snow-leopard.jpg",
-    "place": "Hemis National Park, Ladakh",
-    "country": "India",
-    "lat": 33.9,
-    "lng": 77.4,
+    "name": "Siamese crocodile",
+    "image": "images/animals/siamese-crocodile.jpg",
+    "place": "Cardamom Mountains",
+    "country": "Cambodia",
+    "lat": 11.7,
+    "lng": 103.4,
     "habitats": [
-      "grassland"
+      "freshwater"
+    ]
+  },
+  {
+    "name": "Southern bluefin tuna",
+    "image": "images/animals/southern-bluefin-tuna.jpg",
+    "place": "Great Australian Bight",
+    "country": "Australia",
+    "lat": -34.5,
+    "lng": 131.5,
+    "habitats": [
+      "ocean"
     ]
   },
   {
@@ -640,6 +972,17 @@
     "habitats": [
       "ocean",
       "freshwater"
+    ]
+  },
+  {
+    "name": "Staghorn coral",
+    "image": "images/animals/staghorn-coral.jpg",
+    "place": "Florida Keys National Marine Sanctuary",
+    "country": "United States",
+    "lat": 24.6,
+    "lng": -81.3,
+    "habitats": [
+      "ocean"
     ]
   },
   {
@@ -753,6 +1096,17 @@
     "habitats": [
       "freshwater",
       "grassland"
+    ]
+  },
+  {
+    "name": "Yangtze giant softshell turtle",
+    "image": "images/animals/yangtze-giant-softshell-turtle.jpg",
+    "place": "Dong Mo Lake, Hanoi",
+    "country": "Vietnam",
+    "lat": 21.06,
+    "lng": 105.45,
+    "habitats": [
+      "freshwater"
     ]
   },
   {

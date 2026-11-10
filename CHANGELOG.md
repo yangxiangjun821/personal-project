@@ -2,6 +2,15 @@
 
 All notable changes to Vanishing Wild. Dates are YYYY-MM-DD.
 
+## 2026-11-10
+
+### Added
+- The globe now has a marker for all 100 species instead of 69 (`images/animals/animal-locations.json`), each at a real reserve, park or sea where the animal lives, with its habitats for the habitat filter.
+- Chinese names for the 47 new places and countries in `i18n-zh.js`, so the hover cards and profile panel read fully in Chinese.
+
+### Changed
+- Bumped the `i18n-zh.js` cache version in `index.html` and `project.html`.
+
 ## 2026-11-09
 
 ### Added

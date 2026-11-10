@@ -225,9 +225,12 @@
             dirty=true;
         } else if (state.zoom!==zoomTarget) { state.zoom=zoomTarget; dirty=true; }
         // As a settled backdrop (behind the animal list or about view) the globe is half covered and
-        // nobody is steering it, so the twinkling sky redraws at ~15fps and 1x instead of ~30fps and 1.5x.
+        // nobody is steering it: once the fly and glide there have finished, stop redrawing altogether
+        // (the stars hold still) so scrolling the cards does not compete with the sky shader on weak GPUs.
+        // Moving it again (fly, glide, zoom, resize, leaving the backdrop) calls invalidate() and restarts.
         const backdrop=locked && !fly;
-        if (!dirty && now-lastDraw<(backdrop?66:32)) { frame=requestAnimationFrame(render); return; }
+        if (backdrop && !dirty && !glide) return;
+        if (!dirty && now-lastDraw<32) { frame=requestAnimationFrame(render); return; }
         lastDraw=now;
         const viewChanged=dirty; dirty=false;
         const dpr = Math.min(devicePixelRatio || 1, backdrop ? 1 : 1.5);   // the sky shader is costly; 1.5x stays sharp
@@ -335,6 +338,7 @@
             stopSpin(); pointers.clear(); canvas.classList.remove('is-dragging');
             focused=false; moveTo(where);
         }
+        invalidate();   // restarts the loop, which stops while it is a settled backdrop
     }
     let suspended=false;
     function setSuspended(on) { suspended=on; if (!on) invalidate(); }

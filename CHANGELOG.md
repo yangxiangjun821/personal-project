@@ -21,7 +21,7 @@ All notable changes to Vanishing Wild. Dates are YYYY-MM-DD.
 ### Performance
 - All 100 animal photos are now served from the site itself. 46 of them used to load straight from `upload.wikimedia.org` and `thumb.wikimedia.org`, which cannot be reached from mainland China, so those cards stayed empty or waited until the request timed out. The copies are in `images/animals/` (names ending in `-commons` where a different local photo already had that name); credits in `images/animal-photo-credits.json` are unchanged.
 - Animal list cards load 640px copies from `images/animals/thumbs/` (4.6 MB in total instead of 22.7 MB); the detail page still shows the full photos. A card falls back to the full photo if its copy is missing.
-- While the globe sits behind the animal list or the about view, the starfield redraws at about 15 frames a second and 1x resolution instead of 30 and 1.5x, which keeps scrolling the list smooth on integrated graphics.
+- While the globe sits behind the animal list or the about view, it stops redrawing once it has flown into place (the stars hold still) and starts again as soon as the view closes. Before, the full-screen starfield shader kept running at 30 frames a second behind the cards, which made opening and scrolling the list stutter on integrated graphics.
 
 ## 2026-11-05
 

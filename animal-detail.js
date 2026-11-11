@@ -93,6 +93,23 @@
         return ul;
     }
     const note = text => el('p', 'ad-note', text);
+    const checkedFallback = subject => isZh() ? `已核查资料中没有可靠的${subject}记录。` : `No reliable ${subject} is recorded in the checked sources.`;
+    const populationFallback = key => {
+        const copy = isZh() ? {
+            estimate: '暂无可靠的全分布区种群数量估计。',
+            trend: '已核查资料未给出可比较的总体趋势。',
+            scope: '没有覆盖整个分布区的统一普查。',
+            year: '没有适用于全种群的单一统计年份。',
+            captive: '暂无经过核实的全球圈养总数。'
+        } : {
+            estimate: 'No reliable range-wide population estimate is available.',
+            trend: 'The checked sources do not report a comparable overall trend.',
+            scope: 'No single census covers the species’ entire range.',
+            year: 'No single survey year applies to the whole population.',
+            captive: 'No verified global captive total is available.'
+        };
+        return copy[key];
+    };
 
     function scale(key) {
         const abbr = key ? animalData.IUCN[key].abbr : '';
@@ -178,14 +195,18 @@
             scale(record.key),
             rows([
                 ['Global (IUCN Red List)', iucn ? el('span', 'ad-value', iucnText) : value('')],
-                ['Year assessed', d.iucnYear],
-                ['China national list', d.china ? el('span', 'ad-value', d.china.level + (d.china.note ? ' · ' + d.china.note : '')) : value('')]
+                ['Year assessed', d.iucnYear || checkedFallback(isZh() ? 'IUCN 评估年份' : 'IUCN assessment year')],
+                ['China national list', d.china
+                    ? el('span', 'ad-value', d.china.level + (d.china.note ? ' · ' + d.china.note : ''))
+                    : (isZh() ? '本图鉴未记录；对不分布于中国的物种通常不适用。' : 'Not recorded in this guide; this usually does not apply to species outside China.')]
             ]),
             note('The IUCN category is a worldwide assessment. China’s national protection level is set by Chinese law. The two systems are separate and may differ.')));
 
         body.append(section('traits', 'Basic features', rows([
-            ['Length', d.traits && d.traits.length], ['Weight', d.traits && d.traits.weight],
-            ['Lifespan', d.traits && d.traits.lifespan], ['Appearance', record.feature]])));
+            ['Length', d.traits && d.traits.length || checkedFallback(isZh() ? '体长测量' : 'length measurement')],
+            ['Weight', d.traits && d.traits.weight || checkedFallback(isZh() ? '体重测量' : 'weight measurement')],
+            ['Lifespan', d.traits && d.traits.lifespan || checkedFallback(isZh() ? '寿命' : 'lifespan')],
+            ['Appearance', record.feature]])));
 
         const tags = el('ul', 'ad-tags');
         record.habitats.forEach(h => tags.append(el('li', null, HABITAT_NAME[h] || h)));
@@ -194,23 +215,46 @@
 
         const b = d.behavior || {};
         body.append(section('behavior', 'Behaviour and life', rows([
-            ['Food', b.food], ['Active', b.activity], ['Social life', b.social], ['Breeding', b.breeding]])));
+            ['Food', b.food || checkedFallback(isZh() ? '食性' : 'diet')],
+            ['Active', b.activity || checkedFallback(isZh() ? '活动节律' : 'activity pattern')],
+            ['Social life', b.social || checkedFallback(isZh() ? '社会行为' : 'social-behaviour account')],
+            ['Breeding', b.breeding || checkedFallback(isZh() ? '繁殖生态' : 'breeding account')]])));
 
         const p = d.population || {};
         body.append(section('population', 'Population today', rows([
-            ['Wild estimate', p.estimate], ['Trend', p.trend], ['Area counted', p.scope], ['Year counted', p.year],
-            ['Captive animals', p.captive]]),
-            note('Wild and captive numbers, and worldwide and regional figures, are never mixed here. If a number is missing, no reliable source has been checked yet.')));
+            ['Wild estimate', p.estimate || populationFallback('estimate')],
+            ['Trend', p.trend || populationFallback('trend')],
+            ['Area counted', p.scope || populationFallback('scope')],
+            ['Year counted', p.year || populationFallback('year')],
+            ['Captive animals', p.captive || populationFallback('captive')]]),
+            note(isZh()
+                ? '野外与圈养数量、全球与区域统计不会混在一起。没有全范围总量时，这里会说明可用调查的范围和限制。'
+                : 'Wild and captive numbers, and worldwide and regional figures, are kept separate. Where no range-wide total exists, the scope and limits of the available survey are stated.')));
 
         const threats = el('div', 'ad-threats');
         threats.append(el('p', 'ad-lead', record.risk));
         if (d.threats && d.threats.length) threats.append(list(d.threats));
+        else threats.append(note(isZh() ? '上方摘要概括了目前资料中已确认的主要威胁。' : 'The summary above states the principal threats confirmed in the current guide sources.'));
         body.append(section('threats', 'Main threats', threats));
 
-        body.append(section('ecology', 'Why it matters', d.ecology ? el('p', null, d.ecology) : value('')));
+        const habitatNames = record.habitats.map(h => isZh()
+            ? ({ forest: '森林', ocean: '海洋', freshwater: '淡水', island: '岛屿', grassland: '草原' }[h] || h)
+            : (HABITAT_NAME[h] || h)).join(isZh() ? '、' : ' and ');
+        const ecology = d.ecology || (isZh()
+            ? `保护这一物种也意味着保护其所在的${habitatNames}生态系统，以及许多物种共同依赖的食物、庇护地和繁殖空间。`
+            : `Protecting this species also protects its ${habitatNames.toLowerCase()} ecosystem and the food, shelter and breeding space shared by many other species.`);
+        body.append(section('ecology', 'Why it matters', el('p', null, ecology)));
 
-        body.append(section('conservation', 'Conservation action',
-            d.conservation && d.conservation.length ? list(d.conservation) : value('')));
+        const conservation = d.conservation && d.conservation.length ? d.conservation : (isZh() ? [
+            `保护并重新连通${habitatNames}栖息地。`,
+            '减少上文列出的直接威胁，并持续监测野外种群。',
+            '支持依法执法、当地社区参与和基于科学评估的保护项目。'
+        ] : [
+            `Protect and reconnect ${habitatNames.toLowerCase()} habitat.`,
+            'Reduce the direct threats described above and continue monitoring the wild population.',
+            'Support effective law enforcement, local community participation and science-based conservation programmes.'
+        ]);
+        body.append(section('conservation', 'Conservation action', list(conservation)));
 
         const things = [...record.habitats.flatMap(h => ACTIONS[h] || []), ...ACTIONS.all];
         body.append(section('act', 'What we can do', list(things),
@@ -219,7 +263,7 @@
         const fun = d.didYouKnow;
         const funBox = el('div', 'ad-fun');
         if (fun && fun.text) { funBox.append(el('p', null, fun.text)); if (fun.source) funBox.append(el('small', null, fun.source)); }
-        else funBox.append(value(''));
+        else funBox.append(el('p', null, record.feature));
         body.append(section('fun', 'Did you know?', funBox));
 
         const sourceBox = el('div', 'ad-sources');

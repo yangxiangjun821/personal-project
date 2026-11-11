@@ -168,16 +168,15 @@
         box.innerHTML =
             '<p class="habitat-loss__context">Human-impact illustration · not recorded damage at this site</p>' +
             '<label class="habitat-loss__label" for="habitat-loss"><span class="habitat-loss__name"></span> <output class="habitat-loss__stage" for="habitat-loss"></output></label>' +
-            '<input type="range" id="habitat-loss" class="habitat-loss__range" min="0" max="100" step="0.1" value="0" disabled aria-describedby="loss-context">' +
+            '<input type="range" id="habitat-loss" class="habitat-loss__range" min="0" max="100" step="0.1" value="0" disabled aria-describedby="loss-impact">' +
             '<p class="habitat-loss__note"></p>' +
-            '<div class="habitat-loss__actions"><button type="button" class="loss-play" disabled>Play impact</button><button type="button" class="loss-reset" disabled>Reset view</button><button type="button" class="loss-retry" hidden>Retry images</button></div>' +
-            '<p class="habitat-loss__context" id="loss-context">Illustrative human-impact scenario. The altered image does not document damage at this location. The slider shows a visual sequence, not a measured pollution level.</p>' +
+            '<p class="habitat-loss__impact" id="loss-impact"></p>' +
+            '<button type="button" class="loss-retry" hidden>Retry images</button>' +
             '<p class="habitat-loss__status" role="status"></p>';
         box.querySelector('.habitat-loss__name').textContent = s.lossLabel || 'Habitat loss';
+        box.querySelector('.habitat-loss__impact').textContent = pollutionScenes[current]?.impact || '';
         const range = box.querySelector('.habitat-loss__range');
         range.addEventListener('input', () => player?.set(range.value / 100));
-        box.querySelector('.loss-play').addEventListener('click', () => player?.toggle());
-        box.querySelector('.loss-reset').addEventListener('click', () => player?.set(0));
         box.querySelector('.loss-retry').addEventListener('click', enableLoss);
         return box;
     }
@@ -205,11 +204,8 @@
             if (request !== lossRequest || selected !== current || !landed) { next.destroy(); return; }
             loss?.destroy(); loss = next;
             player?.destroy();
-            player = habitatLoss.playback(setLoss, playing => {
-                panel.querySelector('.loss-play').textContent = playing ? 'Pause impact' : 'Play impact';
-                panel.querySelector('.loss-play').setAttribute('aria-pressed', String(playing));
-            });
-            panel.querySelectorAll('input, .loss-play, .loss-reset').forEach(control => control.disabled = false);
+            player = habitatLoss.playback(setLoss, () => {});
+            panel.querySelector('.habitat-loss__range').disabled = false;
             panel.querySelector('.habitat-loss__status').textContent = '';
             layoutPhoto(); setLoss(0);
         } catch (error) {

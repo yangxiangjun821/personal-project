@@ -6,6 +6,7 @@
         forest: {
             name: 'Forest', photo: 'forest/danum-canopy.jpg', focusY: .52,
             pressure: 'Logging & land-clearing fires',
+            impact: 'Logging and clearing for farms break continuous forest into isolated patches. The lost canopy removes shelter, exposes soil to erosion and makes the remaining forest more vulnerable to fire.',
             source: [.52, .81], spread: [1.05, .8],
             stages: [
                 [0, 'Intact rainforest', 'A continuous canopy provides shelter and connects wildlife populations.'],
@@ -20,6 +21,7 @@
             name: 'Ocean', photo: 'ocean/ningaloo-lagoon.jpg', focusY: .262,
             asset: 'ocean-litter',
             pressure: 'Dredging & beach litter',
+            impact: 'Coastal dredging releases sediment that clouds the water and can smother reef life. Plastic waste and abandoned fishing gear collect on shore, where wildlife can swallow them or become entangled.',
             source: [.77, .39], spread: [.85, 1.55],
             stages: [
                 [0, 'Clear lagoon', 'Clear coastal water allows sunlight to reach the reef below.'],
@@ -33,6 +35,7 @@
         freshwater: {
             name: 'Freshwater', photo: 'freshwater/okavango-floodplain.jpg', focusY: .322,
             pressure: 'Wastewater & fertiliser runoff',
+            impact: 'Fertiliser runoff and poorly treated wastewater overload wetlands with nutrients, driving algal growth that can reduce oxygen in the water. Plastic waste also becomes trapped in channels and reeds.',
             source: [.16, .53], spread: [.85, 1.05],
             stages: [
                 [0, 'Wetland channels', 'Channels and reed beds support aquatic plants, fish and wetland wildlife.'],
@@ -46,6 +49,7 @@
         island: {
             name: 'Island', photo: 'island/fernandina-shore.jpg', focusY: .283,
             pressure: 'Lost fishing gear & fuel leakage',
+            impact: 'Fuel leaks contaminate coastal water and tide pools, while lost fishing gear and plastic waste build up along the shore. Wildlife can be poisoned, injured or trapped by this debris.',
             source: [.76, .3], spread: [1.1, .8],
             stages: [
                 [0, 'Rocky island shore', 'Tide pools and coastal rocks provide feeding and resting places for island wildlife.'],
@@ -59,6 +63,7 @@
         grassland: {
             name: 'Grassland', photo: 'grassland/serengeti-plains.jpg', focusY: .383,
             pressure: 'Land conversion & waste dumping',
+            impact: 'Roads, farms and fences replace and divide open grassland, blocking wildlife routes and leaving soil vulnerable to erosion. Overgrazing and illegal dumping further degrade the remaining habitat.',
             source: [.68, .64], spread: [1.05, 1.05],
             stages: [
                 [0, 'Open grassland', 'Native grassland provides feeding space and connected routes for wildlife.'],
